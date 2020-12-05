@@ -82,7 +82,8 @@ class Main extends React.Component {
         >
           <h2 className="major">About</h2>
           <p>
-            I grew up in Lincoln RI right outside of providence and had a pretty picturesque up bringing me
+            I grew up in Lincoln RI right outside of Providence and had a pretty picturesque up bringing.
+            My family and I would spend winters skiing in Vermont and summers at the beach in Naragansett.
           </p>
           <span className="image main">
             <img src={famPic} alt="" />
