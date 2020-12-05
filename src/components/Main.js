@@ -1,10 +1,8 @@
 import PropTypes from 'prop-types'
 import React from 'react'
-import pic01 from '../images/pic01.jpg'
-import pic02 from '../images/pic02.jpg'
-import pic03 from '../images/pic03.jpg'
 import famPic from '../images/wholefam.jpg'
 import optumPats from '../images/fiverings.jpg'
+import twins from '../images/fampiece-crop.jpg'
 
 class Main extends React.Component {
   render() {
@@ -31,15 +29,18 @@ class Main extends React.Component {
           style={{ display: 'none' }}
         >
           <h2 className="major">Intro</h2>
-          <span className="image main">
-            <img src={pic01} alt="" />
-          </span>
           <p>
             From the heart of New England
           </p>
           <p>
             Oh ..... I didnt see you there. It looks like you stumbled across my Portfolio. Feel free to look around
           </p>
+          <span className="image main">
+            <img src={twins} alt="twins" />
+          </span>
+          <p>Can you guess which one is me?</p>
+          <button className="button">Left</button>
+          <button className="button">Right</button>
           {close}
         </article>
 
@@ -61,7 +62,13 @@ class Main extends React.Component {
           </p>
           <p>
             I have a passion for problem solving and felt that I could apply my skill set to a industry that is being modernized
-            at a rapid pass. 
+            at a rapid pass. According to Baseline "Nearly 90% of all data has been created in the last two years" and the systems that currently
+            support some of societies biggest institutions are running on some incredibly old systems that will need to be made more robust
+            and scalable in the next coming years.
+          </p>
+          <p>
+            It never ceases to amaze me at the innovation we are seeing all around the world that only exist because of how far modern software and hardware
+            has taken us.
           </p>
           {close}
         </article>

@@ -65,8 +65,9 @@
 
 		&.main {
 			display: block;
-			margin: (_size(element-margin) * 1.25) 0;
-			width: 100%;
+			// margin: (_size(element-margin) * 1.25) 0;
+			margin: 0 auto;
+			width: 70%;
 
 			img {
 				width: 100%;
