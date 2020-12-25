@@ -64,27 +64,21 @@ const Main = ({ route, article, articleTimeout, onCloseArticle, timeout, setWrap
       >
         <h2 className="major">Work</h2>
         <p>
-          After I graduated from Boston University in the Spring of 2018 I
+          After graduating from Boston University in Spring 2018, I
           started my career as a Software Engineer at Optum. Optum is the tech
-          subsidiary of United Health Group which is the largest health
-          insurance provider in the country having more than 49 million members currently.
+          subsidiary of United Health Group, the largest health
+          insurance provider in the country currently supporting more than 49 million members.
         </p>
         <span className="image main">
           <img src={optumPats} alt="OptumPatriots" />
         </span>
         <p>
-          I have a passion for problem solving and felt that I could apply my
-          skill set to a industry that is being modernized at a rapid pass.
-          According to Baseline "Nearly 90% of all data has been created in the
-          last two years" and the systems that currently support some of
-          societies biggest institutions are running on some incredibly old
-          systems that will need to be made more robust and scalable in the next
-          coming years.
-        </p>
-        <p>
-          It never ceases to amaze me at the innovation we are seeing all around
-          the world that only exist because of how far modern software and
-          hardware has taken us.
+          I have a passion for problem solving and believe that I can apply my
+          skill set to an industry that is being modernized at a rapid pass.
+          According to Baseline, "Nearly 90% of all data has been created in the
+          last two years." The systems currently supporting some of
+          societie's biggest institutions are running on some incredibly antiquated
+          systems that will need to be made more robust and scalable.
         </p>
         {close}
       </article>
