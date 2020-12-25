@@ -100,7 +100,7 @@ const Main = ({ route, article, articleTimeout, onCloseArticle, timeout, setWrap
           <img src={famPic} alt="" />
         </span>
         <p>
-          Lets be honest we all owe such huge debts to family for their support
+          We all owe such huge debts to family for their support
           in our endevors. Its important to recognize how important your loved
           ones are
         </p>
