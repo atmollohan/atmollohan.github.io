@@ -11,7 +11,7 @@ const Header = props => (
       <div className="inner">
         <h1>Andrew Mollohan</h1>
         <p>
-          The only place where success comes before work is in the dictionary.
+          Head of an engineer, heart of a pioneer.
         </p>
       </div>
     </div>
