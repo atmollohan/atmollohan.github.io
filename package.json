@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "author": "Andrew Mollohan",
   "dependencies": {
-    "gatsby": "^3.0.0",
+    "gatsby": "^3.0.4",
     "gatsby-plugin-manifest": "^2.2.38",
     "gatsby-plugin-react-helmet": "^3.1.21",
     "gatsby-plugin-sass": "^2.1.27",
