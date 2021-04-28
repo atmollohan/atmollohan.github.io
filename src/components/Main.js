@@ -6,14 +6,25 @@ import SocialLinks from '../components/SocialLinks'
 import famPic from '../images/wholefam.jpg'
 import optumPats from '../images/fiverings.jpg'
 import twins from '../images/fampiece-crop.jpg'
+import znLogo from '../images/znlogo.jpg'
+import wholeFamSki from '../images/wholeFamSki.jpg'
+import buGrad from '../images/buGrad.jpg'
 import resume from '../files/Andrew Mollohan Resume.pdf'
+
 
 const Main = ({ route, article, articleTimeout, onCloseArticle, timeout, setWrapperRef}) => {
   const [response, setResponse] = useState('')
   let close = (
     <div
+      role = "button"
+      aria-label="close"
       className="close"
+      tabIndex={0}
       onClick={() => {
+        onCloseArticle()
+        setResponse('')
+      }}
+      onKeyDown={(e) => {
         onCloseArticle()
         setResponse('')
       }}
@@ -40,18 +51,24 @@ const Main = ({ route, article, articleTimeout, onCloseArticle, timeout, setWrap
           Oh ..... I didnt see you there. It looks like you stumbled across my
           Portfolio. Feel free to look around or if you're in a rush grab a copy
           of my{' '}
-          <a href={resume} target="_blank" title="atmollohan">
+          <a href={resume} target="_blank" rel="noreferrer" title="atmollohan">
             resume
-          </a>
+          </a>. Feel free to use reach out if you want to collaborate.
         </p>
         {response === 'left' && <Confetti />}
-        <span className="image main">
-          <img src={twins} alt="twins" />
-        </span>
         <p>Can you guess which one is me?</p>
-        <button className="button" onClick={() => setResponse('left')}>Left</button>
-        <button className="button" onClick={() => setResponse('right')}>Right</button>
-        {response==='right' && <p>Its okay, I forgive you.</p> }
+        <div className="row">
+          <div>
+            <button className="button" onClick={() => setResponse('left')}>Left</button>
+            <button className="button" onClick={() => setResponse('right')}>Right</button>
+          </div>
+          {response==='right' && <p>Its okay, I forgive you.</p> }
+          <span className="image main">
+            <img src={twins} alt="twins" />
+          </span>
+          <br></br>
+          <SocialLinks />
+        </div>
         {close}
       </article>
 
@@ -80,6 +97,16 @@ const Main = ({ route, article, articleTimeout, onCloseArticle, timeout, setWrap
           societie's biggest institutions are running on some incredibly antiquated
           systems that will need to be made more robust and scalable.
         </p>
+        <div className="row">
+          <p>
+            After nearly three years of working at Optum I decided that I wanted to progress my
+            carrier at a smaller more dynamic company. I started working at <a href="https://www.zeronorth.io/" target="_blank" rel="noopener noreferrer">ZeroNorth</a> in February of 2021
+            and began to quickly immerse myself in the world of software security.
+          </p>
+          <span className="logo">
+            <img src={znLogo} alt="ZeroNorth Logo"/>
+          </span>
+        </div>
         {close}
       </article>
 
@@ -92,18 +119,31 @@ const Main = ({ route, article, articleTimeout, onCloseArticle, timeout, setWrap
       >
         <h2 className="major">About</h2>
         <p>
-          I grew up in Lincoln RI right outside of Providence and had a pretty
-          picturesque up bringing. Growing up we would spend winters skiing in
-          Vermont and summers at the beach in Naragansett with friends and family.
+          I grew up in Lincoln RI right outside of Providence and had a pretty picturesque up bringing.
+          I have amazing memories and life long friendships from the small suburb that I grew up in. 
+          Throughout childhood up we would spend winters skiing in Vermont and summers at the beach in Naragansett with friends and family.
         </p>
-        <span className="image main">
-          <img src={famPic} alt="" />
-        </span>
+        <div className="row">
+          <span className="image main">
+            <img src={wholeFamSki} alt="retro mollohans at killington" />
+          </span>
+          <span className="image main">
+            <img src={famPic} alt="mollohans at phili" />
+          </span>
+          {/* <span className="image main">
+            <img src={famSki} alt="mollohans at killington" />
+          </span> */}
+        </div>
         <p>
           We all owe such huge debts to family for their support
           in our endevors. Its important to recognize how important your loved
-          ones are
+          ones are. After graduating from highschool I attended 
+          &nbsp;<a href="https://www.bu.edu/" target="_blank" rel="noreferrer">Boston Univeristy</a>&nbsp;
+          and majored in applied mathematics and computer science graduating cum laude
         </p>
+        <span className="image main">
+          <img src={buGrad} alt="andrew mollohan BU" />
+        </span>
         {close}
       </article>
 
