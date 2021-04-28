@@ -1,5 +1,4 @@
-import PropTypes from 'prop-types'
-import React, { useState } from 'react'
+import React from 'react'
 
 const SocialLinks = () => (
   <ul className="icons">
@@ -7,12 +6,19 @@ const SocialLinks = () => (
       <a
         href="https://www.linkedin.com/in/andrew-mollohan-868b87b3"
         className="icon fa-linkedin"
+        target="_blank"
+        rel="noreferrer"
       >
         <span className="label">LinkedIn</span>
       </a>
     </li>
     <li>
-      <a href="https://github.com/atmollohan" className="icon fa-github">
+      <a 
+        href="https://github.com/atmollohan"
+        className="icon fa-github"
+        target="_blank"
+        rel="noreferrer"
+      >
         <span className="label">GitHub</span>
       </a>
     </li>
@@ -20,6 +26,8 @@ const SocialLinks = () => (
       <a
         href="https://www.instagram.com/atmollohan/"
         className="icon fa-instagram"
+        target="_blank"
+        rel="noreferrer"
       >
         <span className="label">Instagram</span>
       </a>
@@ -28,6 +36,8 @@ const SocialLinks = () => (
       <a
         href="https://www.facebook.com/andrew.mollohan/"
         className="icon fa-facebook"
+        target="_blank"
+        rel="noreferrer"
       >
         <span className="label">Facebook</span>
       </a>
