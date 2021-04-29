@@ -6,7 +6,7 @@ import SocialLinks from '../components/SocialLinks'
 import famPic from '../images/wholefam.jpg'
 import optumPats from '../images/fiverings.jpg'
 import twins from '../images/fampiece-crop.jpg'
-import znLogo from '../images/znlogo.jpg'
+import znBanner from '../images/znBanner.jpg'
 import wholeFamSki from '../images/wholeFamSki.jpg'
 import buGrad from '../images/buGrad.jpg'
 import resume from '../files/Andrew Mollohan Resume.pdf'
@@ -97,16 +97,14 @@ const Main = ({ route, article, articleTimeout, onCloseArticle, timeout, setWrap
           societie's biggest institutions are running on some incredibly antiquated
           systems that will need to be made more robust and scalable.
         </p>
-        <div className="row">
-          <p>
-            After nearly three years of working at Optum I decided that I wanted to progress my
-            carrier at a smaller more dynamic company. I started working at <a href="https://www.zeronorth.io/" target="_blank" rel="noopener noreferrer">ZeroNorth</a> in February of 2021
-            and began to quickly immerse myself in the world of software security.
-          </p>
-          <span className="logo">
-            <img src={znLogo} alt="ZeroNorth Logo"/>
-          </span>
-        </div>
+        <p>
+          After nearly three years of working at Optum I decided that I wanted to progress my
+          carrier at a smaller more dynamic company. I started working at <a href="https://www.zeronorth.io/" target="_blank" rel="noopener noreferrer">ZeroNorth</a> in February of 2021
+          and began to quickly immerse myself in the world of software security.
+        </p>
+        <span className="image">
+          <img src={znBanner} alt="ZeroNorth Logo" className="logo" />
+        </span>
         {close}
       </article>
 
