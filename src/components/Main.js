@@ -57,12 +57,14 @@ const Main = ({ route, article, articleTimeout, onCloseArticle, timeout, setWrap
         </p>
         {response === 'left' && <Confetti />}
         <p>Can you guess which one is me?</p>
-        <div className="row">
+        <div>
           <div>
             <button className="button" onClick={() => setResponse('left')}>Left</button>
             <button className="button" onClick={() => setResponse('right')}>Right</button>
           </div>
-          {response==='right' && <p>Its okay, I forgive you.</p> }
+          <br></br>
+          {response==='right' && <p>Its okay... I forgive you.</p> }
+          {response==='left' && <p>I knew you could do it!</p> }
           <span className="image main">
             <img src={twins} alt="twins" />
           </span>
