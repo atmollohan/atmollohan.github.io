@@ -9,7 +9,7 @@ import twins from '../images/fampiece-crop.jpg'
 import znBanner from '../images/znBanner.jpg'
 import wholeFamSki from '../images/wholeFamSki.jpg'
 import buGrad from '../images/buGrad.jpg'
-import resume from '../files/Andrew Mollohan Resume.pdf'
+import resume from '../files/atmResume.pdf'
 
 
 const Main = ({ route, article, articleTimeout, onCloseArticle, timeout, setWrapperRef}) => {
