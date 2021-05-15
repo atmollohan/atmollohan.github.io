@@ -9,9 +9,10 @@ import twins from '../images/fampiece-crop.jpg'
 import znBanner from '../images/znBanner.jpg'
 import wholeFamSki from '../images/wholeFamSki.jpg'
 import buGrad from '../images/buGrad.jpg'
-import ikonStash from '../images/ikonStash.jpg'
+// import ikonStash from '../images/ikonStash.jpg'
 // import famSki from '../images/famSki.jpg'
 import resume from '../files/atmResume.pdf'
+import FluidImage from '../components/FluidImage'
 
 
 const Main = ({ route, article, articleTimeout, onCloseArticle, timeout, setWrapperRef}) => {
@@ -99,7 +100,7 @@ const Main = ({ route, article, articleTimeout, onCloseArticle, timeout, setWrap
           skill set to an industry that is being modernized at a rapid pass.
           According to Baseline, "Nearly 90% of all data has been created in the
           last two years." The systems currently supporting some of
-          societie's biggest institutions are running on some incredibly antiquated
+          society's biggest institutions are running on some incredibly antiquated
           systems that will need to be made more robust and scalable.
         </p>
         <p>
@@ -175,7 +176,8 @@ const Main = ({ route, article, articleTimeout, onCloseArticle, timeout, setWrap
             out west even if its something easy I think it would be a lot of fun. I still spend a lot of my free time in the winter skiing.
             I am a proud Ikon Pass Holder
           </p>
-          <img style={{width: "40%"}} src={ikonStash} alt="ikon pass holder" />
+          {/* <img style={{maxHeight: "auto", maxWidth: "30%"}} src={ikonStash} alt="ikon pass holder" /> */}
+          <FluidImage />
         </div>
         {close}
       </article>
