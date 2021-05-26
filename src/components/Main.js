@@ -168,7 +168,7 @@ const Main = ({ route, article, articleTimeout, onCloseArticle, timeout, setWrap
           <img src={buGrad} alt="andrew mollohan BU" />
         </span>
         <div className="row">
-          <p>
+          <p style={{ maxWidth: "50%", padding: "10px" }}>
             I guess that brings us to the present. These days I am living up in boston, I spent the whole covid year living and working from home
             which was a big change for sure. I felt a lot more isolated but that ended up driving me to work harder.
             I started running a lot and even bagged a couple virtual half marathons. I also love to climb, I mostly
