@@ -9,9 +9,10 @@ import twins from '../images/fampiece-crop.jpg'
 import znBanner from '../images/znBanner.jpg'
 import wholeFamSki from '../images/wholeFamSki.jpg'
 import buGrad from '../images/buGrad.jpg'
-import ikonStash from '../images/ikonStash.jpg'
+// import ikonStash from '../images/ikonStash.jpg'
 // import famSki from '../images/famSki.jpg'
 import resume from '../files/atmResume.pdf'
+import FluidImage from '../components/FluidImage'
 
 
 const Main = ({ route, article, articleTimeout, onCloseArticle, timeout, setWrapperRef}) => {
@@ -99,7 +100,7 @@ const Main = ({ route, article, articleTimeout, onCloseArticle, timeout, setWrap
           skill set to an industry that is being modernized at a rapid pass.
           According to Baseline, "Nearly 90% of all data has been created in the
           last two years." The systems currently supporting some of
-          societie's biggest institutions are running on some incredibly antiquated
+          society's biggest institutions are running on some incredibly antiquated
           systems that will need to be made more robust and scalable.
         </p>
         <p>
@@ -133,12 +134,12 @@ const Main = ({ route, article, articleTimeout, onCloseArticle, timeout, setWrap
         <h2 className="major">About</h2>
         <p>
           I grew up in Lincoln RI right outside of Providence and had a pretty picturesque up bringing.
-          A want to say that about 20,000 people lived there so it was a pretty small town fully of some great parks and Rhode Islands own Twin River.
+          A want to say that about 20,000 people lived there so it was a pretty small town fully of some great parks and Rhode Islands own Twin River Casino!
           I often reflect on amazing memories and life long friendships I gained from my childhood in RI. 
           Growing up we would spend winters skiing in Vermont and summers at the beach in Naragansett with friends and family.
           Its a life goal of mine to one day own a big huge lake house that all my friends and family could come stay at.
-          But that is then and this is now. The think I care about the most right now is absorbing all the knowledge and 
-          expierience I can. If I can make yourself 1% better every day then on the year you'll be 37x where you started off at.
+          But that is then and this is now. Right now I am absorbing all the knowledge and 
+          expierience I can from the incredible people I've worked with in order grow both as a person and a professional. If you can make yourself 1% better every day then on the year you'll be 37x where you started off at.
         </p>
         <div className="row">
           <span className="image main">
@@ -167,7 +168,7 @@ const Main = ({ route, article, articleTimeout, onCloseArticle, timeout, setWrap
           <img src={buGrad} alt="andrew mollohan BU" />
         </span>
         <div className="row">
-          <p>
+          <p style={{ maxWidth: "50%", padding: "10px" }}>
             I guess that brings us to the present. These days I am living up in boston, I spent the whole covid year living and working from home
             which was a big change for sure. I felt a lot more isolated but that ended up driving me to work harder.
             I started running a lot and even bagged a couple virtual half marathons. I also love to climb, I mostly
@@ -175,7 +176,8 @@ const Main = ({ route, article, articleTimeout, onCloseArticle, timeout, setWrap
             out west even if its something easy I think it would be a lot of fun. I still spend a lot of my free time in the winter skiing.
             I am a proud Ikon Pass Holder
           </p>
-          <img style={{width: "40%"}} src={ikonStash} alt="ikon pass holder" />
+          {/* <img style={{maxHeight: "auto", maxWidth: "30%"}} src={ikonStash} alt="ikon pass holder" /> */}
+          {/* <FluidImage /> */}
         </div>
         {close}
       </article>
