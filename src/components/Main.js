@@ -134,12 +134,12 @@ const Main = ({ route, article, articleTimeout, onCloseArticle, timeout, setWrap
         <h2 className="major">About</h2>
         <p>
           I grew up in Lincoln RI right outside of Providence and had a pretty picturesque up bringing.
-          A want to say that about 20,000 people lived there so it was a pretty small town fully of some great parks and Rhode Islands own Twin River.
+          A want to say that about 20,000 people lived there so it was a pretty small town fully of some great parks and Rhode Islands own Twin River Casino!
           I often reflect on amazing memories and life long friendships I gained from my childhood in RI. 
           Growing up we would spend winters skiing in Vermont and summers at the beach in Naragansett with friends and family.
           Its a life goal of mine to one day own a big huge lake house that all my friends and family could come stay at.
-          But that is then and this is now. The think I care about the most right now is absorbing all the knowledge and 
-          expierience I can. If I can make yourself 1% better every day then on the year you'll be 37x where you started off at.
+          But that is then and this is now. Right now I am absorbing all the knowledge and 
+          expierience I can from the incredible people I've worked with in order grow both as a person and a professional. If you can make yourself 1% better every day then on the year you'll be 37x where you started off at.
         </p>
         <div className="row">
           <span className="image main">
@@ -177,7 +177,7 @@ const Main = ({ route, article, articleTimeout, onCloseArticle, timeout, setWrap
             I am a proud Ikon Pass Holder
           </p>
           {/* <img style={{maxHeight: "auto", maxWidth: "30%"}} src={ikonStash} alt="ikon pass holder" /> */}
-          <FluidImage />
+          {/* <FluidImage /> */}
         </div>
         {close}
       </article>

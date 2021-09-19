@@ -8,7 +8,9 @@ const FluidImage = () => {
     {
       file(relativePath: {eq: "ikonStash.jpg"}) {
         childImageSharp {
-          gatsbyImageData(placeholder: BLURRED)
+          gatsbyImageData(
+            placeholder: BLURRED 
+          )
         }
         name
       }
