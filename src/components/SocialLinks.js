@@ -24,7 +24,7 @@ const SocialLinks = () => (
     </li>
     <li>
       <a
-        href="https://www.instagram.com/atmollohan/"
+        href="https://www.instagram.com/mollotech/"
         className="icon fa-instagram"
         target="_blank"
         rel="noreferrer"

@@ -121,6 +121,31 @@ const Main = ({ route, article, articleTimeout, onCloseArticle, timeout, setWrap
         <span className="image">
           <img src={znBanner} alt="ZeroNorth Logo" className="logo" />
         </span>
+        <p>
+          In the past year I have also worked closely with a old friend to launch the digital assets for a local coffee roasting company.
+          Teddy Sullivans We Roast Coffee has been a huge hit in our home town and has been growing fast.
+          Local media outlet's have also taken notice including:
+          <ul>
+            <li><a href="https://www.valleybreeze.com/news/unlock-your-inner-barista-with-we-roast-coffee/article_e204dee8-5897-5521-a8a1-a20767b2a45f.html" target="_blank" rel="noreferrer">The Valley Breeze</a></li>  
+            <li><a href="https://tourblackstone.com/we-roast-coffee/" target="_blank" rel="noreferrer">tourblackstone.com</a></li>  
+          </ul>
+          If you're in northern RI and are looking for the best cup of coffee around pop into his store during business hours at <a href="https://www.google.com/maps/place/WeRoast+Coffee/@41.9030184,-71.4110711,15z/data=!4m5!3m4!1s0x0:0x33a3e23755923cba!8m2!3d41.9030184!4d-71.4110711" target="_blank" rel="noreferrer">276 Front Street</a>.
+        </p>
+        <p>
+          We built out a store and hosted it with a nice memorable url at <a href="https://weroast.coffee/" target="_blank" rel="noreferrer">weroast.coffee</a>.
+          {/* <iframe src="https://weroast.coffee/" title="We Roast Store"></iframe> */}
+        </p>
+        <p>
+          During initial talks I had built out a proof of concept blog using a JAM stack (JavaScript, API's and MARK down). I implemented the front end using Gatsby which is a JS framework built on top of react.
+          I also used various third party software's and api's including: 
+          <ul>
+            <li>Auth0 for authentication and authorization</li>
+            <li>Contentful for CMS</li>
+            <li>Netlify for automated deployments and cloud hosting</li>
+          </ul>
+          You can see the latest deployed instance <a href="https://weroast.netlify.app/" target="_blank" rel="noreferrer">here</a>.
+          {/* <iframe src="https://weroast.netlify.app/" title="We Roast Custom Blog"></iframe> */}
+        </p>
         {close}
       </article>
 
@@ -134,10 +159,10 @@ const Main = ({ route, article, articleTimeout, onCloseArticle, timeout, setWrap
         <h2 className="major">About</h2>
         <p>
           I grew up in Lincoln RI right outside of Providence and had a pretty picturesque up bringing.
-          A want to say that about 20,000 people lived there so it was a pretty small town fully of some great parks and Rhode Islands own Twin River Casino!
-          I often reflect on amazing memories and life long friendships I gained from my childhood in RI. 
+          About 20,000 people lived there so it was a pretty small town full of some great parks and Rhode Islands own Twin River Casino!
+          I often reflect on the amazing memories and life long friendships I gained from my childhood in RI. 
           Growing up we would spend winters skiing in Vermont and summers at the beach in Naragansett with friends and family.
-          Its a life goal of mine to one day own a big huge lake house that all my friends and family could come stay at.
+          It is a life goal of mine to one day own a big huge lake house that all my friends and family could come stay at.
           But that is then and this is now. Right now I am absorbing all the knowledge and 
           expierience I can from the incredible people I've worked with in order grow both as a person and a professional. If you can make yourself 1% better every day then on the year you'll be 37x where you started off at.
         </p>
@@ -154,14 +179,14 @@ const Main = ({ route, article, articleTimeout, onCloseArticle, timeout, setWrap
         </div>
         <p>
           We all owe such huge debts to family for their support in our endevors. 
-          Its important to recognize how important your loved ones are and 
+          It's important to recognize how important your loved ones are and 
           I can openly admit that I would be nowhere today had I not had both my parents. 
           Especially when it came to College since it was such a big decision to what is basically a child.
           I have strong oppinions about the current system we live and operate in but those oppinions also fuel me to 
           drive forward and make changes. After graduating from highschool I attended 
           &nbsp;<a href="https://www.bu.edu/" target="_blank" rel="noreferrer">Boston Univeristy</a>&nbsp;
           and majored in applied mathematics and computer science graduating with cum laude honors.
-          To be honest college was way harder than highschool but Im glad that I went because I met awesome people and made some great
+          To be honest college was way harder than highschool but I am glad that I went because I met awesome people and made some great
           memories.
         </p>
         <span className="image main">
