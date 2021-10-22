@@ -119,7 +119,7 @@ const Main = ({ route, article, articleTimeout, onCloseArticle, timeout, setWrap
           In the past year or so helped build and automate the deployment of a discord bot to aws via github actions with some friends.
           We currently have a mini economy implemented in our chat server that communicates with a database service called fauna DB.
           Another project I really enjoyed working on was a consulting contract 
-          for the Partnership to Reduce Cancer in Rhode Island or <a href="https://www.prcri.org/annual-cancer-summit" target="_blank" rel="noopener noreferrer">PCRI</a>.
+          for the Partnership to Reduce Cancer in Rhode Island or <a href="https://www.prcri.org/annual-cancer-summit" target="_blank" rel="noopener noreferrer">PRCRI</a>.
           They are doing a lot of great work surronding the much needed support to cancer community.
         </p>
         <p>
@@ -148,9 +148,9 @@ const Main = ({ route, article, articleTimeout, onCloseArticle, timeout, setWrap
           During initial talks I had built out a proof of concept blog using a JAM stack (JavaScript, API's and MARK down). I implemented the front end using Gatsby which is a JS framework built on top of react.
           I also used various third party software's and api's including: 
           <ul>
-            <li>Auth0 for authentication and authorization</li>
-            <li>Contentful for CMS</li>
-            <li>Netlify for automated deployments and cloud hosting</li>
+            <li><a href="https://auth0.com/" target="_blank" rel="noreferrer">Auth0</a> for authentication and authorization</li>
+            <li><a href="https://www.contentful.com/" target="_blank" rel="noreferrer">Contentful</a> for CMS</li>
+            <li><a href="https://www.netlify.com/" target="_blank" rel="noreferrer">Netlify</a> for automated deployments and cloud hosting</li>
           </ul>
           You can see the latest deployed instance <a href="https://weroast.netlify.app/" target="_blank" rel="noreferrer">here</a>.
           {/* <iframe src="https://weroast.netlify.app/" title="We Roast Custom Blog"></iframe> */}
