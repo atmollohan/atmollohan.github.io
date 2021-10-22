@@ -9,10 +9,7 @@ import twins from '../images/fampiece-crop.jpg'
 import znBanner from '../images/znBanner.jpg'
 import wholeFamSki from '../images/wholeFamSki.jpg'
 import buGrad from '../images/buGrad.jpg'
-// import ikonStash from '../images/ikonStash.jpg'
-// import famSki from '../images/famSki.jpg'
 import resume from '../files/atmResume.pdf'
-import FluidImage from '../components/FluidImage'
 
 
 const Main = ({ route, article, articleTimeout, onCloseArticle, timeout, setWrapperRef}) => {
@@ -49,14 +46,25 @@ const Main = ({ route, article, articleTimeout, onCloseArticle, timeout, setWrap
         style={{ display: 'none' }}
       >
         <h2 className="major">Intro</h2>
-        <p>From the heart of New England</p>
         <p>
           Oh ..... I didnt see you there. It looks like you stumbled across my
           Portfolio. Feel free to look around or if you're in a rush grab a copy
           of my{' '}
           <a href={resume} target="_blank" rel="noreferrer" title="atmollohan">
             resume
-          </a>. Feel free to use reach out if you want to collaborate. Or just take a look around and let me know what you think
+          </a>. I figured it was better build a portfolio from scratch to show off some of the work that I do outside of my 9-5. 
+          Feel free to use reach out if you want to collaborate. Or just take a look around and let me know what you think!
+        </p>
+        <p>
+          Here are some areas of interest:
+          <ul>
+            <li>Digital Design</li>
+            <li>Workflow Automation</li>
+            <li>Web/Application development and design</li>
+            <li>Cyber Security</li>
+            <li>E-commerce</li>
+            <li>Digital Marketing</li>
+          </ul>
         </p>
         {response === 'left' && <Confetti />}
         <p>Can you guess which one is me?</p>
@@ -91,23 +99,24 @@ const Main = ({ route, article, articleTimeout, onCloseArticle, timeout, setWrap
           started my career as a Software Engineer at Optum. Optum is the tech
           subsidiary of United Health Group, the largest health
           insurance provider in the country currently supporting more than 49 million members.
+          Optum provided me a fantastic environment to learn and grow. 
         </p>
         <span className="image main">
           <img src={optumPats} alt="OptumPatriots" />
         </span>
         <p>
           I have a passion for problem solving and believe that I can apply my
-          skill set to an industry that is being modernized at a rapid pass.
+          skill set to industries that are being modernized at a rapid pass.
           According to Baseline, "Nearly 90% of all data has been created in the
           last two years." The systems currently supporting some of
           society's biggest institutions are running on some incredibly antiquated
           systems that will need to be made more robust and scalable.
         </p>
         <p>
-          Outside of my 9:00 to 5:00 I continue to work with new exciting technologies. 
-          I have really enjoyed building out elegant UI's aside working with serverless and other various backend systems.
-          The tools they have out there these days is pretty amazing, how quickly the industry shifts is part of the reason I love it so much.
-          I have gotten the chance to help build and fully automate the deployment of a discord bot to aws via github actions with my friends.
+          Outside of my 9-5 I continue to work with new exciting technologies. 
+          I have really enjoyed building out elegant UI's along side working with serverless and other various backend systems.
+          The tools they have out there these days are pretty amazing, how quickly the industry shifts is part of the reason I love it so much.
+          In the past year or so helped build and automate the deployment of a discord bot to aws via github actions with some friends.
           We currently have a mini economy implemented in our chat server that communicates with a database service called fauna DB.
           Another project I really enjoyed working on was a consulting contract 
           for the Partnership to Reduce Cancer in Rhode Island or <a href="https://www.prcri.org/annual-cancer-summit" target="_blank" rel="noopener noreferrer">PCRI</a>.
@@ -193,7 +202,7 @@ const Main = ({ route, article, articleTimeout, onCloseArticle, timeout, setWrap
           <img src={buGrad} alt="andrew mollohan BU" />
         </span>
         <div className="row">
-          <p style={{ maxWidth: "50%", padding: "10px" }}>
+          <p>
             I guess that brings us to the present. These days I am living up in boston, I spent the whole covid year living and working from home
             which was a big change for sure. I felt a lot more isolated but that ended up driving me to work harder.
             I started running a lot and even bagged a couple virtual half marathons. I also love to climb, I mostly
@@ -201,8 +210,6 @@ const Main = ({ route, article, articleTimeout, onCloseArticle, timeout, setWrap
             out west even if its something easy I think it would be a lot of fun. I still spend a lot of my free time in the winter skiing.
             I am a proud Ikon Pass Holder
           </p>
-          {/* <img style={{maxHeight: "auto", maxWidth: "30%"}} src={ikonStash} alt="ikon pass holder" /> */}
-          {/* <FluidImage /> */}
         </div>
         {close}
       </article>
