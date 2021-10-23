@@ -52,8 +52,8 @@ const Main = ({ route, article, articleTimeout, onCloseArticle, timeout, setWrap
           of my{' '}
           <a href={resume} target="_blank" rel="noreferrer" title="atmollohan">
             resume
-          </a>. I figured it was better build a portfolio from scratch to show off some of the work that I do outside of my 9-5. 
-          Feel free to use reach out if you want to collaborate. Or just take a look around and let me know what you think!
+          </a>. A resume will only tell you a, 8' by 12's worth of information. 
+          So I figured it would be better to build a portfolio from scratch to show off some of the work that I do outside of my 9-5. 
         </p>
         <p>
           Here are some areas of interest:
@@ -66,6 +66,7 @@ const Main = ({ route, article, articleTimeout, onCloseArticle, timeout, setWrap
             <li>Digital Marketing</li>
           </ul>
         </p>
+        <p>Feel free to use reach out if you want to collaborate or just take a look around and let me know what you think!</p>
         {response === 'left' && <Confetti />}
         <p>Can you guess which one is me?</p>
         <div>
