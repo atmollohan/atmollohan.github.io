@@ -126,11 +126,17 @@ const Main = ({ route, article, articleTimeout, onCloseArticle, timeout, setWrap
         <p>
           After nearly three years of working at Optum, I decided that I wanted to progress my
           career at a smaller, more dynamic company. I began working at <a href="https://www.zeronorth.io/" target="_blank" rel="noopener noreferrer">ZeroNorth</a>, a Boston based startup, in February 2021
-          and quickly immersed myself in the world of Cybersecurity.
+          and quickly immersed myself in the world of Cybersecurity. ZeroNorth offered a robust platform for automating and orchestrating security scanning offereing a wide range of different tools.
+          Similar to my role at Optum, I worked in a full stack capacity working with an Angular frontend, Node API, Typescript libraries and Python security runners. I also directly worked with a wide range of the scanners themselves.
+          I learned a tremendous amount in my time at ZeroNorth and am super grateful for the team we had. 
         </p>
         <span className="image">
           <img src={znBanner} alt="ZeroNorth Logo" className="logo" />
         </span>
+        <p>
+          At the end of 2021 ZeroNorth was aquired by <a href="https://harness.io/" target="_blank" rel="noopener noreferrer">Harness</a> which is a leading CICD as a service company.
+          So in a sense ZeroNorth became a new Harness module called Security Tests Orchestration (STO).
+        </p>
         <p>
           In the past year I have also worked closely with an old friend to launch the digital assets for his local coffee roasting company.
           Teddy Sullivan's <a href="https://weroast.coffee/" target="_blank" rel="noreferrer">We Roast Coffee</a> has been a huge hit in our hometown and is growing fast.
