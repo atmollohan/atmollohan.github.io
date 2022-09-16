@@ -15,12 +15,12 @@ const ContactForm = ({ onCloseArticle }) => {
     if (ok) {
       form.reset()
       setTimeout(() => {
-          onCloseArticle()
-          setServerState({
-            submitting: false,
-            status: null,
-          })
-        }, 2000)
+        onCloseArticle()
+        setServerState({
+          submitting: false,
+          status: null,
+        })
+      }, 2000)
     }
   }
   const handleOnSubmit = e => {
@@ -43,11 +43,11 @@ const ContactForm = ({ onCloseArticle }) => {
     <form method="post" onSubmit={handleOnSubmit}>
       <div className="field half first">
         <label htmlFor="name">Name</label>
-        <input type="text" name="name" id="name" required/>
+        <input type="text" name="name" id="name" required />
       </div>
       <div className="field half">
         <label htmlFor="email">Email</label>
-        <input type="email" name="email" id="email" required/>
+        <input type="email" name="email" id="email" required />
       </div>
       <div className="field">
         <label htmlFor="message">Message</label>
@@ -66,9 +66,9 @@ const ContactForm = ({ onCloseArticle }) => {
           <input type="reset" value="Reset" />
         </li>
         {serverState.status && (
-            <li className={!serverState.status.ok ? 'errorMsg' : ''}>
+          <li className={!serverState.status.ok ? 'errorMsg' : ''}>
             {serverState.status.msg}
-            </li>
+          </li>
         )}
       </ul>
     </form>
@@ -76,7 +76,7 @@ const ContactForm = ({ onCloseArticle }) => {
 }
 
 ContactForm.propTypes = {
-    onCloseArticle: PropTypes.func,
+  onCloseArticle: PropTypes.func,
 }
 
 export default ContactForm

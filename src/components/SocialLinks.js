@@ -13,7 +13,7 @@ const SocialLinks = () => (
       </a>
     </li>
     <li>
-      <a 
+      <a
         href="https://github.com/atmollohan"
         className="icon fa-github"
         target="_blank"

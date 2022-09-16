@@ -1,16 +1,13 @@
 import React from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
-
+import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 
 const FluidImage = () => {
   const data = useStaticQuery(graphql`
     {
-      file(relativePath: {eq: "ikonStash.jpg"}) {
+      file(relativePath: { eq: "ikonStash.jpg" }) {
         childImageSharp {
-          gatsbyImageData(
-            placeholder: BLURRED 
-          )
+          gatsbyImageData(placeholder: BLURRED)
         }
         name
       }
