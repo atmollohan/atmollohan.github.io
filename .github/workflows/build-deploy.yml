@@ -8,7 +8,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      # Read node version from `.nvmrc` file
       - id: nvmrc
         uses: browniebroke/read-nvmrc-action@v1
       - uses: actions/setup-node@v3
@@ -21,6 +20,6 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@3.7.1
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BRANCH: master # The branch the action should deploy to.
-          FOLDER: public # The folder the action should deploy.
-          CLEAN: true # Automatically remove deleted files from the deploy branch
+          BRANCH: master
+          FOLDER: public
+          CLEAN: true
