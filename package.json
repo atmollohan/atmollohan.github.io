@@ -34,7 +34,7 @@
     "deploy": "gatsby build --prefix-paths && gh-pages -d public -b master"
   },
   "devDependencies": {
-    "prettier": "^1.19.1"
+    "prettier": "^3.3.0"
   },
   "repository": {
     "type": "git",

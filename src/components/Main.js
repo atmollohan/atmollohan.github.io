@@ -277,7 +277,12 @@ const Main = ({
           {/* <iframe src="https://weroast.netlify.app/" title="We Roast Custom Blog"></iframe> */}
         </p>
         <p>
-          In November of 2021 ZeroNorth was aquired by <a href="https://harness.io/" target="_blank" rel="noreferrer">Harness</a> a leading CI/CD product that is rapidly expanding into all phases of the Software Delivery Lifecycle(SDLC).
+          In November of 2021 ZeroNorth was aquired by{' '}
+          <a href="https://harness.io/" target="_blank" rel="noreferrer">
+            Harness
+          </a>{' '}
+          a leading CI/CD product that is rapidly expanding into all phases of
+          the Software Delivery Lifecycle(SDLC).
         </p>
         {close}
       </article>
