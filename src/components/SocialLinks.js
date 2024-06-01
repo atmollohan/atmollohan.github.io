@@ -32,16 +32,6 @@ const SocialLinks = () => (
         <span className="label">Instagram</span>
       </a>
     </li>
-    <li>
-      <a
-        href="https://www.facebook.com/andrew.mollohan/"
-        className="icon fa-facebook"
-        target="_blank"
-        rel="noreferrer"
-      >
-        <span className="label">Facebook</span>
-      </a>
-    </li>
   </ul>
 )
 
