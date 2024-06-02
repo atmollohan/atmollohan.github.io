@@ -30,7 +30,7 @@ const Main = ({
         onCloseArticle()
         setResponse('')
       }}
-      onKeyDown={e => {
+      onKeyDown={(e) => {
         onCloseArticle()
         setResponse('')
       }}
@@ -59,18 +59,22 @@ const Main = ({
             resume
           </a>
           . A resume only gives you a page worth of information. So I figured it
-          would be better to build a portfolio from scratch to show off some of
-          the work that I do outside of my 9 to 5.
+          would be better to wear my JS hat and build a portfolio from modern
+          frameworks. This is a good space for me to show off what I can do in
+          both my 9:00-5:00 and my 5:00-9:00.
         </p>
         <p>
-          Here are some areas of interest:
+          Here are some technical areas of interest:
           <ul>
-            <li>Digital Design</li>
+            <li>Cloud Computing</li>
+            <li>AI Development</li>
+            <li>Application Development</li>
+            <li>Data Engineer / Analysis</li>
             <li>Workflow Automation</li>
-            <li>Web/Application development and design</li>
-            <li>Cyber Security</li>
-            <li>E-commerce</li>
-            <li>Digital Marketing</li>
+            <li>Decentralized Finance</li>
+            <li>Computer Hardware / Self Hosting</li>
+            <li>Software Security Scanning and Analysis</li>
+            <li>Digital Design / Marketing / E-commerce</li>
           </ul>
         </p>
         <p>
@@ -128,7 +132,7 @@ const Main = ({
           that will need to be made more robust and scalable.
         </p>
         <p>
-          Outside of my 9 to 5, I continue to work with new and exciting
+          Outside of my 9:00 to 5:00, I continue to work with new and exciting
           technologies. I have really enjoyed building out elegant user
           interfaces while working with serverless and other varied backend
           systems. The tools available these days are pretty amazing. The speed
@@ -151,8 +155,8 @@ const Main = ({
         </p>
         <p>
           After nearly three years of working at Optum, I decided that I wanted
-          to progress my career at a smaller, more dynamic company. I began
-          working at{' '}
+          to progress my career at a smaller, more dynamic company that would
+          allow me to grow my technical skills faster. I began working at{' '}
           <a
             href="https://www.zeronorth.io/"
             target="_blank"
@@ -181,8 +185,11 @@ const Main = ({
           >
             Harness
           </a>{' '}
-          which is a leading CICD as a service company. So in a sense ZeroNorth
-          became a new Harness module called Security Tests Orchestration (STO).
+          which is a leading software development platform that sells a variety
+          of products to speed up various parts of the software delivery life
+          cycle (SDLC). ZeroNorth became a new Harness module called Security
+          Tests Orchestration (STO) which was the first official Security
+          solution to be rolled out at Harness.
         </p>
         <p>
           In the past year I have also worked closely with an old friend to
@@ -222,15 +229,22 @@ const Main = ({
           >
             276 Front Street
           </a>
+          . Though word on the street is that they are moving{' '}
+          <a
+            href="https://www.valleybreeze.com/news/weroasts-sullivan-to-serve-community-coffee-and-cocktails-at-new-headquarters/article_57d716ac-fe7e-11ee-a708-8f175a596772.html"
+            target="_blank"
+            rel="noreferrer"
+          >
+            soon
+          </a>
           .
         </p>
         <p>
-          We built out a store and hosted it with a nice memorable url at{' '}
+          We built out a store and hosted it with a nice memorable domain of{' '}
           <a href="https://weroast.coffee/" target="_blank" rel="noreferrer">
             weroast.coffee
           </a>
           .
-          {/* <iframe src="https://weroast.coffee/" title="We Roast Store"></iframe> */}
         </p>
         <p>
           During initial talks I built out a proof of concept blog using a JAM
@@ -273,16 +287,19 @@ const Main = ({
           >
             here
           </a>
-          .
-          {/* <iframe src="https://weroast.netlify.app/" title="We Roast Custom Blog"></iframe> */}
+          . The original blog was since replaced with the shopify store and
+          front page.
         </p>
         <p>
-          In November of 2021 ZeroNorth was aquired by{' '}
+          As I mentioned before ZeroNorth was aquired by{' '}
           <a href="https://harness.io/" target="_blank" rel="noreferrer">
             Harness
           </a>{' '}
-          a leading CI/CD product that is rapidly expanding into all phases of
-          the Software Delivery Lifecycle(SDLC).
+          a leading leading software development platform back in the fall of
+          2021 and I have been working there since then doing all kinds of
+          technical work for them earing me two annual star performer awards.
+          This along with growing expierience and responsibilities allowed me to
+          move up multiple levels and grow a massive amount as an engineer.
         </p>
         {close}
       </article>

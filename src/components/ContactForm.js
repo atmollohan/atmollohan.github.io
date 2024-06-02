@@ -23,7 +23,7 @@ const ContactForm = ({ onCloseArticle }) => {
       }, 2000)
     }
   }
-  const handleOnSubmit = e => {
+  const handleOnSubmit = (e) => {
     e.preventDefault()
     const form = e.target
     setServerState({ submitting: true })
@@ -32,10 +32,10 @@ const ContactForm = ({ onCloseArticle }) => {
       url: 'https://getform.io/f/6e8ba933-607a-4319-98a6-d36450623767',
       data: new FormData(form),
     })
-      .then(r => {
+      .then((r) => {
         handleServerResponse(true, 'Thanks for reaching out!', form)
       })
-      .catch(r => {
+      .catch((r) => {
         handleServerResponse(false, r.response.data.error, form)
       })
   }

@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: 'Mollo Tech Consulting | Portfolio',
+    title: 'Mollo Tech | Portfolio | Andrew Mollohan',
     author: 'Andrew Mollohan',
-    description: 'Personal Portfolio',
+    description: 'Mollo Tech | Portfolio',
   },
   plugins: [
     'gatsby-plugin-react-helmet',

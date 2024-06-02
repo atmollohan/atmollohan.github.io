@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types'
 import React from 'react'
-import HeaderGif from '../images/cool.gif'
+import HeaderGif from '../images/gifs/cool.gif'
 
-const Header = props => (
+const Header = (props) => (
   <header id="header" style={props.timeout ? { display: 'none' } : {}}>
     <div className="logo">
       <span className="icon fa-asterisk" src={HeaderGif}></span>
