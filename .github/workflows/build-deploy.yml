@@ -9,11 +9,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - id: nvmrc
-        uses: browniebroke/read-nvmrc-action@v1
       - uses: actions/setup-node@v4
         with:
-          node-version: '${{ steps.nvmrc.outputs.node_version }}'
+          node-version-file: '.nvmrc'
       - run: npm ci
       - run: npm run build
 
