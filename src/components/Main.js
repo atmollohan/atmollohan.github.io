@@ -9,7 +9,7 @@ import twins from '../images/fampiece-crop.jpg'
 import znBanner from '../images/znBanner.jpg'
 import wholeFamSki from '../images/wholeFamSki.jpg'
 import buGrad from '../images/buGrad.jpg'
-import resume from '../files/atmResume.pdf'
+import resume from '../files/atmReactiveResume.pdf'
 
 const Main = ({
   route,
@@ -100,8 +100,30 @@ const Main = ({
           </span>
           <br></br>
           <p>I grew up as 1 of a pair. Believe it or not we are fraternal.</p>
-          <SocialLinks />
         </div>
+        <p>
+          In case you're curious about this site specifically, I used a
+          React-based, open-source framework called Gatsby using a fairly
+          minimal{' '}
+          <a
+            href="https://github.com/codebushi/gatsby-starter-dimension"
+            target="_blank"
+            rel="noreferrer"
+          >
+            design
+          </a>{' '}
+          that I pulled from their templates. I have the source code on
+          <a
+            href="https://github.com/atmollohan/atmollohan.github.io"
+            target="_blank"
+            rel="noreferrer"
+          >
+            github
+          </a>{' '}
+          and am deploying it automatically on commits to main with github
+          actions.
+        </p>
+        <SocialLinks />
         {close}
       </article>
 
@@ -177,29 +199,15 @@ const Main = ({
           <img src={znBanner} alt="ZeroNorth Logo" className="logo" />
         </span>
         <p>
-          At the end of 2021 ZeroNorth was aquired by{' '}
-          <a
-            href="https://harness.io/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Harness
-          </a>{' '}
-          which is a leading software development platform that sells a variety
-          of products to speed up various parts of the software delivery life
-          cycle (SDLC). ZeroNorth became a new Harness module called Security
-          Tests Orchestration (STO) which was the first official Security
-          solution to be rolled out at Harness.
-        </p>
-        <p>
-          In the past year I have also worked closely with an old friend to
-          launch the digital assets for his local coffee roasting company. Teddy
-          Sullivan's{' '}
+          Throughout the first year of or two of Covid I had worked closely with
+          an old friend to launch the digital assets for his local coffee
+          company. Teddy Sullivan's{' '}
           <a href="https://weroast.coffee/" target="_blank" rel="noreferrer">
             We Roast Coffee
           </a>{' '}
-          has been a huge hit in our hometown and is growing fast. Local media
-          outlets have also taken notice:
+          has been a huge hit in our hometown and has developed a big base of
+          locals who sing its praises. Local media outlets have also taken
+          notice:
           <ul>
             <li>
               <a
@@ -240,66 +248,62 @@ const Main = ({
           .
         </p>
         <p>
-          We built out a store and hosted it with a nice memorable domain of{' '}
+          We built out an online store with shopify and hosted it with a nice
+          memorable domain of{' '}
           <a href="https://weroast.coffee/" target="_blank" rel="noreferrer">
             weroast.coffee
           </a>
           .
         </p>
         <p>
-          During initial talks I built out a proof of concept blog using a JAM
-          stack (JavaScript, APIs and mark down). I implemented the front end
-          using Gatsby which is a javascript framework built on top of react. I
-          also used various third party software and APIs including:
-          <ul>
-            <li>
-              <a href="https://auth0.com/" target="_blank" rel="noreferrer">
-                Auth0
-              </a>{' '}
-              for authentication and authorization
-            </li>
-            <li>
-              <a
-                href="https://www.contentful.com/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Contentful
-              </a>{' '}
-              for content management
-            </li>
-            <li>
-              <a
-                href="https://www.netlify.com/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Netlify
-              </a>{' '}
-              for automated deployments and cloud hosting
-            </li>
-          </ul>
-          You can see the latest deployed instance{' '}
+          During initial talks I built out a blot as a proof of concept using a
+          JAM stack (JavaScript, APIs and mark down). I implemented the front
+          end using Gatsby which is a javascript framework built on top of
+          react. I also used various third party software and APIs including:{' '}
+          <a href="https://auth0.com/" target="_blank" rel="noreferrer">
+            Auth0
+          </a>{' '}
+          for authentication and authorization{' '}
           <a
-            href="https://weroast.netlify.app/"
+            href="https://www.contentful.com/"
             target="_blank"
             rel="noreferrer"
           >
-            here
-          </a>
-          . The original blog was since replaced with the shopify store and
-          front page.
+            Contentful
+          </a>{' '}
+          for content management and{' '}
+          <a href="https://www.netlify.com/" target="_blank" rel="noreferrer">
+            Netlify
+          </a>{' '}
+          for automated deployments and cloud hosting. The original blog was
+          since replaced with the shopify store and front page.
         </p>
         <p>
-          As I mentioned before ZeroNorth was aquired by{' '}
-          <a href="https://harness.io/" target="_blank" rel="noreferrer">
+          In November of 2021 ZeroNorth was aquired by{' '}
+          <a
+            href="https://harness.io/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Harness
           </a>{' '}
-          a leading leading software development platform back in the fall of
-          2021 and I have been working there since then doing all kinds of
-          technical work for them earing me two annual star performer awards.
-          This along with growing expierience and responsibilities allowed me to
-          move up multiple levels and grow a massive amount as an engineer.
+          which is a leading cloud software development platform that sells a
+          variety of products to speed up various parts of the software delivery
+          life cycle (SDLC) for hundreds of fortue 500 companies. ZeroNorth
+          became a new Harness module called Security Tests Orchestration (STO)
+          which was the first official Security solution to be rolled out at
+          Harness in the Summer of 2022 which was a little more than a half
+          years work after being aquired.
+        </p>
+        <p>
+          I have been working for Harness since then doing all kinds sorts
+          technical work for them. The results of my hard work were shown in my
+          contribution to th eteam and success of our module earing me two
+          annual star performer awards (2022, 2024), well have to see if I can
+          get the hat trick. This growing expierience and responsibilities along
+          with the support of my awesome team has helped me to move level up as
+          an engineer many times and advance my career greatly. Im now at a
+          point where no problem seems too big because I've seen it all.
         </p>
         {close}
       </article>

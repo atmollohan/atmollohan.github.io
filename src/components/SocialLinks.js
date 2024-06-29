@@ -4,12 +4,12 @@ const SocialLinks = () => (
   <ul className="icons">
     <li>
       <a
-        href="https://www.linkedin.com/in/andrew-mollohan-868b87b3"
-        className="icon fa-linkedin"
+        href="https://github.com/atmollo-harness"
+        className="icon fa-github"
         target="_blank"
         rel="noreferrer"
       >
-        <span className="label">LinkedIn</span>
+        <span className="label">Harness GitHub</span>
       </a>
     </li>
     <li>
@@ -19,7 +19,7 @@ const SocialLinks = () => (
         target="_blank"
         rel="noreferrer"
       >
-        <span className="label">GitHub</span>
+        <span className="label">Personal GitHub</span>
       </a>
     </li>
     <li>
@@ -30,6 +30,16 @@ const SocialLinks = () => (
         rel="noreferrer"
       >
         <span className="label">Instagram</span>
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://www.linkedin.com/in/andrew-mollohan-868b87b3"
+        className="icon fa-linkedin"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <span className="label">LinkedIn</span>
       </a>
     </li>
   </ul>
