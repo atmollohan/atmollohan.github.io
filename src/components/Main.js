@@ -363,15 +363,10 @@ const Main = ({
         <div className="row">
           <p>
             I guess that brings us to the present. These days I live in Boston.
-            I spent the whole Covid year working from home, which was a big
-            change for sure. I felt a lot more isolated but that ended up
-            driving me to work harder. I started running a lot and even bagged a
-            couple virtual half marathons. I also love to rock climb. I mostly
-            climb indoors but sometimes get the chance to boulder and lead climb
-            outdoors. Another ambition of mine is to to go lead climbing out
-            west. Even if it's something easy, I think it would be a lot of fun!
-            I still spend a lot of my free time in the winter skiing. I am a
-            proud Ikon Pass Holder.
+            I spent all of Covid working from home, which was a big
+            change for sure. It was strange at first being isolated but that ended up
+            allowing me to learn more. I picked up running when the gyms shut down and even bagged a
+            couple half marathons since then. I still spend a lot of my free time in the winter skiing with friends and family.
           </p>
         </div>
         {close}
