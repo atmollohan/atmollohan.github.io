@@ -69,11 +69,11 @@ const Main = ({
             <li>Cloud Computing</li>
             <li>AI Development</li>
             <li>Application Development</li>
-            <li>Data Engineer / Analysis</li>
-            <li>Workflow Automation</li>
+            <li>Data Engineering</li>
+            <li>Custom Workflow Automation</li>
             <li>Decentralized Finance</li>
             <li>Computer Hardware / Self Hosting</li>
-            <li>Software Security Scanning and Analysis</li>
+            <li>Software Security Scanning</li>
             <li>Digital Design / Marketing / E-commerce</li>
           </ul>
         </p>
@@ -288,22 +288,18 @@ const Main = ({
             Harness
           </a>{' '}
           which is a leading cloud software development platform that sells a
-          variety of products to speed up various parts of the software delivery
-          life cycle (SDLC) for hundreds of fortue 500 companies. ZeroNorth
-          became a new Harness module called Security Tests Orchestration (STO)
-          which was the first official Security solution to be rolled out at
-          Harness in the Summer of 2022 which was a little more than a half
-          years work after being aquired.
+          variety of products to enhance the various parts of the software delivery
+          life cycle (SDLC) for hundreds of fortue 500 companies. ZeroNorth became the 
+          first security center Harness product called Security Tests Orchestration (STO)
+          which we were able to begin selling the Summer of 2022. We were able to create a sellable product withing the broader platform 
+          within a little more than a half a years work which I was super proud of.
         </p>
         <p>
-          I have been working for Harness since then doing all kinds sorts
-          technical work for them. The results of my hard work were shown in my
-          contribution to th eteam and success of our module earing me two
-          annual star performer awards (2022, 2024), well have to see if I can
-          get the hat trick. This growing expierience and responsibilities along
-          with the support of my awesome team has helped me to move level up as
-          an engineer many times and advance my career greatly. Im now at a
-          point where no problem seems too big because I've seen it all.
+          I have been working for Harness since then doing a wide range of
+          technical work. The results of my hard work were shown in how overall successful the STO product is
+          a long with other various marks of high performance including earning multiple star performer awards (2022, 2024). 
+          All of this has helped continue to grow my skills, expierience and responsibilities along
+          with the support of my awesome team. Im now at a point where no problem seems too big because I've seen it all.
         </p>
         {close}
       </article>
@@ -337,9 +333,6 @@ const Main = ({
           <span className="image main">
             <img src={famPic} alt="mollohans at phili" />
           </span>
-          {/* <span className="image main">
-            <img src={famSki} alt="mollohans at killington" />
-          </span> */}
         </div>
         <p>
           I am so grateful to family for their support in all my endevors. It's
