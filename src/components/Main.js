@@ -43,6 +43,7 @@ const Main = ({
       id="main"
       style={timeout ? { display: 'flex' } : { display: 'none' }}
     >
+      {/* TODO move each of these articles to seperate componenets or markdown files rather than having one big componenet */}
       <article
         id="intro"
         className={`${article === 'intro' ? 'active' : ''} ${
@@ -70,11 +71,12 @@ const Main = ({
             <li>AI Development</li>
             <li>Application Development</li>
             <li>Data Engineering</li>
-            <li>Custom Workflow Automation</li>
+            <li>Workflow Automation</li>
             <li>Decentralized Finance</li>
             <li>Computer Hardware / Self Hosting</li>
-            <li>Software Security Scanning</li>
-            <li>Digital Design / Marketing / E-commerce</li>
+            <li>Software Security</li>
+            <li>Ecommerce</li>
+            <li>Digital Design</li>
           </ul>
         </p>
         <p>
@@ -112,7 +114,7 @@ const Main = ({
           >
             design
           </a>{' '}
-          that I pulled from their templates. I have the source code on
+          that I pulled from their templates. I have the source code on{' '}
           <a
             href="https://github.com/atmollohan/atmollohan.github.io"
             target="_blank"
@@ -146,12 +148,12 @@ const Main = ({
           <img src={optumPats} alt="OptumPatriots" />
         </span>
         <p>
-          I have a passion for problem solving and believe that I can apply my
-          skill set to industries that are being modernized at a rapid pace.
-          According to Baseline, "Nearly 90% of all data has been created in the
-          last two years." The systems currently supporting some of society's
-          biggest institutions are running on some incredibly antiquated systems
-          that will need to be made more robust and scalable.
+          I have always had the knack for problem solving and believe that I can
+          apply my skills to industries that are being modernized at a rapid
+          pace. According to Baseline, "Nearly 90% of all data has been created
+          in the last two years." The systems currently supporting some of
+          society's biggest institutions are running on some incredibly
+          antiquated systems that will need to be made more robust and scalable.
         </p>
         <p>
           Outside of my 9:00 to 5:00, I continue to work with new and exciting
@@ -288,18 +290,29 @@ const Main = ({
             Harness
           </a>{' '}
           which is a leading cloud software development platform that sells a
-          variety of products to enhance the various parts of the software delivery
-          life cycle (SDLC) for hundreds of fortue 500 companies. ZeroNorth became the 
-          first security center Harness product called Security Tests Orchestration (STO)
-          which we were able to begin selling the Summer of 2022. We were able to create a sellable product withing the broader platform 
-          within a little more than a half a years work which I was super proud of.
+          variety of products to enhance the various parts of the software
+          delivery life cycle (SDLC) for hundreds of fortue 500 companies.
+          ZeroNorth became the first security center Harness product called{' '}
+          <a
+            href="https://harness.io/products/security-testing-orchestration/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Security Testing Orchestration (STO)
+          </a>{' '}
+          which we were able to begin selling the Summer of 2022. We were able
+          to create a sellable product withing the broader platform within a
+          little more than a half a years work which I was super proud of.
         </p>
         <p>
           I have been working for Harness since then doing a wide range of
-          technical work. The results of my hard work were shown in how overall successful the STO product is
-          a long with other various marks of high performance including earning multiple star performer awards (2022, 2024). 
-          All of this has helped continue to grow my skills, expierience and responsibilities along
-          with the support of my awesome team. Im now at a point where no problem seems too big because I've seen it all.
+          technical work. The results of the team and me hard work were shown in
+          the overall success of the STO product. I have recieved other various
+          marks of high performance including earning multiple star performer
+          awards (2022, 2023 and 2024). All of this has helped continue to grow
+          my skills, expierience and responsibilities along with the support of
+          my awesome team. Im now at a point where no problem seems too big
+          because I've seen it all.
         </p>
         {close}
       </article>
@@ -356,10 +369,12 @@ const Main = ({
         <div className="row">
           <p>
             I guess that brings us to the present. These days I live in Boston.
-            I spent all of Covid working from home, which was a big
-            change for sure. It was strange at first being isolated but that ended up
-            allowing me to learn more. I picked up running when the gyms shut down and even bagged a
-            couple half marathons since then. I still spend a lot of my free time in the winter skiing with friends and family.
+            I spent all of Covid working from home, which was a big change for
+            sure. It was strange at first being isolated but that ended up
+            allowing me to learn more. I picked up running when the gyms shut
+            down and even bagged a couple half marathons since then. I still
+            spend a lot of my free time in the winter skiing with friends and
+            family.
           </p>
         </div>
         {close}
