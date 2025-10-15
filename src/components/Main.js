@@ -9,7 +9,7 @@ import twins from '../images/fampiece-crop.jpg'
 import znBanner from '../images/znBanner.jpg'
 import wholeFamSki from '../images/wholeFamSki.jpg'
 import buGrad from '../images/buGrad.jpg'
-import resume from '../files/atmReactiveResume.pdf'
+import resume from '../content/resume.current.v1.3.pdf'
 
 const Main = ({
   route,
@@ -43,7 +43,6 @@ const Main = ({
       id="main"
       style={timeout ? { display: 'flex' } : { display: 'none' }}
     >
-      {/* TODO move each of these articles to seperate componenets or markdown files rather than having one big componenet */}
       <article
         id="intro"
         className={`${article === 'intro' ? 'active' : ''} ${
@@ -51,6 +50,7 @@ const Main = ({
         }`}
         style={{ display: 'none' }}
       >
+        {/* TODO replace this with intro.md */}
         <h2 className="major">Intro</h2>
         <p>
           Oh ..... I didnt see you there. It looks like you stumbled across my
@@ -136,6 +136,7 @@ const Main = ({
         }`}
         style={{ display: 'none' }}
       >
+        {/* TODO replace with work.md */}
         <h2 className="major">Work</h2>
         <p>
           After graduating from Boston University in Spring 2018, I started my
@@ -324,6 +325,7 @@ const Main = ({
         }`}
         style={{ display: 'none' }}
       >
+        {/* TODO replace this with about.md */}
         <h2 className="major">About</h2>
         <p>
           I grew up in Lincoln, RI right outside of Providence and had a pretty
@@ -387,6 +389,7 @@ const Main = ({
         }`}
         style={{ display: 'none' }}
       >
+        {/* TODO replace this with contact.md */}
         <h2 className="major">Contact</h2>
         <p>
           If you are looking to work together drop me a line directly with this
