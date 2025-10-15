@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkatmollohan_github_io=self.webpackChunkatmollohan_github_io||[]).push([[217],{9970:function(e,t,n){n.r(t),n.d(t,{default:function(){return a}});var l=n(6540);function a(e){let{data:t}=e;const{markdownRemark:n}=t,{frontmatter:a,html:r}=n;return l.createElement("div",null,l.createElement("div",null,l.createElement("h1",null,a.title),l.createElement("h2",null,a.date),l.createElement("div",{dangerouslySetInnerHTML:{__html:r}})))}}}]);
+//# sourceMappingURL=component---src-pages-blog-markdown-remark-frontmatter-slug-jsx-256e03bf2999bb07da91.js.map
