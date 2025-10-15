@@ -1,4 +1,7 @@
-# About
+---
+slug: "/about"
+title: "About"
+---
 
 I grew up in Lincoln, RI right outside of Providence and had a pretty picturesque up bringing. With a population of about 20,000 it is a pretty small town full of some great parks and Rhode Island's own Twin River Casino! I often reflect on the amazing memories and life-long friendships I made during my Rhode Island childhood. Growing we spent winters skiing in Vermont and summers at the beach in Naragansett with friends and family. It's a dream of mine to own a big huge lake house and host all my friends and family. But that is then and this is now. Right now I am absorbing all the knowledge and expierience I can from the incredible people I've worked with in order grow both as a person and a professional. If you can make yourself 1% better every day then at the end of the year you will have improved by a factor 37.
 

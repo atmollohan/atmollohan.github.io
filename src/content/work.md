@@ -1,4 +1,7 @@
-# Work
+---
+slug: "/work"
+title: "Work"
+---
 
 After graduating from Boston University in Spring 2018, I started my career as a Software Engineer at Optum. Optum is the tech subsidiary of United Health Group, the largest health insurance provider in the country, currently supporting more than 49 million members. Optum provided me a fantastic environment to learn and grow.
 
