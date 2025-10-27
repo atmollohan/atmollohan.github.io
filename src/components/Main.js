@@ -62,7 +62,7 @@ const Main = ({
           . A resume only gives you a page worth of information. So I figured it
           would be better to wear my JS hat and build a portfolio from modern
           frameworks. This is a good space for me to show off what I can do in
-          both my 9:00-5:00 and my 5:00-9:00.
+          both my 9-5 and my 5-9.
         </p>
         <p>
           Here are some technical areas of interest:
@@ -157,7 +157,7 @@ const Main = ({
           antiquated systems that will need to be made more robust and scalable.
         </p>
         <p>
-          Outside of my 9:00 to 5:00, I continue to work with new and exciting
+          Outside of my 9 to 5, I continue to work with new and exciting
           technologies. I have really enjoyed building out elegant user
           interfaces while working with serverless and other varied backend
           systems. The tools available these days are pretty amazing. The speed
@@ -259,7 +259,7 @@ const Main = ({
           .
         </p>
         <p>
-          During initial talks I built out a blot as a proof of concept using a
+          During initial talks I built out a blog as a proof of concept using a
           JAM stack (JavaScript, APIs and mark down). I implemented the front
           end using Gatsby which is a javascript framework built on top of
           react. I also used various third party software and APIs including:{' '}

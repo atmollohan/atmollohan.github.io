@@ -1,10 +1,10 @@
 {
   "name": "atmollohan.github.io",
   "description": "Mollo Tech Portfolio built with gatsby",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "author": "Andrew Mollohan",
   "dependencies": {
-    "axios": "^1.7.2",
+    "axios": "^1.13.0",
     "gatsby": "^5.13.6",
     "gatsby-plugin-image": "^3.15.0",
     "gatsby-plugin-manifest": "^5.15.0",
