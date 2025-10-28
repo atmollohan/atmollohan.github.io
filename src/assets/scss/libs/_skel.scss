@@ -1,3 +1,5 @@
+@use "sass:math";
+@use "sass:meta";
 @use "sass:list";
 @use "sass:map";
 @use "sass:string";
@@ -8,6 +10,7 @@
 	/// Breakpoints.
 	/// @var {list}
 	// $breakpoints: () !global;
+	$breakpoints: null;
 
 	/// Vendor prefixes.
 	/// @var {list}
@@ -82,24 +85,24 @@
 
 		$result: null;
 
-		@if type-of($index) != number {
-			@warn "$index: #{quote($index)} is not a number for `remove-nth`.";
+		@if meta.type-of($index) != number {
+			@warn "$index: #{string.quote($index)} is not a number for `remove-nth`.";
 		}
 		@else if $index == 0 {
 			@warn "List index 0 must be a non-zero integer for `remove-nth`.";
 		}
-		@else if abs($index) > length($list) {
-			@warn "List index is #{$index} but list is only #{length($list)} item long for `remove-nth`.";
+		@else if math.abs($index) > list.length($list) {
+			@warn "List index is #{$index} but list is only #{list.length($list)} item long for `remove-nth`.";
 		}
 		@else {
 
 			$result: ();
-			$index: if($index < 0, length($list) + $index + 1, $index);
+			$index: if($index < 0, list.length($list) + $index + 1, $index);
 
-			@for $i from 1 through length($list) {
+			@for $i from 1 through list.length($list) {
 
 				@if $i != $index {
-					$result: append($result, nth($list, $i));
+					$result: list.append($result, list.nth($list, $i));
 				}
 
 			}
@@ -218,7 +221,7 @@
 		// Locked?
 			$lock: false;
 
-			@if length($width) == 2 {
+			@if list.length($width) == 2 {
 				$width: list.nth($width, 1);
 				$lock: true;
 			}
@@ -309,7 +312,7 @@
 	@mixin grid-gutters($gutters, $class: null, $multiplier: 1) {
 
 		// Expand gutters if it's not a list.
-			@if length($gutters) == 1 {
+			@if list.length($gutters) == 1 {
 				$gutters: ($gutters, 0);
 			}
 
@@ -411,7 +414,7 @@
 					@include containers($containers);
 
 				// Apply per-breakpoint.
-					@each $name in map-keys($breakpoints) {
+					@each $name in map.keys($breakpoints) {
 
 						// Get/use breakpoint setting if it exists.
 							$x: map.get($configPerBreakpoint, $name);
@@ -493,7 +496,7 @@
 					@include grid($grid-gutters);
 
 				// Apply per-breakpoint.
-					@each $name in map-keys($breakpoints) {
+					@each $name in map.keys($breakpoints) {
 
 						// Get/use breakpoint setting if it exists.
 							$x: map.get($configPerBreakpoint, $name);

@@ -1,18 +1,17 @@
-///
-/// Dimension by HTML5 UP
-/// html5up.net | @ajlkn
-/// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-///
+@use "../libs/functions";
+@use "../libs/skel";
+
+
 
 /* Footer */
 
 #footer {
-  @include vendor(
+  @include skel.vendor(
     'transition',
     (
-      'transform #{_duration(article)} ease-in-out',
-      'filter #{_duration(article)} ease-in-out',
-      'opacity #{_duration(article)} ease-in-out'
+      'transform #{functions.duration(article)} ease-in-out',
+      'filter #{functions.duration(article)} ease-in-out',
+      'opacity #{functions.duration(article)} ease-in-out'
     )
   );
   width: 100%;
@@ -21,7 +20,7 @@
   text-align: center;
 
   .copyright {
-    letter-spacing: _font(letter-spacing);
+    letter-spacing: functions.font(letter-spacing);
     font-size: 0.5rem;
     opacity: 0.75;
     margin-bottom: 0;
@@ -29,7 +28,7 @@
   }
 
   .body.is-article-visible & {
-    @include vendor('transform', 'scale(0.95)');
+    @include skel.vendor('transform', 'scale(0.95)');
     // @include vendor('filter', 'blur(0.1rem)');
     opacity: 0;
   }

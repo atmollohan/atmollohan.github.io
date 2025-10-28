@@ -1,21 +1,20 @@
-///
-/// Dimension by HTML5 UP
-/// html5up.net | @ajlkn
-/// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-///
+@use "../libs/functions";
+@use "../libs/skel";
+
+
 
 /* Header */
 
 #header {
-  @include vendor('display', 'flex');
-  @include vendor('flex-direction', 'column');
-  @include vendor('align-items', 'center');
-  @include vendor(
+  @include skel.vendor('display', 'flex');
+  @include skel.vendor('flex-direction', 'column');
+  @include skel.vendor('align-items', 'center');
+  @include skel.vendor(
     'transition',
     (
-      'transform #{_duration(article)} ease-in-out',
-      'filter #{_duration(article)} ease-in-out',
-      'opacity #{_duration(article)} ease-in-out'
+      'transform #{functions.duration(article)} ease-in-out',
+      'filter #{functions.duration(article)} ease-in-out',
+      'opacity #{functions.duration(article)} ease-in-out'
     )
   );
   background-image: -moz-radial-gradient(
@@ -38,7 +37,7 @@
   text-align: center;
 
   > * {
-    @include vendor('transition', 'opacity #{_duration(article)} ease-in-out');
+    @include skel.vendor('transition', 'opacity #{functions.duration(article)} ease-in-out');
     position: relative;
     margin-top: 3.5rem;
 
@@ -47,10 +46,10 @@
       display: block;
       position: absolute;
       top: calc(-3.5rem - 1px);
-      left: calc(50% - #{_size(border-width) * 1});
-      width: _size(border-width);
+      left: calc(50% - #{functions.size(border-width) * 1});
+      width: functions.size(border-width);
       height: calc(3.5rem + 1px);
-      background: _palette(border);
+      background: functions.palette(border);
     }
   }
 
@@ -66,7 +65,7 @@
     width: 5.5rem;
     height: 5.5rem;
     line-height: 5.5rem;
-    border: solid _size(border-width) _palette(border);
+    border: solid functions.size(border-width) functions.palette(border);
     border-radius: 100%;
 
     .icon {
@@ -78,21 +77,21 @@
 
   .content {
     border-style: solid;
-    border-color: _palette(border);
-    border-top-width: _size(border-width);
-    border-bottom-width: _size(border-width);
+    border-color: functions.palette(border);
+    border-top-width: functions.size(border-width);
+    border-bottom-width: functions.size(border-width);
     max-width: 100%;
 
     .inner {
-      @include vendor(
+      @include skel.vendor(
         'transition',
         (
-          'max-height #{_duration(intro)} ease',
-          'padding #{_duration(intro)} ease',
-          'opacity #{_duration(article)} ease-in-out'
+          'max-height #{functions.duration(intro)} ease',
+          'padding #{functions.duration(intro)} ease',
+          'opacity #{functions.duration(article)} ease-in-out'
         )
       );
-      @include vendor('transition-delay', '0.25s');
+      @include skel.vendor('transition-delay', '0.25s');
       padding: 3rem 2rem;
       max-height: 40rem;
       overflow: hidden;
@@ -104,7 +103,7 @@
 
     p {
       text-transform: uppercase;
-      letter-spacing: _font(letter-spacing);
+      letter-spacing: functions.font(letter-spacing);
       font-size: 0.8rem;
       line-height: 2;
     }
@@ -112,16 +111,16 @@
 
   nav {
     ul {
-      @include vendor('display', 'flex');
+      @include skel.vendor('display', 'flex');
       margin-bottom: 0;
       list-style: none;
       padding-left: 0;
-      border: solid _size(border-width) _palette(border);
-      border-radius: _size(border-radius);
+      border: solid functions.size(border-width) functions.palette(border);
+      border-radius: functions.size(border-radius);
 
       li {
         padding-left: 0;
-        border-left: solid _size(border-width) _palette(border);
+        border-left: solid functions.size(border-width) functions.palette(border);
 
         &:first-child {
           border-left: 0;
@@ -132,21 +131,21 @@
           min-width: 7.5rem;
           height: 2.75rem;
           line-height: 2.75rem;
-          padding: 0 1.25rem 0 (1.25rem + _font(letter-spacing));
+          padding: 0 1.25rem 0 (1.25rem + functions.font(letter-spacing));
           text-transform: uppercase;
-          letter-spacing: _font(letter-spacing);
+          letter-spacing: functions.font(letter-spacing);
           font-size: 0.8rem;
-          font-family: _font(family);
+          font-family: functions.font(family);
           border: none;
           box-shadow: none;
 
           &:hover,
           &:focus {
-            background-color: _palette(border-bg);
+            background-color: functions.palette(border-bg);
           }
 
           &:active {
-            background-color: _palette(border-bg-alt);
+            background-color: functions.palette(border-bg-alt);
           }
         }
       }
@@ -158,10 +157,10 @@
         display: block;
         position: absolute;
         top: 0;
-        left: calc(50% - #{_size(border-width) * 1});
-        width: _size(border-width);
+        left: calc(50% - #{functions.size(border-width) * 1});
+        width: functions.size(border-width);
         height: 100%;
-        background: _palette(border);
+        background: functions.palette(border);
       }
 
       ul {
@@ -175,7 +174,7 @@
   }
 
   .body.is-article-visible & {
-    @include vendor('transform', 'scale(0.95)');
+    @include skel.vendor('transform', 'scale(0.95)');
     // @include vendor('filter', 'blur(0.1rem)');
     opacity: 0;
   }
@@ -197,7 +196,7 @@
     }
   }
 
-  @include breakpoint(medium) {
+  @include skel.breakpoint(medium) {
     .content {
       p {
         br {
@@ -207,7 +206,7 @@
     }
   }
 
-  @include breakpoint(small) {
+  @include skel.breakpoint(small) {
     > * {
       margin-top: 2rem;
 
@@ -240,7 +239,7 @@
     }
   }
 
-  @include breakpoint(xsmall) {
+  @include skel.breakpoint(xsmall) {
     padding: 1.5rem 0;
 
     .content {
@@ -251,13 +250,13 @@
 
     nav {
       ul {
-        @include vendor('flex-direction', 'column');
+        @include skel.vendor('flex-direction', 'column');
         min-width: 10rem;
         max-width: 100%;
 
         li {
           border-left: 0;
-          border-top: solid _size(border-width) _palette(border);
+          border-top: solid functions.size(border-width) functions.palette(border);
 
           &:first-child {
             border-top: 0;

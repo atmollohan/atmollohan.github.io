@@ -1,37 +1,37 @@
+@use "../libs/functions";
+@use "../libs/mixins";
+@use "../libs/skel";
+
 @use "sass:color";
 
-///
-/// Dimension by HTML5 UP
-/// html5up.net | @ajlkn
-/// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-///
+
 
 /* Main */
 
 	#main {
-		@include vendor('flex-grow', '1');
-		@include vendor('flex-shrink', '1');
-		@include vendor('display', 'flex');
-		@include vendor('align-items', 'center');
-		@include vendor('justify-content', 'center');
-		@include vendor('flex-direction', 'column');
+		@include skel.vendor('flex-grow', '1');
+		@include skel.vendor('flex-shrink', '1');
+		@include skel.vendor('display', 'flex');
+		@include skel.vendor('align-items', 'center');
+		@include skel.vendor('justify-content', 'center');
+		@include skel.vendor('flex-direction', 'column');
 		position: relative;
 		max-width: 100%;
 		z-index: 3;
 		display: none;
 
 		article {
-			@include vendor('transform', 'translateY(0.25rem)');
-			@include vendor('transition', (
-				'opacity #{_duration(article)} ease-in-out',
-				'transform #{_duration(article)} ease-in-out'
+			@include skel.vendor('transform', 'translateY(0.25rem)');
+			@include skel.vendor('transition', (
+				'opacity #{functions.duration(article)} ease-in-out',
+				'transform #{functions.duration(article)} ease-in-out'
 			));
-			@include padding(2.5rem, 2.5rem, (2rem, 0, 1rem, 0));
+			@include mixins.padding(2.5rem, 2.5rem, (2rem, 0, 1rem, 0));
 			position: relative;
 			width: 40rem;
 			max-width: 100%;
-			background-color: color.adjust(_palette(bg), $alpha: -0.15);
-			border-radius: _size(border-radius);
+			background-color: color.adjust(functions.palette(bg), $alpha: -0.15);
+			border-radius: functions.size(border-radius);
 			opacity: 0;
 
 			&.timeout {
@@ -39,7 +39,7 @@
 			}
 
 			&.active.timeout {
-				@include vendor('transform', 'translateY(0)');
+				@include skel.vendor('transform', 'translateY(0)');
 				opacity: 1;
 			}
 
@@ -60,7 +60,7 @@
 				white-space: nowrap;
 
 				&:before {
-					@include vendor('transition', 'background-color #{_duration(transition)} ease-in-out');
+					@include skel.vendor('transition', 'background-color #{functions.duration(transition)} ease-in-out');
 					content: '';
 					display: block;
 					position: absolute;
@@ -70,29 +70,29 @@
 					height: 2.5rem;
 					border-radius: 100%;
 					background-position: center;
-					background-image: svg-url('<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20px" height="20px" viewBox="0 0 20 20" zoomAndPan="disable"><style>line { stroke: #{_palette(border)}; stroke-width: 1; }</style><line x1="2" y1="2" x2="18" y2="18" /><line x1="18" y1="2" x2="2" y2="18" /></svg>');
+					background-image: mixins.svg-url('<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20px" height="20px" viewBox="0 0 20 20" zoomAndPan="disable"><style>line { stroke: #{functions.palette(border)}; stroke-width: 1; }</style><line x1="2" y1="2" x2="18" y2="18" /><line x1="18" y1="2" x2="2" y2="18" /></svg>');
 					background-size: 20px 20px;
 					background-repeat: no-repeat;
 				}
 
 				&:hover {
 					&:before {
-						background-color: _palette(border-bg);
+						background-color: functions.palette(border-bg);
 					}
 				}
 
 				&:active {
 					&:before {
-						background-color: _palette(border-bg-alt);
+						background-color: functions.palette(border-bg-alt);
 					}
 				}
 			}
 
 		}
 
-		@include breakpoint(small) {
+		@include skel.breakpoint(small) {
 			article {
-				@include padding(2rem, 2rem, (1.5rem, 0, 0.5rem, 0));
+				@include mixins.padding(2rem, 2rem, (1.5rem, 0, 0.5rem, 0));
 				.close {
 					&:before {
 						top: 0.875rem;
@@ -105,9 +105,9 @@
 			}
 		}
 
-		@include breakpoint(xsmall) {
+		@include skel.breakpoint(xsmall) {
 			article {
-				@include padding(2rem, 1.5rem, (1rem, 0, 0.5rem, 0));
+				@include mixins.padding(2rem, 1.5rem, (1rem, 0, 0.5rem, 0));
 			}
 		}
 	}

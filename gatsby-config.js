@@ -18,7 +18,14 @@ module.exports = {
         icon: 'src/images/spaceCase.png', // This path is relative to the root of the site.
       },
     },
-    'gatsby-plugin-sass',
+    {
+      resolve: `gatsby-plugin-sass`,
+      options: {
+        sassOptions: {
+          api: 'modern',
+        },
+      },
+    },
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
@@ -36,6 +43,6 @@ module.exports = {
         path: `${__dirname}/src/content`,
       },
     },
-     `gatsby-transformer-remark`,
+    `gatsby-transformer-remark`,
   ],
 }

@@ -1,15 +1,15 @@
-///
-/// Dimension by HTML5 UP
-/// html5up.net | @ajlkn
-/// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-///
+@use "../libs/functions";
+@use "../libs/mixins";
+@use "../libs/skel";
+
+
 
 /* Form */
 
 	form {
-		$gutter: _size(element-margin) * 0.75;
+		$gutter: functions.size(element-margin) * 0.75;
 
-		margin: 0 0 (_size(element-margin) * 1.25) 0;
+		margin: 0 0 (functions.size(element-margin) * 1.25) 0;
 
 		.field {
 			margin: 0 0 ($gutter * 1) 0;
@@ -29,7 +29,7 @@
 			margin: ($gutter * 1.25) 0 0 0 !important;
 		}
 
-		@include breakpoint(small) {
+		@include skel.breakpoint(small) {
 			.field {
 				margin: 0 0 ($gutter * 0.75) 0;
 
@@ -47,7 +47,7 @@
 			}
 		}
 
-		@include breakpoint(xsmall) {
+		@include skel.breakpoint(xsmall) {
 			.field {
 				&.half {
 					width: 100%;
@@ -63,13 +63,13 @@
 	}
 
 	label {
-		color: _palette(fg-bold);
+		color: functions.palette(fg-bold);
 		display: block;
 		font-size: 0.8rem;
-		font-weight: _font(weight);
-		letter-spacing: _font(letter-spacing);
+		font-weight: functions.font(weight);
+		letter-spacing: functions.font(letter-spacing);
 		line-height: 1.5;
-		margin: 0 0 (_size(element-margin) * 0.5) 0;
+		margin: 0 0 (functions.size(element-margin) * 0.5) 0;
 		text-transform: uppercase;
 	}
 
@@ -79,15 +79,15 @@
 	input[type="tel"],
 	select,
 	textarea {
-		@include vendor('appearance', 'none');
-		@include vendor('transition', (
-			'border-color #{_duration(transition)} ease-in-out',
-			'box-shadow #{_duration(transition)} ease-in-out',
-			'background-color #{_duration(transition)} ease-in-out'
+		@include skel.vendor('appearance', 'none');
+		@include skel.vendor('transition', (
+			'border-color #{functions.duration(transition)} ease-in-out',
+			'box-shadow #{functions.duration(transition)} ease-in-out',
+			'background-color #{functions.duration(transition)} ease-in-out'
 		));
 		background: transparent;
-		border-radius: _size(border-radius);
-		border: solid _size(border-width) _palette(border);
+		border-radius: functions.size(border-radius);
+		border: solid functions.size(border-width) functions.palette(border);
 		color: inherit;
 		display: block;
 		outline: 0;
@@ -100,37 +100,37 @@
 		}
 
 		&:focus {
-			background: _palette(border-bg);
-			border-color: _palette(fg-bold);
-			box-shadow: 0 0 0 _size(border-width) _palette(fg-bold);
+			background: functions.palette(border-bg);
+			border-color: functions.palette(fg-bold);
+			box-shadow: 0 0 0 functions.size(border-width) functions.palette(fg-bold);
 		}
 	}
 
 	select {
 		option {
-			background: _palette(bg);
-			color: _palette(fg);
+			background: functions.palette(bg);
+			color: functions.palette(fg);
 		}
 	}
 
 	.select-wrapper {
-		@include icon;
+		@include mixins.icon;
 		display: block;
 		position: relative;
 
 		&:before {
-			color: _palette(border);
+			color: functions.palette(border);
 			content: '\f107';
 			display: block;
-			height: _size(element-height);
+			height: functions.size(element-height);
 			//line-height: _size(element-height);
-			line-height: calc(#{_size(element-height)} + 0em);
+			line-height: calc(#{functions.size(element-height)} + 0em);
 			pointer-events: none;
 			position: absolute;
 			right: 0;
 			text-align: center;
 			top: 0;
-			width: _size(element-height);
+			width: functions.size(element-height);
 		}
 
 		select::-ms-expand {
@@ -142,7 +142,7 @@
 	input[type="password"],
 	input[type="email"],
 	select {
-		height: _size(element-height);
+		height: functions.size(element-height);
 	}
 
 	textarea {
@@ -151,7 +151,7 @@
 
 	input[type="checkbox"],
 	input[type="radio"] {
-		@include vendor('appearance', 'none');
+		@include skel.vendor('appearance', 'none');
 		display: block;
 		float: left;
 		margin-right: -2rem;
@@ -160,53 +160,53 @@
 		z-index: -1;
 
 		& + label {
-			@include icon;
-			@include vendor('user-select', 'none');
-			color: _palette(fg);
+			@include mixins.icon;
+			@include skel.vendor('user-select', 'none');
+			color: functions.palette(fg);
 			cursor: pointer;
 			display: inline-block;
 			font-size: 0.8rem;
-			font-weight: _font(weight);
-			margin: 0 0 (_size(element-margin) * 0.25) 0;
-			padding-left: (_size(element-height) * 0.6) + 1rem;
+			font-weight: functions.font(weight);
+			margin: 0 0 (functions.size(element-margin) * 0.25) 0;
+			padding-left: (functions.size(element-height) * 0.6) + 1rem;
 			padding-right: 0.75rem;
 			position: relative;
 
 			&:before {
-				@include vendor('transition', (
-					'border-color #{_duration(transition)} ease-in-out',
-					'box-shadow #{_duration(transition)} ease-in-out',
-					'background-color #{_duration(transition)} ease-in-out'
+				@include skel.vendor('transition', (
+					'border-color #{functions.duration(transition)} ease-in-out',
+					'box-shadow #{functions.duration(transition)} ease-in-out',
+					'background-color #{functions.duration(transition)} ease-in-out'
 				));
-				border-radius: _size(border-radius);
-				border: solid _size(border-width) _palette(border);
+				border-radius: functions.size(border-radius);
+				border: solid functions.size(border-width) functions.palette(border);
 				content: '';
 				display: inline-block;
-				height: (_size(element-height) * 0.6);
+				height: (functions.size(element-height) * 0.6);
 				left: 0;
 				//line-height: (_size(element-height) * 0.575);
-				line-height: calc(#{_size(element-height) * 0.575} + 0em);
+				line-height: calc(#{functions.size(element-height) * 0.575} + 0em);
 				position: absolute;
 				text-align: center;
 				top: -0.125rem;
-				width: (_size(element-height) * 0.6);
+				width: (functions.size(element-height) * 0.6);
 			}
 		}
 
 		&:checked + label {
 			&:before {
-				background: _palette(fg-bold) !important;
-				border-color: _palette(fg-bold) !important;
-				color: _palette(bg);
+				background: functions.palette(fg-bold) !important;
+				border-color: functions.palette(fg-bold) !important;
+				color: functions.palette(bg);
 				content: '\f00c';
 			}
 		}
 
 		&:focus + label {
 			&:before {
-				background: _palette(border-bg);
-				border-color: _palette(fg-bold);
-				box-shadow: 0 0 0 _size(border-width) _palette(fg-bold);
+				background: functions.palette(border-bg);
+				border-color: functions.palette(fg-bold);
+				box-shadow: 0 0 0 functions.size(border-width) functions.palette(fg-bold);
 			}
 		}
 	}
@@ -214,7 +214,7 @@
 	input[type="checkbox"] {
 		& + label {
 			&:before {
-				border-radius: _size(border-radius);
+				border-radius: functions.size(border-radius);
 			}
 		}
 	}
@@ -228,26 +228,26 @@
 	}
 
 	::-webkit-input-placeholder {
-		color: _palette(fg-light) !important;
+		color: functions.palette(fg-light) !important;
 		opacity: 1.0;
 	}
 
 	:-moz-placeholder {
-		color: _palette(fg-light) !important;
+		color: functions.palette(fg-light) !important;
 		opacity: 1.0;
 	}
 
 	::-moz-placeholder {
-		color: _palette(fg-light) !important;
+		color: functions.palette(fg-light) !important;
 		opacity: 1.0;
 	}
 
 	:-ms-input-placeholder {
-		color: _palette(fg-light) !important;
+		color: functions.palette(fg-light) !important;
 		opacity: 1.0;
 	}
 
 	.formerize-placeholder {
-		color: _palette(fg-light) !important;
+		color: functions.palette(fg-light) !important;
 		opacity: 1.0;
 	}
