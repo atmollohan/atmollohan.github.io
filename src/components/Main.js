@@ -9,7 +9,7 @@ import twins from '../images/fampiece-crop.jpg'
 import znBanner from '../images/znBanner.jpg'
 import wholeFamSki from '../images/wholeFamSki.jpg'
 import buGrad from '../images/buGrad.jpg'
-import resume from '../content/resume.current.v1.3.pdf'
+import resume from '../content/resume.current.v1.4.pdf'
 
 const Main = ({
   route,
