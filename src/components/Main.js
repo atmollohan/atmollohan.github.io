@@ -53,25 +53,25 @@ const Main = ({
         {/* TODO replace this with intro.md */}
         <h2 className="major">Intro</h2>
         <p>
-          Oh ..... I didnt see you there. It looks like you stumbled across my
-          Portfolio. Feel free to look around or if you're in a rush grab a copy
+          Oh... I didn't see you there. It looks like you stumbled across my
+          portfolio. Feel free to look around or, if you're in a rush, grab a copy
           of my{' '}
           <a href={resume} target="_blank" rel="noreferrer" title="atmollohan">
             resume
           </a>
-          . A resume only gives you a page worth of information. So I figured it
-          would be better to wear my JS hat and build a portfolio from modern
-          frameworks. This is a good space for me to show off what I can do in
-          both my 9-5 and my 5-9.
+          . A resume only gives you a page's worth of information. So I figured
+          it would be better to wear my JS hat and build a portfolio with modern
+          frameworks. This is a good space for me to show what I can do in both
+          my 9-5 and my 5-9.
         </p>
         <p>
           Here are some technical areas of interest:
           <ul>
             <li>Cloud Computing</li>
-            <li>AI Development</li>
             <li>Application Development</li>
-            <li>Data Engineering</li>
+            <li>AI Development</li>
             <li>Workflow Automation</li>
+            <li>Data Engineering</li>
             <li>Decentralized Finance</li>
             <li>Computer Hardware / Self Hosting</li>
             <li>Software Security</li>
@@ -95,13 +95,13 @@ const Main = ({
             </button>
           </div>
           <br></br>
-          {response === 'right' && <p>Its okay... I forgive you.</p>}
+          {response === 'right' && <p>It's okay... I forgive you.</p>}
           {response === 'left' && <p>I knew you could do it!</p>}
           <span className="image main">
             <img src={twins} alt="twins" />
           </span>
           <br></br>
-          <p>I grew up as 1 of a pair. Believe it or not we are fraternal.</p>
+          <p>I grew up as one of a pair. Believe it or not, we are fraternal.</p>
         </div>
         <p>
           In case you're curious about this site specifically, I used a
@@ -120,10 +120,10 @@ const Main = ({
             target="_blank"
             rel="noreferrer"
           >
-            github
+            GitHub
           </a>{' '}
-          and am deploying it automatically on commits to main with github
-          actions.
+          and am deploying it automatically on commits to main with GitHub
+          Actions.
         </p>
         <SocialLinks />
         {close}
@@ -163,9 +163,10 @@ const Main = ({
           systems. The tools available these days are pretty amazing. The speed
           at which the industry shifts is part of the reason I love it so much.
           Recently, I worked with some friends to build and automate the
-          deployment of a discord bot to amazon web services via github actions.
-          We currently have a mini economy implemented in our chat server that
-          communicates with a database service called fauna DB. Another project
+          deployment of a Discord bot to Amazon Web Services via GitHub
+          Actions. We currently have a mini economy implemented in our chat
+          server that communicates with a database service called FaunaDB.
+          Another project
           I really enjoyed working on was a consulting contract with the
           Partnership to Reduce Cancer in Rhode Island (
           <a
@@ -175,7 +176,7 @@ const Main = ({
           >
             PRCRI
           </a>
-          ). They are are providing a tremendous amount of support to the cancer
+          ). They are providing a tremendous amount of support to the cancer
           community in Rhode Island.
         </p>
         <p>
@@ -191,9 +192,9 @@ const Main = ({
           </a>
           , a Boston based startup, in February 2021 and quickly immersed myself
           in the world of Cybersecurity. ZeroNorth offered a robust platform for
-          automating and orchestrating security scanning offereing a wide range
-          of different tools. Similar to my role at Optum, I worked in a full
-          stack capacity working with an Angular frontend, Node API, Typescript
+          automating and orchestrating security scanning, offering a wide range
+          of tools. Similar to my role at Optum, I worked in a full-stack
+          capacity working with an Angular frontend, Node API, TypeScript
           libraries and Python security runners. I also directly worked with a
           wide range of the scanners themselves. I learned a tremendous amount
           in my time at ZeroNorth and am super grateful for the team we had.
@@ -202,7 +203,7 @@ const Main = ({
           <img src={znBanner} alt="ZeroNorth Logo" className="logo" />
         </span>
         <p>
-          Throughout the first year of or two of Covid I had worked closely with
+          Throughout the first year or two of the COVID-19 pandemic I worked closely with
           an old friend to launch the digital assets for his local coffee
           company. Teddy Sullivan's{' '}
           <a href="https://weroast.coffee/" target="_blank" rel="noreferrer">
@@ -251,7 +252,7 @@ const Main = ({
           .
         </p>
         <p>
-          We built out an online store with shopify and hosted it with a nice
+          We built out an online store with Shopify and hosted it with a nice
           memorable domain of{' '}
           <a href="https://weroast.coffee/" target="_blank" rel="noreferrer">
             weroast.coffee
@@ -260,9 +261,9 @@ const Main = ({
         </p>
         <p>
           During initial talks I built out a blog as a proof of concept using a
-          JAM stack (JavaScript, APIs and mark down). I implemented the front
-          end using Gatsby which is a javascript framework built on top of
-          react. I also used various third party software and APIs including:{' '}
+          JAMstack (JavaScript, APIs, and Markdown). I implemented the front
+          end using Gatsby which is a JavaScript framework built on top of
+          React. I also used various third-party software and APIs including:{' '}
           <a href="https://auth0.com/" target="_blank" rel="noreferrer">
             Auth0
           </a>{' '}
@@ -279,10 +280,10 @@ const Main = ({
             Netlify
           </a>{' '}
           for automated deployments and cloud hosting. The original blog was
-          since replaced with the shopify store and front page.
+          since replaced with the Shopify store and front page.
         </p>
         <p>
-          In November of 2021 ZeroNorth was aquired by{' '}
+          In November of 2021 ZeroNorth was acquired by{' '}
           <a
             href="https://harness.io/"
             target="_blank"
@@ -292,8 +293,8 @@ const Main = ({
           </a>{' '}
           which is a leading cloud software development platform that sells a
           variety of products to enhance the various parts of the software
-          delivery life cycle (SDLC) for hundreds of fortue 500 companies.
-          ZeroNorth became the first security center Harness product called{' '}
+          delivery life cycle (SDLC) for hundreds of Fortune 500 companies.
+            ZeroNorth became the first security center Harness product called{' '}
           <a
             href="https://harness.io/products/security-testing-orchestration/"
             target="_blank"
@@ -302,18 +303,18 @@ const Main = ({
             Security Testing Orchestration (STO)
           </a>{' '}
           which we were able to begin selling the Summer of 2022. We were able
-          to create a sellable product withing the broader platform within a
-          little more than a half a years work which I was super proud of.
+          to create a sellable product within the broader platform in a
+          little more than half a year's work, which I was very proud of.
         </p>
         <p>
           I have been working for Harness since then doing a wide range of
-          technical work. The results of the team and me hard work were shown in
-          the overall success of the STO product. I have recieved other various
-          marks of high performance including earning multiple star performer
-          awards (2022, 2023 and 2024). All of this has helped continue to grow
-          my skills, expierience and responsibilities along with the support of
-          my awesome team. Im now at a point where no problem seems too big
-          because I've seen it all.
+          technical work. The results of our hard work were reflected in the
+          overall success of the STO product. I have received various marks of
+          high performance, including multiple Star Performer awards (2022,
+          2023 and 2024). All of this has helped continue to grow my skills,
+          experience, and responsibilities along with the support of my awesome
+          team. I'm now at a point where no problem seems too big because
+          I've seen it all.
         </p>
         {close}
       </article>
@@ -329,17 +330,17 @@ const Main = ({
         <h2 className="major">About</h2>
         <p>
           I grew up in Lincoln, RI right outside of Providence and had a pretty
-          picturesque up bringing. With a population of about 20,000 it is a
-          pretty small town full of some great parks and Rhode Island's own Twin
-          River Casino! I often reflect on the amazing memories and life-long
-          friendships I made during my Rhode Island childhood. Growing we spent
-          winters skiing in Vermont and summers at the beach in Naragansett with
-          friends and family. It's a dream of mine to own a big huge lake house
-          and host all my friends and family. But that is then and this is now.
-          Right now I am absorbing all the knowledge and expierience I can from
-          the incredible people I've worked with in order grow both as a person
-          and a professional. If you can make yourself 1% better every day then
-          at the end of the year you will have improved by a factor 37.
+          picturesque upbringing. With a population of about 20,000 it is a
+          small town full of some great parks and Rhode Island's own Twin River
+          Casino. I often reflect on the amazing memories and lifelong
+          friendships I made during my Rhode Island childhood. Growing up, we
+          spent winters skiing in Vermont and summers at the beach in
+          Narragansett with friends and family. It's a dream of mine to own a
+          large lake house and host all my friends and family. Right now I am
+          absorbing all the knowledge and experience I can from the incredible
+          people I've worked with in order to grow both as a person and a
+          professional. If you can make yourself 1% better every day, over the
+          course of a year that compounds into meaningful improvement.
         </p>
         <div className="row">
           <span className="image main">
@@ -350,31 +351,31 @@ const Main = ({
           </span>
         </div>
         <p>
-          I am so grateful to family for their support in all my endevors. It's
+          I am so grateful to family for their support in all my endeavors. It's
           vital to recognize the importance of your loved ones. I would be
-          nowhere had it not been for my parents. Especially when it came to
-          selecting a College. A big decision for an 18 year old. I have strong
-          opinions about the world in which we live and the systems with which
-          we operate. However it's those opinions that drive me forward to make
-          changes. I attended &nbsp;
+          nowhere had it not been for my parents, especially when it came to
+          selecting a college — a big decision for an 18-year-old. I have
+          strong opinions about the world in which we live and the systems with
+          which we operate. However, it's those opinions that drive me forward
+          to make changes. I attended&nbsp;
           <a href="https://www.bu.edu/" target="_blank" rel="noreferrer">
-            Boston Univeristy
+            Boston University
           </a>
           , majored in applied mathematics and computer science, and graduated
-          with cum laude honors. To be honest, college was way harder than high
-          school but I am glad that I went because I met awesome people and made
-          some great memories.
+          with cum laude honors. To be honest, college was harder than high
+          school but I'm glad that I went because I met great people and made
+          some lasting memories.
         </p>
         <span className="image main">
           <img src={buGrad} alt="andrew mollohan BU" />
         </span>
         <div className="row">
-          <p>
+            <p>
             I guess that brings us to the present. These days I live in Boston.
-            I spent all of Covid working from home, which was a big change for
-            sure. It was strange at first being isolated but that ended up
-            allowing me to learn more. I picked up running when the gyms shut
-            down and even bagged a couple half marathons since then. I still
+            I spent much of the COVID-19 pandemic working from home, which was
+            a big change. It was strange at first being isolated but that
+            allowed me to focus on learning. I picked up running when the gyms
+            shut down and completed a couple half marathons since then. I still
             spend a lot of my free time in the winter skiing with friends and
             family.
           </p>
@@ -392,8 +393,8 @@ const Main = ({
         {/* TODO replace this with contact.md */}
         <h2 className="major">Contact</h2>
         <p>
-          If you are looking to work together drop me a line directly with this
-          form I set up. I listed a couple links to my active social medias if
+          If you are looking to work together, drop me a line using the form I
+          set up. I listed a couple links to my active social media if
           that's your jam.
         </p>
         <ContactForm onCloseArticle={onCloseArticle} />
