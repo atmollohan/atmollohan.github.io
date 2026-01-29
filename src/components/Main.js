@@ -9,7 +9,7 @@ import twins from '../images/fampiece-crop.jpg'
 import znBanner from '../images/znBanner.jpg'
 import wholeFamSki from '../images/wholeFamSki.jpg'
 import buGrad from '../images/buGrad.jpg'
-import resume from '../content/resume.current.v1.4.pdf'
+import resume from '../content/resume.current.v1.7.pdf'
 
 const Main = ({
   route,
@@ -69,12 +69,13 @@ const Main = ({
           <ul>
             <li>Cloud Computing</li>
             <li>Application Development</li>
-            <li>AI Development</li>
+            <li>AI / ML Development</li>
             <li>Workflow Automation</li>
+            <li>Self Hosting</li>
+            <li>Computer Hardware</li>
             <li>Data Engineering</li>
-            <li>Decentralized Finance</li>
-            <li>Computer Hardware / Self Hosting</li>
             <li>Software Security</li>
+            <li>Decentralized Finance</li>
             <li>Ecommerce</li>
             <li>Digital Design</li>
           </ul>
@@ -139,50 +140,41 @@ const Main = ({
         {/* TODO replace with work.md */}
         <h2 className="major">Work</h2>
         <p>
-          After graduating from Boston University in Spring 2018, I started my
-          career as a Software Engineer at Optum. Optum is the tech subsidiary
-          of United Health Group, the largest health insurance provider in the
-          country, currently supporting more than 49 million members. Optum
-          provided me a fantastic environment to learn and grow.
-        </p>
-        <span className="image main">
-          <img src={optumPats} alt="OptumPatriots" />
-        </span>
-        <p>
-          I have always had the knack for problem solving and believe that I can
-          apply my skills to industries that are being modernized at a rapid
-          pace. According to Baseline, "Nearly 90% of all data has been created
-          in the last two years." The systems currently supporting some of
-          society's biggest institutions are running on some incredibly
-          antiquated systems that will need to be made more robust and scalable.
-        </p>
-        <p>
-          Outside of my 9 to 5, I continue to work with new and exciting
-          technologies. I have really enjoyed building out elegant user
-          interfaces while working with serverless and other varied backend
-          systems. The tools available these days are pretty amazing. The speed
-          at which the industry shifts is part of the reason I love it so much.
-          Recently, I worked with some friends to build and automate the
-          deployment of a Discord bot to Amazon Web Services via GitHub
-          Actions. We currently have a mini economy implemented in our chat
-          server that communicates with a database service called FaunaDB.
-          Another project
-          I really enjoyed working on was a consulting contract with the
-          Partnership to Reduce Cancer in Rhode Island (
+          I have been working for{' '}
           <a
-            href="https://www.prcri.org/annual-cancer-summit"
+            href="https://harness.io/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            PRCRI
-          </a>
-          ). They are providing a tremendous amount of support to the cancer
-          community in Rhode Island.
+            Harness
+          </a>{' '}
+          since November 2021 as a Software Engineer II, and have been
+          promoted to Senior Software Engineer I and then Senior Software
+          Engineer II, doing a wide range of technical work. Harness is a
+          leading cloud software development platform that sells a variety of
+          products to enhance the various parts of the software delivery life
+          cycle (SDLC) for hundreds of Fortune 500 companies. When ZeroNorth was
+          acquired by Harness, it became the first security center Harness
+          product called{' '}
+          <a
+            href="https://harness.io/products/security-testing-orchestration/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Security Testing Orchestration (STO)
+          </a>{' '}
+          which we were able to begin selling the Summer of 2022. We were able
+          to create a sellable product within the broader platform in a little
+          more than half a year's work, which I was very proud of. The results
+          of our hard work were reflected in the overall success of the STO
+          product. I have received various marks of high performance, including
+          multiple Star Performer awards (2022, 2023 and 2024). All of this has
+          helped continue to grow my skills, experience, and responsibilities
+          along with the support of my awesome team. I'm now at a point where no
+          problem seems too big because I've seen it all.
         </p>
         <p>
-          After nearly three years of working at Optum, I decided that I wanted
-          to progress my career at a smaller, more dynamic company that would
-          allow me to grow my technical skills faster. I began working at{' '}
+          Before joining Harness, I began working at{' '}
           <a
             href="https://www.zeronorth.io/"
             target="_blank"
@@ -190,8 +182,11 @@ const Main = ({
           >
             ZeroNorth
           </a>
-          , a Boston based startup, in February 2021 and quickly immersed myself
-          in the world of Cybersecurity. ZeroNorth offered a robust platform for
+          , a Boston based startup, in February 2021 as a Software Engineer
+          II after nearly three years of working at Optum. I was eager to
+          progress my career at a smaller, more dynamic company that would allow
+          me to grow my technical skills faster. I quickly immersed myself in
+          the world of Cybersecurity. ZeroNorth offered a robust platform for
           automating and orchestrating security scanning, offering a wide range
           of tools. Similar to my role at Optum, I worked in a full-stack
           capacity working with an Angular frontend, Node API, TypeScript
@@ -257,10 +252,7 @@ const Main = ({
           <a href="https://weroast.coffee/" target="_blank" rel="noreferrer">
             weroast.coffee
           </a>
-          .
-        </p>
-        <p>
-          During initial talks I built out a blog as a proof of concept using a
+          . During initial talks I built out a blog as a proof of concept using a
           JAMstack (JavaScript, APIs, and Markdown). I implemented the front
           end using Gatsby which is a JavaScript framework built on top of
           React. I also used various third-party software and APIs including:{' '}
@@ -283,38 +275,46 @@ const Main = ({
           since replaced with the Shopify store and front page.
         </p>
         <p>
-          In November of 2021 ZeroNorth was acquired by{' '}
-          <a
-            href="https://harness.io/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Harness
-          </a>{' '}
-          which is a leading cloud software development platform that sells a
-          variety of products to enhance the various parts of the software
-          delivery life cycle (SDLC) for hundreds of Fortune 500 companies.
-            ZeroNorth became the first security center Harness product called{' '}
-          <a
-            href="https://harness.io/products/security-testing-orchestration/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Security Testing Orchestration (STO)
-          </a>{' '}
-          which we were able to begin selling the Summer of 2022. We were able
-          to create a sellable product within the broader platform in a
-          little more than half a year's work, which I was very proud of.
+          After graduating from Boston University in Spring 2018, I started my
+          career at Optum as a Technology Development Intern. Optum is the tech
+          subsidiary of United Health Group, the largest health insurance
+          provider in the country, currently supporting more than 49 million
+          members. I was brought back full time as a Technology Development
+          Associate and was subsequently promoted to Software Engineer. Optum
+          provided me a fantastic environment to learn and grow.
+        </p>
+        <span className="image main">
+          <img src={optumPats} alt="OptumPatriots" />
+        </span>
+        <p>
+          I have always had the knack for problem solving and believe that I can
+          apply my skills to industries that are being modernized at a rapid
+          pace. According to Baseline, "Nearly 90% of all data has been created
+          in the last two years." The systems currently supporting some of
+          society's biggest institutions are running on some incredibly
+          antiquated systems that will need to be made more robust and scalable.
         </p>
         <p>
-          I have been working for Harness since then doing a wide range of
-          technical work. The results of our hard work were reflected in the
-          overall success of the STO product. I have received various marks of
-          high performance, including multiple Star Performer awards (2022,
-          2023 and 2024). All of this has helped continue to grow my skills,
-          experience, and responsibilities along with the support of my awesome
-          team. I'm now at a point where no problem seems too big because
-          I've seen it all.
+          Outside of my 9 to 5, I continue to work with new and exciting
+          technologies. I have really enjoyed building out elegant user
+          interfaces while working with serverless and other varied backend
+          systems. The tools available these days are pretty amazing. The speed
+          at which the industry shifts is part of the reason I love it so much.
+          I have worked with some friends to build and automate the deployment
+          of a Discord bot to Amazon Web Services via GitHub Actions. We also
+          have a mini economy implemented in our chat server that communicates
+          with a database service called FaunaDB. Another project I really
+          enjoyed working on was a consulting contract with the Partnership to
+          Reduce Cancer in Rhode Island (
+          <a
+            href="https://www.prcri.org/annual-cancer-summit"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            PRCRI
+          </a>
+          ). They are providing a tremendous amount of support to the cancer
+          community in Rhode Island.
         </p>
         {close}
       </article>

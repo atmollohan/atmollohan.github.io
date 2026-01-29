@@ -3,7 +3,7 @@ slug: "/intro"
 title: "Intro"
 ---
 
-Oh... I didn't see you there. It looks like you stumbled across my portfolio. Feel free to look around or, if you're in a rush, grab a copy of my [resume](resume.current.v1.4.pdf). A resume only gives you a page's worth of information. So I figured it would be better to wear my JS hat and build a portfolio with modern frameworks. This is a good space for me to show what I can do in both my 9-5 and my 5-9.
+Oh... I didn't see you there. It looks like you stumbled across my portfolio. Feel free to look around or, if you're in a rush, grab a copy of my [resume](resume.current.v1.7.pdf). A resume only gives you a page's worth of information. So I figured it would be better to wear my JS hat and build a portfolio with modern frameworks. This is a good space for me to show what I can do in both my 9-5 and my 5-9.
 
 ## Technical Areas of Interest
 

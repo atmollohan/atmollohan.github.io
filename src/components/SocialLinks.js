@@ -4,22 +4,32 @@ const SocialLinks = () => (
   <ul className="icons">
     <li>
       <a
-        href="https://github.com/atmollo-harness"
-        className="icon fa-github"
-        target="_blank"
-        rel="noreferrer"
-      >
-        <span className="label">Harness GitHub</span>
-      </a>
-    </li>
-    <li>
-      <a
         href="https://github.com/atmollohan"
         className="icon fa-github"
         target="_blank"
         rel="noreferrer"
       >
-        <span className="label">Personal GitHub</span>
+        <span className="label">Personal</span>
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://github.com/andrew-mollohan-havoc"
+        className="icon fa-github"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <span className="label">Havoc</span>
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://github.com/atmollo-harness"
+        className="icon fa-github"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <span className="label">Harness</span>
       </a>
     </li>
     <li>
