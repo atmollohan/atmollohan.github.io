@@ -1,0 +1,68 @@
+                                         Experience
+Andrew Mollohan
+Senior Software Engineer II              HavocAI                                                        Providence, RI
+                                         Senior Platform Engineer                             December 2025 - Present
+ atmollohan@gmail.com                   Owns the end-to-end platform for autonomous marine systems, spanning
+ Boston, MA                             edge systems, cloud infrastructure, backend services, and operator tools.
+ https://mollo.tech                     Work in a small startup environment with direct responsibility for
+                                        architecture, reliability, and developer experience.
+                                        Harness                                                                    Boston
+                                        Senior Software Engineer II                    November 2021 - November 2025
+                                         Built a fault tolerant highly resilient cloud native security product into a large
+                                         and rapidly Software Development Platform.
+Skills
+                                         Developed core go services and python integrations that ran millions of
+Python                                   scans.
+
+                                         Contributed at all phases of the software delivery lifecycle including:
+JavaScript                               planning, frontend, backend, database, DevOps, testing and monitoring.
+React, TypeScript, Angular, Node,
+                                         Worked with multiple cloud providers (GCP / AWS) on various cloud
+Next.js, Gatsby.js
+                                         infrastructures / computer architectures to deliver results across various
+                                         customer use cases.
+Golang
+                                         Lead agile development for a small team of 5-10 engineers for 4+ years.
+
+                                         Senior Software Engineer II May 2024 - Nov 2025
+Software
+                                         Senior Software Engineer I August 2022 - May 2024
+Docker, Kubernetes, Linux, git,
+Jenkins, Kafka, Terraform, Helm,         Software Engineer II November 2021 - August 2022
+NPM, pip, WSL
+                                         Software Engineer at ZeroNorth
+Cloud Providers                                                                       February 2021 - November 2021
+GCP, AWS, Azure                          Developed real time application security solution; maintained 20+
+                                         integrations with leading security tools while implementing customers needs.
+Databases
+Postgres, MYSQL, Mongo, Redis,           Software Engineer at Optum
+Oracle, Neo4j, TigerGraph, Cassandra                                                        May 2017 - February 2021
+                                         Built, deployed and scaled 6+ secure enterprise grade applications to public
+AI / ML
+                                         and private cloud platforms; implemented security scanning across
+Claude, ChatGPT, Gemini, MCP, SciPy,
+                                         organization.
+Pytorch, scikit-learn, Ollama, RAG,
+TensorFlow, LLM                          Software Engineer June 2019 - February 2021
+
+Platforms                                Technology Development Associate June 2018 - June 2019
+Github, Jira, Harness, Netlify, Gitlab
+                                         Technology Development Intern May 2017 - August 2017
+
+Awards
+                                         Education
+Eagle Scout with Palms
+                                         Boston University                                     Bachelors Degree • 3.55
+Marathoner                               Applied Mathematics & Computer Science             September 2014 - May 2018
+
+Harness Star Performer                   Dean's List: 2014 - 2018, Graduated with honors
+
+Interests                                Projects
+Hobbies                                  Security Testing Orchestration           Zeronorth platform
+Skiing, Running, Biking
+                                         Healthcare Broker Marketplace            Mobile Broker App
+Technology
+                                         Health benefit ML App                    Discord Bot
+Gaming, Coding, Cloud Computing,
+Web Development, AI, DeFi
+

@@ -4,6 +4,16 @@ const SocialLinks = () => (
   <ul className="icons">
     <li>
       <a
+        href="https://www.linkedin.com/in/andrew-mollohan-868b87b3"
+        className="icon fa-linkedin"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <span className="label">LinkedIn</span>
+      </a>
+    </li>
+    <li>
+      <a
         href="https://github.com/atmollohan"
         className="icon fa-github"
         target="_blank"
@@ -40,16 +50,6 @@ const SocialLinks = () => (
         rel="noreferrer"
       >
         <span className="label">Instagram</span>
-      </a>
-    </li>
-    <li>
-      <a
-        href="https://www.linkedin.com/in/andrew-mollohan-868b87b3"
-        className="icon fa-linkedin"
-        target="_blank"
-        rel="noreferrer"
-      >
-        <span className="label">LinkedIn</span>
       </a>
     </li>
   </ul>
