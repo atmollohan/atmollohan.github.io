@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkatmollohan_github_io=self.webpackChunkatmollohan_github_io||[]).push([[372],{7123:function(e,t,o){o.r(t);var l=o(6540),n=o(8693),a=o(5105);t.default=()=>l.createElement(a.A,null,l.createElement("h1",null,"New page coming soon..."),l.createElement(n.Link,{to:"/"},"Go back to the goods"))}}]);
-//# sourceMappingURL=component---src-pages-v-2-js-de346b1623ea870d8d0c.js.map
