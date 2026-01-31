@@ -41,30 +41,30 @@ const Intro = ({ article, articleTimeout, onCloseArticle, timeout }) => {
         <a href={resume} target="_blank" rel="noreferrer" title="atmollohan">
           resume
         </a>
-        . A resume only gives you a page's worth of information. So I figured
-        it would be better to wear my JS hat and build a portfolio with modern
-        frameworks. This is a good space for me to show what I can do in both
-        my 9-5 and my 5-9.
+        . A resume only gives you a page's worth of information. So I figured it
+        would be better to wear my JS hat and build a portfolio with modern
+        frameworks. This is a good space for me to show what I can do in both my
+        9-5 and my 5-9.
       </p>
       <p>
         Here are some technical areas of interest:
         <ul>
           <li>Cloud Computing</li>
+          <li>Self Hosting</li>
           <li>Application Development</li>
           <li>AI / ML Development</li>
-          <li>Workflow Automation</li>
-          <li>Self Hosting</li>
           <li>Computer Hardware</li>
-          <li>Data Engineering</li>
+          <li>Workflow Automation</li>
           <li>Software Security</li>
+          <li>Data Engineering</li>
           <li>Decentralized Finance</li>
           <li>Ecommerce</li>
           <li>Digital Design</li>
         </ul>
       </p>
       <p>
-        Reach out if you want to collaborate or just take a look around and
-        let me know what you think!
+        Reach out if you want to collaborate or just take a look around and let
+        me know what you think!
       </p>
       {response === 'left' && <Confetti />}
       <p>Can you guess which one is me?</p>
@@ -88,8 +88,7 @@ const Intro = ({ article, articleTimeout, onCloseArticle, timeout }) => {
       </div>
       <p>
         In case you're curious about this site specifically, I used a
-        React-based, open-source framework called Gatsby using a fairly
-        minimal{' '}
+        React-based, open-source framework called Gatsby using a fairly minimal{' '}
         <a
           href="https://github.com/codebushi/gatsby-starter-dimension"
           target="_blank"

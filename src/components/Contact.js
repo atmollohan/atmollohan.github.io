@@ -25,9 +25,9 @@ const Contact = ({ article, articleTimeout, onCloseArticle, timeout }) => {
     >
       <h2 className="major">Contact</h2>
       <p>
-        If you are looking to work together, drop me a line using the form I
-        set up. I listed a couple links to my active social media if
-        that's your jam.
+        If you are looking to work together, drop me a line using the form I set
+        up. I listed a couple links to my active social media if that's your
+        jam.
       </p>
       <ContactForm onCloseArticle={onCloseArticle} />
       <SocialLinks />

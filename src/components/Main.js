@@ -13,7 +13,6 @@ const Main = ({
   timeout,
   setWrapperRef,
 }) => {
-
   return (
     <div
       ref={setWrapperRef}

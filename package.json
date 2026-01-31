@@ -1,19 +1,19 @@
 {
   "name": "atmollohan.github.io",
-  "description": "Mollo Tech Portfolio built with gatsby",
-  "version": "1.1.2",
+  "description": "Mollo Tech Landing Page",
+  "version": "1.2.0",
   "author": "Andrew Mollohan",
   "dependencies": {
-    "axios": "^1.13.0",
-    "gatsby": "^5.13.6",
-    "gatsby-plugin-image": "^3.15.0",
-    "gatsby-plugin-manifest": "^5.15.0",
-    "gatsby-plugin-react-helmet": "^6.15.0",
-    "gatsby-plugin-sass": "^6.13.1",
-    "gatsby-plugin-sharp": "^5.15.0",
-    "gatsby-source-filesystem": "^5.15.0",
-    "gatsby-transformer-remark": "^6.15.0",
-    "gatsby-transformer-sharp": "^5.15.0",
+    "axios": "^1.13.4",
+    "gatsby": "^5.16.0",
+    "gatsby-plugin-image": "^3.16.0",
+    "gatsby-plugin-manifest": "^5.16.0",
+    "gatsby-plugin-react-helmet": "^6.16.0",
+    "gatsby-plugin-sass": "^6.16.0",
+    "gatsby-plugin-sharp": "^5.16.0",
+    "gatsby-source-filesystem": "^5.16.0",
+    "gatsby-transformer-remark": "^6.16.0",
+    "gatsby-transformer-sharp": "^5.16.0",
     "gh-pages": "^6.3.0",
     "prop-types": "^15.8.1",
     "react": "^18.3.1",
@@ -35,7 +35,7 @@
     "deploy": "gatsby build --prefix-paths && gh-pages -d public -b master"
   },
   "devDependencies": {
-    "prettier": "^3.6.2"
+    "prettier": "^3.8.1"
   },
   "repository": {
     "type": "git",

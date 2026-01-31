@@ -1,7 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import znBanner from '../images/znBanner.jpg'
-import optumPats from '../images/fiverings.jpg'
 
 const Work = ({ article, articleTimeout, onCloseArticle, timeout }) => {
   const close = (
@@ -27,8 +26,8 @@ const Work = ({ article, articleTimeout, onCloseArticle, timeout }) => {
 
       <p>
         In November 2025, I accepted a new role at a small robotics startup
-        working on the cloud platform for a maritime autonomy company. The
-        role has pushed me deeper into edge/cloud integration and production
+        working on the cloud platform for a maritime autonomy company. The role
+        has pushed me deeper into edge/cloud integration and production
         reliability for systems that have to operate at sea — a rewarding
         challenge that blends software, hardware, and operations.
       </p>
@@ -38,14 +37,13 @@ const Work = ({ article, articleTimeout, onCloseArticle, timeout }) => {
         <a href="https://harness.io/" target="_blank" rel="noopener noreferrer">
           Harness
         </a>{' '}
-        since November 2021 as a Software Engineer II, and have been
-        promoted to Senior Software Engineer I and then Senior Software
-        Engineer II, doing a wide range of technical work. Harness is a
-        leading cloud software development platform that sells a variety of
-        products to enhance the various parts of the software delivery life
-        cycle (SDLC) for hundreds of Fortune 500 companies. When ZeroNorth was
-        acquired by Harness, it became the first security center Harness
-        product called{' '}
+        since November 2021 as a Software Engineer II, and have been promoted to
+        Senior Software Engineer I and then Senior Software Engineer II, doing a
+        wide range of technical work. Harness is a leading cloud software
+        development platform that sells a variety of products to enhance the
+        various parts of the software delivery life cycle (SDLC) for hundreds of
+        Fortune 500 companies. When ZeroNorth was acquired by Harness, it became
+        the first security center Harness product called{' '}
         <a
           href="https://harness.io/products/security-testing-orchestration/"
           target="_blank"
@@ -53,46 +51,49 @@ const Work = ({ article, articleTimeout, onCloseArticle, timeout }) => {
         >
           Security Testing Orchestration (STO)
         </a>{' '}
-        which we were able to begin selling the Summer of 2022. We were able
-        to create a sellable product within the broader platform in a little
-        more than half a year's work, which I was very proud of. The results
-        of our hard work were reflected in the overall success of the STO
-        product. I have received various marks of high performance, including
-        multiple Star Performer awards (2022, 2023 and 2024). All of this has
-        helped continue to grow my skills, experience, and responsibilities
-        along with the support of my awesome team. I'm now at a point where no
-        problem seems too big because I've seen it all.
+        which we were able to begin selling the Summer of 2022. We were able to
+        create a sellable product within the broader platform in a little more
+        than half a year's work, which I was very proud of. The results of our
+        hard work were reflected in the overall success of the STO product. I
+        have received various marks of high performance, including multiple Star
+        Performer awards (2022, 2023 and 2024). All of this has helped continue
+        to grow my skills, experience, and responsibilities along with the
+        support of my awesome team. I'm now at a point where no problem seems
+        too big because I've seen it all.
       </p>
       <p>
         Before joining Harness, I began working at{' '}
-        <a href="https://www.zeronorth.io/" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://www.zeronorth.io/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           ZeroNorth
         </a>
-        , a Boston based startup, in February 2021 as a Software Engineer
-        II after nearly three years of working at Optum. I was eager to
-        progress my career at a smaller, more dynamic company that would allow
-        me to grow my technical skills faster. I quickly immersed myself in
-        the world of Cybersecurity. ZeroNorth offered a robust platform for
-        automating and orchestrating security scanning, offering a wide range
-        of tools. Similar to my role at Optum, I worked in a full-stack
-        capacity working with an Angular frontend, Node API, TypeScript
-        libraries and Python security runners. I also directly worked with a
-        wide range of the scanners themselves. I learned a tremendous amount
-        in my time at ZeroNorth and am super grateful for the team we had.
+        , a Boston based startup, in February 2021 as a Software Engineer II
+        after nearly three years of working at Optum. I was eager to progress my
+        career at a smaller, more dynamic company that would allow me to grow my
+        technical skills faster. I quickly immersed myself in the world of
+        Cybersecurity. ZeroNorth offered a robust platform for automating and
+        orchestrating security scanning, offering a wide range of tools. Similar
+        to my role at Optum, I worked in a full-stack capacity working with an
+        Angular frontend, Node API, TypeScript libraries and Python security
+        runners. I also directly worked with a wide range of the scanners
+        themselves. I learned a tremendous amount in my time at ZeroNorth and am
+        super grateful for the team we had.
       </p>
       <span className="image">
         <img src={znBanner} alt="ZeroNorth Logo" className="logo" />
       </span>
       <p>
-        Throughout the first year or two of the COVID-19 pandemic I worked closely with
-        an old friend to launch the digital assets for his local coffee
-        company. Teddy Sullivan's{' '}
+        Throughout the first year or two of the COVID-19 pandemic I worked
+        closely with an old friend to launch the digital assets for his local
+        coffee company. Teddy Sullivan's{' '}
         <a href="https://weroast.coffee/" target="_blank" rel="noreferrer">
           We Roast Coffee
         </a>{' '}
         has been a huge hit in our hometown and has developed a big base of
-        locals who sing its praises. Local media outlets have also taken
-        notice:
+        locals who sing its praises. Local media outlets have also taken notice:
         <ul>
           <li>
             <a
@@ -104,7 +105,11 @@ const Work = ({ article, articleTimeout, onCloseArticle, timeout }) => {
             </a>
           </li>
           <li>
-            <a href="https://tourblackstone.com/we-roast-coffee/" target="_blank" rel="noreferrer">
+            <a
+              href="https://tourblackstone.com/we-roast-coffee/"
+              target="_blank"
+              rel="noreferrer"
+            >
               tourblackstone.com
             </a>
           </li>
@@ -135,9 +140,9 @@ const Work = ({ article, articleTimeout, onCloseArticle, timeout }) => {
           weroast.coffee
         </a>
         . During initial talks I built out a blog as a proof of concept using a
-        JAMstack (JavaScript, APIs, and Markdown). I implemented the front
-        end using Gatsby which is a JavaScript framework built on top of
-        React. I also used various third-party software and APIs including:{' '}
+        JAMstack (JavaScript, APIs, and Markdown). I implemented the front end
+        using Gatsby which is a JavaScript framework built on top of React. I
+        also used various third-party software and APIs including:{' '}
         <a href="https://auth0.com/" target="_blank" rel="noreferrer">
           Auth0
         </a>{' '}
@@ -149,42 +154,43 @@ const Work = ({ article, articleTimeout, onCloseArticle, timeout }) => {
         <a href="https://www.netlify.com/" target="_blank" rel="noreferrer">
           Netlify
         </a>{' '}
-        for automated deployments and cloud hosting. The original blog was
-        since replaced with the Shopify store and front page.
+        for automated deployments and cloud hosting. The original blog was since
+        replaced with the Shopify store and front page.
       </p>
       <p>
         After graduating from Boston University in Spring 2018, I started my
         career at Optum as a Technology Development Intern. Optum is the tech
-        subsidiary of United Health Group, the largest health insurance
-        provider in the country, currently supporting more than 49 million
-        members. I was brought back full time as a Technology Development
-        Associate and was subsequently promoted to Software Engineer. Optum
-        provided me a fantastic environment to learn and grow.
+        subsidiary of United Health Group, the largest health insurance provider
+        in the country, currently supporting more than 49 million members. I was
+        brought back full time as a Technology Development Associate and was
+        subsequently promoted to Software Engineer. Optum provided me a
+        fantastic environment to learn and grow.
       </p>
-      <span className="image main">
-        <img src={optumPats} alt="OptumPatriots" />
-      </span>
       <p>
         I have always had the knack for problem solving and believe that I can
-        apply my skills to industries that are being modernized at a rapid
-        pace. According to Baseline, "Nearly 90% of all data has been created
-        in the last two years." The systems currently supporting some of
-        society's biggest institutions are running on some incredibly
-        antiquated systems that will need to be made more robust and scalable.
+        apply my skills to industries that are being modernized at a rapid pace.
+        According to Baseline, "Nearly 90% of all data has been created in the
+        last two years." The systems currently supporting some of society's
+        biggest institutions are running on some incredibly antiquated systems
+        that will need to be made more robust and scalable.
       </p>
       <p>
         Outside of my 9 to 5, I continue to work with new and exciting
-        technologies. I have really enjoyed building out elegant user
-        interfaces while working with serverless and other varied backend
-        systems. The tools available these days are pretty amazing. The speed
-        at which the industry shifts is part of the reason I love it so much.
-        I have worked with some friends to build and automate the deployment
-        of a Discord bot to Amazon Web Services via GitHub Actions. We also
-        have a mini economy implemented in our chat server that communicates
-        with a database service called FaunaDB. Another project I really
-        enjoyed working on was a consulting contract with the Partnership to
-        Reduce Cancer in Rhode Island (
-        <a href="https://www.prcri.org/annual-cancer-summit" target="_blank" rel="noopener noreferrer">
+        technologies. I have really enjoyed building out elegant user interfaces
+        while working with serverless and other varied backend systems. The
+        tools available these days are pretty amazing. The speed at which the
+        industry shifts is part of the reason I love it so much. I have worked
+        with some friends to build and automate the deployment of a Discord bot
+        to Amazon Web Services via GitHub Actions. We also have a mini economy
+        implemented in our chat server that communicates with a database service
+        called FaunaDB. Another project I really enjoyed working on was a
+        consulting contract with the Partnership to Reduce Cancer in Rhode
+        Island (
+        <a
+          href="https://www.prcri.org/annual-cancer-summit"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           PRCRI
         </a>
         ). They are providing a tremendous amount of support to the cancer

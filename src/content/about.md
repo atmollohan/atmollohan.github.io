@@ -13,3 +13,5 @@ I am so grateful to family for their support in all my endeavors. It's vital to 
 ![andrew mollohan BU](../images/buGrad.jpg)
 
 I guess that brings us to the present. These days I live in Boston. I spent much of the COVID-19 pandemic working from home, which was a big change. It was strange at first being isolated but that allowed me to focus on learning. I picked up running when the gyms shut down and completed a couple half marathons since then. I still spend a lot of my free time in the winter skiing with friends and family.
+
+![OptumPatriots](../images/fiverings.jpg)
