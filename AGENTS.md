@@ -38,7 +38,7 @@ npm test
 
 ### CI/CD
 
-- **Build/Deploy** (`build-deploy.yml`): Runs on push to `main` branch - builds and deploys to GitHub Pages (master branch)
+- **Build/Deploy** (`build-deploy.yml`): Runs on push to `main` branch - builds and deploys to GitHub Pages (`gh-pages` branch)
 - **PR Check** (`pr-check.yml`): Runs on PRs to `main` - runs `format` and `build`
 
 ## Code Style Guidelines
