@@ -9,3 +9,6 @@ yarn-error.log
 
 # env files
 .env
+
+# Planning/roadmap files (local only)
+.planning/

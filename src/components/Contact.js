@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import ContactForm from './ContactForm'
 import SocialLinks from './SocialLinks'
 
-const Contact = ({ article, articleTimeout, onCloseArticle, timeout }) => {
+const Contact = ({ article, articleTimeout, onCloseArticle }) => {
   const close = (
     <div
       role="button"
@@ -26,8 +26,8 @@ const Contact = ({ article, articleTimeout, onCloseArticle, timeout }) => {
       <h2 className="major">Contact</h2>
       <p>
         If you are looking to work together, drop me a line using the form I set
-        up. I listed a couple links to my active social media if that's your
-        jam.
+        up. I listed a couple links to my active social media if that&apos;s
+        your jam.
       </p>
       <ContactForm onCloseArticle={onCloseArticle} />
       <SocialLinks />
@@ -40,7 +40,6 @@ Contact.propTypes = {
   article: PropTypes.string,
   articleTimeout: PropTypes.bool,
   onCloseArticle: PropTypes.func,
-  timeout: PropTypes.bool,
 }
 
 export default Contact

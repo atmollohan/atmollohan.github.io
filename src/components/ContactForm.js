@@ -32,7 +32,7 @@ const ContactForm = ({ onCloseArticle }) => {
       url: 'https://getform.io/f/6e8ba933-607a-4319-98a6-d36450623767',
       data: new FormData(form),
     })
-      .then((r) => {
+      .then(() => {
         handleServerResponse(true, 'Thanks for reaching out!', form)
       })
       .catch((r) => {
