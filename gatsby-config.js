@@ -5,7 +5,6 @@ module.exports = {
     description: 'Mollo Tech | Portfolio',
   },
   plugins: [
-    'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -22,7 +21,8 @@ module.exports = {
       resolve: `gatsby-plugin-sass`,
       options: {
         sassOptions: {
-          api: 'modern',
+          api: 'modern-compiler',
+          silenceDeprecations: ['legacy-js-api'],
         },
       },
     },

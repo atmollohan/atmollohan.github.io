@@ -10,4 +10,12 @@ const SecondPage = () => (
   </Layout>
 )
 
+export const Head = () => (
+  <>
+    <title>Coming Soon | Andrew Mollohan</title>
+    <meta name="robots" content="noindex" />
+    <html lang="en" />
+  </>
+)
+
 export default SecondPage
