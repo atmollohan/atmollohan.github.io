@@ -30,7 +30,7 @@
     "develop": "gatsby develop",
     "format": "prettier --write '**/*.js'",
     "test": "jest",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public -b master"
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public -b gh-pages"
   },
   "devDependencies": {
     "@babel/core": "^7.29.0",
