@@ -25,12 +25,11 @@ npm install
 | `npm run build`   | Build production bundle to `/public`                             |
 | `npm run clean`   | Clean Gatsby cache and remove `node_modules`/`package-lock.json` |
 | `npm run format`  | Format all `.js` files with Prettier                             |
+| `npm run lint`    | Run ESLint on all JS files                                       |
 | `npm run deploy`  | Build with prefix paths and deploy to `gh-pages` branch          |
-| `npm run test`    | No tests configured (exits with error)                           |
+| `npm run test`    | Run Jest tests                                                   |
 
-### Running a Single Test
-
-No test framework is currently configured. If tests are added, run with:
+### Running Tests
 
 ```bash
 npm test
@@ -39,7 +38,7 @@ npm test
 ### CI/CD
 
 - **Build/Deploy** (`build-deploy.yml`): Runs on push to `main` branch - builds and deploys to GitHub Pages (`gh-pages` branch)
-- **PR Check** (`pr-check.yml`): Runs on PRs to `main` - runs `format` and `build`
+- **PR Check** (`pr-check.yml`): Runs on PRs to `main` - runs `lint`, `format --check`, `test`, and `build`
 
 ## Code Style Guidelines
 
@@ -181,18 +180,40 @@ This project does **not** use TypeScript. All components use plain JavaScript wi
 ### Branch Strategy
 
 - `main`: Production-ready code
-- Feature branches for changes
-- PRs required for merging to `main`
+- Type prefixes: `feature/`, `chore/`, `fix/`, `refactor/`, `docs/`
+- Use kebab-case: `feature/add-new-section`, `chore/upgrade-deps`
+- Delete branches after merge
 
 ### Commit Messages
 
-Follow conventional commit format (not enforced, but recommended):
+Follow conventional commit format (lowercase):
 
 ```
 feat: add new portfolio section
 fix: resolve mobile navigation bug
 chore: update dependencies
 ```
+
+### Pull Requests
+
+- Always assign PRs to the repository owner (`atmollohan`)
+- Run format, lint, test, and build before submitting PR
+- Delete branch after merge
+
+## Agent Preferences
+
+### Always Do After Making Changes
+
+1. Run `npm run format` - format code
+2. Run `npm run lint` - check for errors
+3. Run `npm test` - run tests
+4. Run `npm run build` - verify build works
+
+### Global Settings
+
+- Use `.nvmrc` for Node.js version (currently `v24.8.0`)
+- Global gitignore includes `.planning/` directory (local planning files)
+- OpenCode watcher ignores `.planning/**` files
 
 ## Directory Structure
 
