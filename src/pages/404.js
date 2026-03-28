@@ -8,4 +8,12 @@ const NotFoundPage = () => (
   </Layout>
 )
 
+export const Head = () => (
+  <>
+    <title>404 - Page Not Found | Andrew Mollohan</title>
+    <meta name="robots" content="noindex" />
+    <html lang="en" />
+  </>
+)
+
 export default NotFoundPage

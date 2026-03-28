@@ -115,4 +115,16 @@ class IndexPage extends React.Component {
   }
 }
 
+export const Head = () => (
+  <>
+    <title>Mollo Tech | Portfolio | Andrew Mollohan</title>
+    <meta name="description" content="Portfolio of Andrew Mollohan" />
+    <meta
+      name="keywords"
+      content="portfolio, software engineer, developer, Boston"
+    />
+    <html lang="en" />
+  </>
+)
+
 export default IndexPage
