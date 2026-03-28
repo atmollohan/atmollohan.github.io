@@ -10,4 +10,7 @@ module.exports = {
   },
   testPathIgnorePatterns: ['/node_modules/', '/.cache/', '/public/'],
   collectCoverageFrom: ['src/**/*.{js,jsx}', '!src/**/*.test.{js,jsx}'],
+  testEnvironmentOptions: {
+    customExportConditions: ['node', 'node-addons'],
+  },
 }

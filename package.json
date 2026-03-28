@@ -29,6 +29,7 @@
     "clean": "gatsby clean && rm -rf node_modules/ package-lock.json",
     "develop": "gatsby develop",
     "format": "prettier --write '**/*.js'",
+    "lint": "eslint --ignore-path .gitignore .",
     "test": "jest",
     "deploy": "gatsby build --prefix-paths && gh-pages -d public -b gh-pages"
   },
@@ -39,6 +40,9 @@
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/react": "^16.3.2",
     "babel-jest": "^30.3.0",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-react": "^7.34.0",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^30.3.0",
     "jest-environment-jsdom": "^30.3.0",

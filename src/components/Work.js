@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import znBanner from '../images/znBanner.jpg'
 
-const Work = ({ article, articleTimeout, onCloseArticle, timeout }) => {
+const Work = ({ article, articleTimeout, onCloseArticle }) => {
   const close = (
     <div
       role="button"
@@ -53,13 +53,13 @@ const Work = ({ article, articleTimeout, onCloseArticle, timeout }) => {
         </a>{' '}
         which we were able to begin selling the Summer of 2022. We were able to
         create a sellable product within the broader platform in a little more
-        than half a year's work, which I was very proud of. The results of our
-        hard work were reflected in the overall success of the STO product. I
-        have received various marks of high performance, including multiple Star
-        Performer awards (2022, 2023 and 2024). All of this has helped continue
-        to grow my skills, experience, and responsibilities along with the
-        support of my awesome team. I'm now at a point where no problem seems
-        too big because I've seen it all.
+        than half a year&apos;s work, which I was very proud of. The results of
+        our hard work were reflected in the overall success of the STO product.
+        I have received various marks of high performance, including multiple
+        Star Performer awards (2022, 2023 and 2024). All of this has helped
+        continue to grow my skills, experience, and responsibilities along with
+        the support of my awesome team. I&apos;m now at a point where no problem
+        seems too big because I&apos;ve seen it all.
       </p>
       <p>
         Before joining Harness, I began working at{' '}
@@ -88,7 +88,7 @@ const Work = ({ article, articleTimeout, onCloseArticle, timeout }) => {
       <p>
         Throughout the first year or two of the COVID-19 pandemic I worked
         closely with an old friend to launch the digital assets for his local
-        coffee company. Teddy Sullivan's{' '}
+        coffee company. Teddy Sullivan&apos;s{' '}
         <a href="https://weroast.coffee/" target="_blank" rel="noreferrer">
           We Roast Coffee
         </a>{' '}
@@ -114,8 +114,8 @@ const Work = ({ article, articleTimeout, onCloseArticle, timeout }) => {
             </a>
           </li>
         </ul>
-        If you're in northern RI, looking for the best cup of coffee around,
-        then pop into his store during business hours at{' '}
+        If you&apos;re in northern RI, looking for the best cup of coffee
+        around, then pop into his store during business hours at{' '}
         <a
           href="https://www.google.com/maps/place/WeRoast+Coffee/@41.9030184,-71.4110711,15z/data=!4m5!3m4!1s0x0:0x33a3e23755923cba!8m2!3d41.9030184!4d-71.4110711"
           target="_blank"
@@ -169,10 +169,10 @@ const Work = ({ article, articleTimeout, onCloseArticle, timeout }) => {
       <p>
         I have always had the knack for problem solving and believe that I can
         apply my skills to industries that are being modernized at a rapid pace.
-        According to Baseline, "Nearly 90% of all data has been created in the
-        last two years." The systems currently supporting some of society's
-        biggest institutions are running on some incredibly antiquated systems
-        that will need to be made more robust and scalable.
+        According to Baseline, &quot;Nearly 90% of all data has been created in
+        the last two years.&quot; The systems currently supporting some of
+        society&apos;s biggest institutions are running on some incredibly
+        antiquated systems that will need to be made more robust and scalable.
       </p>
       <p>
         Outside of my 9 to 5, I continue to work with new and exciting
@@ -205,7 +205,6 @@ Work.propTypes = {
   article: PropTypes.string,
   articleTimeout: PropTypes.bool,
   onCloseArticle: PropTypes.func,
-  timeout: PropTypes.bool,
 }
 
 export default Work
