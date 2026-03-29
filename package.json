@@ -1,7 +1,7 @@
 {
   "name": "atmollohan.github.io",
   "description": "Mollo Tech Landing Page",
-  "version": "1.3.0",
+  "version": "1.4.1",
   "author": "Andrew Mollohan",
   "dependencies": {
     "axios": "^1.13.4",
@@ -16,9 +16,7 @@
     "gh-pages": "^6.3.0",
     "prop-types": "^15.8.1",
     "react": "^18.3.1",
-    "react-confetti": "^6.4.0",
-    "react-dom": "^18.3.1",
-    "react-use": "^17.6.0"
+    "react-dom": "^18.3.1"
   },
   "keywords": [
     "gatsby"
@@ -27,7 +25,7 @@
   "scripts": {
     "build": "gatsby build",
     "clean": "gatsby clean && rm -rf node_modules/ package-lock.json",
-    "develop": "gatsby develop",
+    "dev": "gatsby develop",
     "format": "prettier --write '**/*.js'",
     "lint": "eslint --ignore-path .gitignore .",
     "test": "jest",
