@@ -1,9 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { StaticQuery, graphql } from 'gatsby'
 import ContactForm from './ContactForm'
 import SocialLinks from './SocialLinks'
 
-const Contact = ({ article, articleTimeout, onCloseArticle }) => {
+const ContactContent = ({ article, articleTimeout, onCloseArticle, html }) => {
   const close = (
     <div
       role="button"
@@ -24,17 +25,35 @@ const Contact = ({ article, articleTimeout, onCloseArticle }) => {
       style={{ display: 'none' }}
     >
       <h2 className="major">Contact</h2>
-      <p>
-        If you are looking to work together, drop me a line using the form I set
-        up. I listed a couple links to my active social media if that&apos;s
-        your jam.
-      </p>
+      <div dangerouslySetInnerHTML={{ __html: html }} />
       <ContactForm onCloseArticle={onCloseArticle} />
       <SocialLinks />
       {close}
     </article>
   )
 }
+
+ContactContent.propTypes = {
+  article: PropTypes.string,
+  articleTimeout: PropTypes.bool,
+  onCloseArticle: PropTypes.func,
+  html: PropTypes.string,
+}
+
+const Contact = (props) => (
+  <StaticQuery
+    query={graphql`
+      query {
+        markdownRemark(frontmatter: { slug: { eq: "/contact" } }) {
+          html
+        }
+      }
+    `}
+    render={(data) => (
+      <ContactContent html={data.markdownRemark.html} {...props} />
+    )}
+  />
+)
 
 Contact.propTypes = {
   article: PropTypes.string,

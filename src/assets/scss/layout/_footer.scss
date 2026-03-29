@@ -1,7 +1,5 @@
-@use "../libs/functions";
-@use "../libs/skel";
-
-
+@use '../libs/functions';
+@use '../libs/skel';
 
 /* Footer */
 
@@ -16,13 +14,13 @@
   );
   width: 100%;
   max-width: 100%;
-  margin-top: 3rem;
+  margin-top: 1rem;
   text-align: center;
 
   .copyright {
     letter-spacing: functions.font(letter-spacing);
-    font-size: 0.5rem;
-    opacity: 0.75;
+    font-size: 0.4rem;
+    opacity: 0.5;
     margin-bottom: 0;
     text-transform: uppercase;
   }

@@ -21,7 +21,7 @@ npm install
 
 | Command           | Description                                                      |
 | ----------------- | ---------------------------------------------------------------- |
-| `npm run develop` | Start Gatsby development server (localhost:8000)                 |
+| `npm run dev` | Start Gatsby development server (localhost:8000)                 |
 | `npm run build`   | Build production bundle to `/public`                             |
 | `npm run clean`   | Clean Gatsby cache and remove `node_modules`/`package-lock.json` |
 | `npm run format`  | Format all `.js` files with Prettier                             |

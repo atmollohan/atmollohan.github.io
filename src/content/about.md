@@ -1,17 +1,36 @@
 ---
-slug: "/about"
-title: "About"
+slug: '/about'
+title: 'About'
 ---
 
-I grew up in Lincoln, RI right outside of Providence and had a pretty picturesque upbringing. With a population of about 20,000 it is a small town full of some great parks and Rhode Island's own Twin River Casino. I often reflect on the amazing memories and lifelong friendships I made during my Rhode Island childhood. Growing up, we spent winters skiing in Vermont and summers at the beach in Narragansett with friends and family. It's a dream of mine to own a large lake house and host all my friends and family. Right now I am absorbing all the knowledge and experience I can from the incredible people I've worked with in order to grow both as a person and a professional. If you can make yourself 1% better every day, over the course of a year that compounds into meaningful improvement.
+I'm a software engineer based in Boston with a passion for building things that make an impact. I grew up in Lincoln, RI — a small town outside of Providence with about 20,000 people, some great parks, and Rhode Island's own Twin River Casino. Those formative years shaped my work ethic: winters skiing in Vermont, summers at the beach in Narragansett, and a constant drive to keep pushing forward.
 
-![retro mollohans at killington](../images/wholeFamSki.jpg)
-![mollohans at phili](../images/wholefam.jpg)
+**My Philosophy**
 
-I am so grateful to family for their support in all my endeavors. It's vital to recognize the importance of your loved ones. I would be nowhere had it not been for my parents, especially when it came to selecting a college — a big decision for an 18-year-old. I have strong opinions about the world in which we live and the systems with which we operate. However, it's those opinions that drive me forward to make changes. I attended [Boston University](https://www.bu.edu/), majored in applied mathematics and computer science, and graduated with cum laude honors. To be honest, college was harder than high school but I'm glad that I went because I met great people and made some lasting memories.
+I believe in continuous improvement. If you can make yourself 1% better every day, over the course of a year that compounds into meaningful growth. I'm energized by solving hard problems and believe the best solutions come from collaboration and diverse perspectives.
 
-![andrew mollohan BU](../images/buGrad.jpg)
+**What I'm About**
 
-I guess that brings us to the present. These days I live in Boston. I spent much of the COVID-19 pandemic working from home, which was a big change. It was strange at first being isolated but that allowed me to focus on learning. I picked up running when the gyms shut down and completed a couple half marathons since then. I still spend a lot of my free time in the winter skiing with friends and family.
+I'm not just a coder — I care about the bigger picture. I'm driven by:
 
-![OptumPatriots](../images/fiverings.jpg)
+- Building software that solves real problems
+- Learning continuously and staying curious
+- Making an impact both at work and in my community
+- Surrounding myself with talented people who challenge me to grow
+
+**Education**
+
+I attended [Boston University](https://www.bu.edu/), majored in applied mathematics and computer science, and graduated with cum laude honors. The transition from high school to college was tough, but I'm grateful for the people I met and the skills I developed along the way.
+
+**Life Outside Work**
+
+When I'm not coding, you'll find me:
+
+- Running — I picked up the habit during COVID and have completed a couple half marathons since
+- Skiing — winters in Vermont with friends and family
+- Brewing coffee — I helped a friend launch [We Roast Coffee](https://weroast.coffee/), a local coffee shop in our hometown that's become a community staple
+- Building side projects — Discord bots, automation scripts, you name it
+
+I grew up as one of a pair (yes, we're fraternal!). My family means everything to me, and I wouldn't be where I am today without their support — especially when it came to making big decisions like choosing a college.
+
+I'm always open to connecting with other builders, problem-solvers, or anyone working on interesting projects. Feel free to reach out!
