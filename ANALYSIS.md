@@ -57,8 +57,8 @@ This is Andrew Mollohan's personal portfolio website - a Gatsby (React-based) st
 │   │   ├── intro.md          # Intro page content
 │   │   ├── work.md           # Work history content
 │   │   ├── post-1.md        # Test post (unused)
-│   │   ├── resume.current.v1.7.pdf
-│   │   └── resume.current.v1.7.txt
+│   │   ├── resume.current.v1.8.pdf
+│   │   └── resume.current.v1.8.txt
 │   ├── images/
 │   │   ├── bg.jpg
 │   │   ├── buGrad.jpg
@@ -117,7 +117,7 @@ This is Andrew Mollohan's personal portfolio website - a Gatsby (React-based) st
 
 | Command           | Description                                          |
 | ----------------- | ---------------------------------------------------- |
-| `npm run develop` | Start Gatsby dev server (localhost:8000)             |
+| `npm run dev` | Start Gatsby dev server (localhost:8000)             |
 | `npm run build`   | Build production bundle to `/public`                 |
 | `npm run clean`   | Clean cache + remove node_modules                    |
 | `npm run format`  | Format all `.js` files with Prettier                 |

@@ -1,25 +1,30 @@
-import * as React from "react"
-import { graphql } from "gatsby"
+import * as React from 'react'
+import { graphql, Link } from 'gatsby'
 
-export default function BlogPostTemplate({
-  data, // this prop will be injected by the GraphQL query below.
-}) {
-  const { markdownRemark } = data // data.markdownRemark holds your post data
+export default function BlogPostTemplate({ data }) {
+  const { markdownRemark } = data
   const { frontmatter, html } = markdownRemark
   return (
-    <div>
-      <div>
-        <h1>{frontmatter.title}</h1>
-        <div
-          dangerouslySetInnerHTML={{ __html: html }}
-        />
-      </div>
+    <div style={{ padding: '2rem', maxWidth: '800px', margin: '0 auto' }}>
+      <Link
+        to="/"
+        style={{
+          textDecoration: 'none',
+          color: '#333',
+          marginBottom: '1rem',
+          display: 'inline-block',
+        }}
+      >
+        ← Back to Home
+      </Link>
+      <h1>{frontmatter.title}</h1>
+      <div dangerouslySetInnerHTML={{ __html: html }} />
     </div>
   )
 }
 
 export const pageQuery = graphql`
-  query($id: String!) {
+  query ($id: String!) {
     markdownRemark(id: { eq: $id }) {
       html
       frontmatter {

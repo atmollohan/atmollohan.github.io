@@ -1,0 +1,78 @@
+Andrew Mollohan
+
+https://mollo.tech
+atmollohan@gmail.com
+Boston, MA
+
+Experience
+
+HavocAI - Providence, RI
+Senior Platform Engineer - December 2025 - Present
+Owns the end-to-end platform for autonomous marine systems, spanning edge
+systems, cloud infrastructure, internal/external services, and operator tools.
+Work in a small but quickly scaling startup environment with direct responsibility
+for cloud architecture, reliability, and internal developer experience.
+
+Harness - Boston
+Senior Software Engineer II - November 2021 - November 2025
+Senior Software Engineer I - August 2022 - May 2024
+Software Engineer II - November 2021 - August 2022
+
+Built a fault tolerant highly resilient cloud native security product into a large
+and rapidly growing Software Development Platform.
+Developed core Go services and Python integrations that ran millions of scans.
+Contributed at all phases of the software delivery lifecycle including: planning,
+frontend, backend, database, DevOps, testing and monitoring.
+Worked with multiple cloud providers (GCP/AWS) on various cloud
+infrastructures and computer architectures to deliver results across various
+customer use cases.
+Led agile development for a small team of 5-10 engineers for 4+ years.
+
+ZeroNorth - February 2021 - November 2021
+Software Engineer
+Developed real-time application security solution; maintained 20+ integrations
+with leading security tools while implementing customers' needs.
+
+Optum - May 2017 - February 2021
+Software Engineer - June 2019 - February 2021
+Technology Development Associate - June 2018 - June 2019
+Technology Development Intern - May 2017 - August 2017
+Built, deployed and scaled 6+ secure enterprise grade applications to public
+and private cloud platforms; implemented security scanning across
+organization.
+
+Skills
+
+Languages: Python, Golang, JavaScript
+Frontend: React, TypeScript, Angular, Node.js, Next.js, Gatsby.js
+Cloud: GCP, AWS, Azure
+DevOps: Docker, Kubernetes, Linux, git, Jenkins, Kafka, Terraform, Helm
+Databases: Postgres, MySQL, MongoDB, Redis, Oracle, Neo4j, TigerGraph, Cassandra
+AI/ML: Claude, ChatGPT, Gemini, MCP, SciPy, PyTorch, scikit-learn, Ollama, RAG,
+       TensorFlow, LLM
+Platforms: GitHub, Jira, Harness, Netlify, Gitlab
+
+Education
+
+Boston University
+Applied Mathematics & Computer Science
+Bachelors Degree - 3.55 GPA
+September 2014 - May 2018
+Dean's List: 2014 - 2018, Graduated with honors
+
+Awards
+
+Eagle Scout with Palms
+Marathoner
+Harness Star Performer
+
+Interests
+
+Hobbies: Skiing, Running, Biking
+Technology: Gaming, Coding, Cloud Computing, Web Development, AI, DeFi
+
+Projects
+
+Security Testing Orchestration (ZeroNorth Platform)
+Healthcare Marketplace for Brokers
+Health Benefit ML App
