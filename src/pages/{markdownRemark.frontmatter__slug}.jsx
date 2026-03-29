@@ -13,9 +13,10 @@ export default function BlogPostTemplate({ data }) {
           color: '#333',
           marginBottom: '1rem',
           display: 'inline-block',
+          fontSize: '1.5rem',
         }}
       >
-        ← Back to Home
+        <i className="fa fa-home" aria-hidden="true"></i>
       </Link>
       <h1>{frontmatter.title}</h1>
       <div dangerouslySetInnerHTML={{ __html: html }} />
