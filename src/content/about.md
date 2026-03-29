@@ -29,7 +29,7 @@ When I'm not coding, you'll find me:
 - Running — I picked up the habit during COVID and have completed a couple half marathons since
 - Skiing — winters in Vermont with friends and family
 - Brewing coffee — I helped a friend launch [We Roast Coffee](https://weroast.coffee/), a local coffee shop in our hometown that's become a community staple
-- Building side projects — Discord bots, automation scripts, you name it
+- Building side projects — Discord bots with economy systems, automation scripts, home automation with Raspberry Pis, and whatever else catches my interest
 
 I grew up as one of a pair (yes, we're fraternal!). My family means everything to me, and I wouldn't be where I am today without their support — especially when it came to making big decisions like choosing a college.
 

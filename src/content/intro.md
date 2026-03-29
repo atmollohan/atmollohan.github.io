@@ -11,8 +11,8 @@ Here's what I work with:
 - **Frontend**: React, Gatsby, Angular
 - **Cloud & Infrastructure**: AWS, GCP, Docker, Kubernetes
 - **Databases**: PostgreSQL, MongoDB, MySQL
-- **AI/ML**: TensorFlow, PyTorch, ML workflows
-- **AI Agents**: Claude Code, Codex, OpenCode, Ollama
+- **AI/ML**: TensorFlow, PyTorch, scikit-learn, RAG workflows, LLMs
+- **AI Agents**: Claude Code, Codex, OpenCode, Ollama, MCP
 - **DevOps**: GitHub Actions, CI/CD, Infrastructure as Code
 - **Security**: AppSec, SAST/DAST tools, vulnerability scanning
 
