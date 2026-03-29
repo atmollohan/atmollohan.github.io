@@ -12,8 +12,11 @@ Here's what I work with:
 - **Cloud & Infrastructure**: AWS, GCP, Docker, Kubernetes
 - **Databases**: PostgreSQL, MongoDB, MySQL
 - **AI/ML**: TensorFlow, PyTorch, ML workflows
+- **AI Agents**: Claude Code, Codex, OpenCode, Ollama
 - **DevOps**: GitHub Actions, CI/CD, Infrastructure as Code
 - **Security**: AppSec, SAST/DAST tools, vulnerability scanning
+
+I've been diving deep into agentic AI programming lately — leveraging AI coding agents to accelerate development, automate repetitive tasks, and explore new ways of building software. Running local LLMs with Ollama and pairing with tools like Claude Code has been a blast. The future of development is collaborative: human intuition paired with AI agents.
 
 I specialize in building scalable applications, automating workflows, and bridging the gap between development and operations. Whether it's shipping features fast or securing the pipeline, I enjoy solving complex problems with elegant solutions.
 
