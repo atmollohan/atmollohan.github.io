@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import Layout from '../components/layout'
 
 import Header from '../components/Header'
@@ -126,5 +127,9 @@ export const Head = () => (
     <html lang="en" />
   </>
 )
+
+IndexPage.propTypes = {
+  location: PropTypes.object,
+}
 
 export default IndexPage
