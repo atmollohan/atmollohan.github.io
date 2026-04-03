@@ -12,7 +12,11 @@ const ContactContent = ({ article, articleTimeout, onCloseArticle, html }) => {
       className="close"
       tabIndex={0}
       onClick={onCloseArticle}
-      onKeyDown={onCloseArticle}
+      onKeyDown={(e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          onCloseArticle()
+        }
+      }}
     ></div>
   )
 

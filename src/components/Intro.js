@@ -17,9 +17,11 @@ const IntroContent = ({ article, articleTimeout, onCloseArticle, html }) => {
         onCloseArticle()
         setResponse('')
       }}
-      onKeyDown={() => {
-        onCloseArticle()
-        setResponse('')
+      onKeyDown={(e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          onCloseArticle()
+          setResponse('')
+        }
       }}
     ></div>
   )
