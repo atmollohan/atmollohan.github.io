@@ -3,35 +3,103 @@ slug: '/work'
 title: 'Work'
 ---
 
-In November 2025, I joined [HavocAI](https://havocai.com/) as a Senior Platform Engineer working on the cloud platform for a maritime autonomy company building autonomous vessels and collaborative AI systems for sea, air, and land operations. HavocAI is developing cutting-edge autonomous boat technology — including 100-foot robot vessels — and I lead the cloud infrastructure that powers these systems. I work primarily with Go, Python, and TypeScript, building services on AWS and Kubernetes. The role has pushed me deeper into edge/cloud integration, AI/ML infrastructure, and production reliability for systems that have to operate at sea — a rewarding challenge that blends software, hardware, and operations.
+## Timeline
 
-I have been working for [Harness](https://harness.io/) since November 2021 as a Software Engineer II, and have been promoted to Senior Software Engineer I and then Senior Software Engineer II, doing a wide range of technical work. Harness is a leading cloud software development platform that sells a variety of products to enhance the various parts of the software delivery life cycle (SDLC) for hundreds of Fortune 500 companies. When ZeroNorth was acquired by Harness, it became the first security center product at Harness called [Security Testing Orchestration (STO)](https://www.harness.io/products/application-security-testing/security-testing-orchestration). You can learn more about STO in their [documentation](https://developer.harness.io/docs/security-testing-orchestration/) and [overview](https://developer.harness.io/docs/security-testing-orchestration/overview/). We were able to create a sellable product within the broader platform in a little more than half a year's work, which I was very proud of. The results of our hard work were reflected in the overall success of the STO product.
+### November 2025 - Present
 
-Throughout my time at Harness, I've contributed to various open-source projects on the [Harness GitHub](https://github.com/harness). One of the most interesting challenges was migrating our internal code management from a third-party platform to Harness's own Git-based solution — a complex migration that required careful planning and execution.
+**[HavocAI](/projects/havocai)** — Senior Platform Engineer
 
-I have received various marks of high performance, including multiple Star Performer awards (2022, 2023 and 2024). All of this has helped continue to grow my skills, experience, and responsibilities along with the support of my awesome team. I'm now at a point where no problem seems too big because I've seen it all.
+Working on the cloud platform for a maritime autonomy company building autonomous vessels and collaborative AI systems for sea, air, and land operations. HavocAI is developing cutting-edge autonomous boat technology — including 100-foot robot vessels — and I lead the cloud infrastructure that powers these systems.
 
-Before joining Harness, I began working at [ZeroNorth](https://www.zeronorth.io/), a Boston-based startup, in February 2021 as a Software Engineer II after nearly three years of working at Optum. I was eager to progress my career at a smaller, more dynamic company that would allow me to grow my technical skills faster. I quickly immersed myself in the world of Cybersecurity. ZeroNorth offered a robust platform for automating and orchestrating security scanning, offering a wide range of tools. Similar to my role at Optum, I worked in a full-stack capacity working with an Angular frontend, Node API, TypeScript libraries and Python security runners. I also directly worked with a wide range of the scanners themselves.
+<span class="tech-tags">
+<span class="tag">Go</span>
+<span class="tag">Python</span>
+<span class="tag">TypeScript</span>
+<span class="tag">AWS</span>
+<span class="tag">Kubernetes</span>
+<span class="tag">AI/ML</span>
+<span class="tag">Edge Computing</span>
+</span>
 
-When [Harness acquired ZeroNorth](https://www.crunchbase.com/acquisition/harness-512d-acquires-zeronorth--1c955184), I was one of the engineers who made the transition to Harness. Harness bought our IP and engineering team, and over the next 4 years, we worked our tails off to build STO into a best-in-class DevSecOps product for Harness users. It was an incredible experience being part of a team that went from acquisition to building something truly impactful. I learned a tremendous amount in my time at ZeroNorth and am super grateful for the team we had.
+---
 
-Throughout the first year or two of the COVID-19 pandemic I worked closely with an old friend to launch the digital assets for his local coffee company. Teddy Sullivan's [We Roast Coffee](https://weroast.coffee/) has been a huge hit in our hometown and has developed a big base of locals who sing its praises. Local media outlets have also taken notice:
+### November 2021 - November 2025
 
-- [The Valley Breeze](https://www.valleybreeze.com/news/unlock-your-inner-barista-with-we-roast-coffee/article_e204dee8-5897-5521-a8a1-a20767b2a45f.html)
-- [tourblackstone.com](https://tourblackstone.com/we-roast-coffee/)
+**[Harness](/projects/harness)** — Senior Software Engineer II
 
-If you're in northern RI, looking for the best cup of coffee around, then pop into his store during business hours at [276 Front Street](https://www.google.com/maps/place/WeRoast+Coffee/@41.9030184,-71.4110711,15z/data=!4m5!3m4!1s0x0:0x33a3e23755923cba!8m2!3d41.9030184!4d-71.4110711). Though word on the street is that they are moving [soon](https://www.valleybreeze.com/news/weroasts-sullivan-to-serve-community-coffee-and-cocktails-at-new-headquarters/article_57d716ac-fe7e-11ee-a708-8f175a596772.html).
+Started as Software Engineer II, promoted to Senior Software Engineer I then II. When ZeroNorth was acquired by Harness, it became the first security center product — Security Testing Orchestration (STO). Built a sellable product within the platform in under 6 months. Received multiple Star Performer awards (2022, 2023, 2024).
 
-We built out an online store with Shopify and hosted it with a nice memorable domain of [weroast.coffee](https://weroast.coffee/). During initial talks I built out a blog as a proof of concept using a JAMstack (JavaScript, APIs, and Markdown). I implemented the front end using Gatsby which is a JavaScript framework built on top of React. I also used various third-party software and APIs including: [Auth0](https://auth0.com/) for authentication and authorization, [Contentful](https://www.contentful.com/) for content management and [Netlify](https://www.netlify.com/) for automated deployments and cloud hosting. The original blog was since replaced with the Shopify store and front page.
+<span class="tech-tags">
+<span class="tag">Go</span>
+<span class="tag">TypeScript</span>
+<span class="tag">Angular</span>
+<span class="tag">Node.js</span>
+<span class="tag">Python</span>
+<span class="tag">AWS</span>
+<span class="tag">Kubernetes</span>
+<span class="tag">DevSecOps</span>
+</span>
 
-I started at [Boston University](https://www.bu.edu/) in Fall 2014 as a neuroscience major on the pre-med track. Somewhere along the way, I discovered I had a knack for coding — something just clicked. I made the switch to applied mathematics and computer science and never looked back. I graduated in Spring 2018 with cum laude honors, having made the Dean's List every single semester.
+---
 
-During the summer between junior and senior year, I interned at Optum as a Software Engineering Intern. I performed so well that they made me a return offer very early into my senior year, which ultimately led me to join full-time after graduating.
+### February 2021 - November 2021
 
-After graduating from Boston University, I started my career at Optum as a Technology Development Intern. Optum is the tech subsidiary of United Health Group, the largest health insurance provider in the country, currently supporting more than 49 million members. I was brought back full time as a Technology Development Associate and was subsequently promoted to Software Engineer. Optum provided me a fantastic environment to learn and grow.
+**[ZeroNorth](/projects/zeronorth)** — Software Engineer II
 
-I have always had the knack for problem solving and believe that I can apply my skills to industries that are being modernized at a rapid pace. According to Baseline, "Nearly 90% of all data has been created in the last two years." The systems currently supporting some of society's biggest institutions are running on some incredibly antiquated systems that will need to be made more robust and scalable.
+Boston-based startup providing a platform for automating and orchestrating security scanning. Immersed myself in cybersecurity, working with Angular frontend, Node API, TypeScript libraries, and Python security runners. Integrated with 15+ security scanning tools.
 
-Before my professional career, I worked various part-time jobs throughout high school and college. Starting freshman summer, I worked as a lifeguard at a local camp. The following summer, I moved on to work as a fry cook and cashier at a pool club. Between sophomore and junior year, I picked up extra shifts cooking at another local pizza place. From junior year through the end of senior year, I worked at a neighborhood pizza shop. During the summers before the Pawtucket Red Sox (Paw Sox) relocated, I spent two summers working as a merchandise associate in the team store.
+<span class="tech-tags">
+<span class="tag">Angular</span>
+<span class="tag">Node.js</span>
+<span class="tag">TypeScript</span>
+<span class="tag">Python</span>
+<span class="tag">Security</span>
+<span class="tag">Full-Stack</span>
+</span>
 
-Outside of my 9 to 5, I continue to work with new and exciting technologies. I have really enjoyed building out elegant user interfaces while working with serverless and other varied backend systems. The tools available these days are pretty amazing. The speed at which the industry shifts is part of the reason I love it so much. I have worked with some friends to build and automate the deployment of a Discord bot to Amazon Web Services via GitHub Actions. We also have a mini economy implemented in our chat server that communicates with a local database. Another project I really enjoyed working on was a consulting contract with the Partnership to Reduce Cancer in Rhode Island ([PRCRI](https://www.prcri.org/annual-cancer-summit)). They are providing a tremendous amount of support to the cancer community in Rhode Island.
+---
+
+### 2020 - 2021
+
+**[We Roast Coffee](/projects/we-roast-coffee)** — Co-founder / Technical Lead
+
+Worked with a friend to launch the digital assets for his local coffee company. Built Shopify online store with memorable domain (weroast.coffee), plus a JAMstack blog proof-of-concept using Gatsby, Auth0, Contentful, and Netlify.
+
+<span class="tech-tags">
+<span class="tag">Gatsby</span>
+<span class="tag">React</span>
+<span class="tag">Shopify</span>
+<span class="tag">Auth0</span>
+<span class="tag">Contentful</span>
+<span class="tag">Netlify</span>
+</span>
+
+---
+
+### 2018 - 2021
+
+**[Optum](/projects/optum)** — Software Engineer
+
+Started as Technology Development Intern (summer 2017), received return offer early in senior year, then full-time as Technology Development Associate, promoted to Software Engineer. Optum is the tech subsidiary of United Health Group, serving 49+ million members.
+
+<span class="tech-tags">
+<span class="tag">Java</span>
+<span class="tag">SQL</span>
+<span class="tag">Oracle</span>
+<span class="tag">Angular</span>
+<span class="tag">Full-Stack</span>
+</span>
+
+---
+
+### Education
+
+**[Boston University](/about)** — Fall 2014 - Spring 2018
+
+Started as neuroscience major on pre-med track, discovered a knack for coding, switched to applied mathematics and computer science. Graduated cum laude, Dean's List every semester.
+
+---
+
+### Pre-Career
+
+Various part-time jobs throughout high school and college: lifeguard, fry cook/cashier at pool club, pizza places, and merchandise associate at Pawtucket Red Sox (Paw Sox) team store.

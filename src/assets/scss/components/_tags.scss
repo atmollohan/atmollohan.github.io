@@ -1,0 +1,62 @@
+@use '../libs/functions';
+
+/* Tech Tags */
+
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0.5rem 0 1rem;
+}
+
+.tag {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.7rem;
+  font-weight: functions.font(weight);
+  background-color: functions.palette(bg-alt);
+  color: functions.palette(fg);
+  border: 1px solid functions.palette(border);
+  border-radius: 3px;
+  transition:
+    background-color #{functions.duration(transition)} ease-in-out,
+    color #{functions.duration(transition)} ease-in-out;
+
+  &:hover {
+    background-color: functions.palette(border);
+    color: functions.palette(fg-bold);
+  }
+}
+
+/* Project Cards */
+
+.project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.project-card {
+  padding: 1.5rem;
+  background-color: functions.palette(bg-alt);
+  border-left: 3px solid functions.palette(accent);
+
+  h3 {
+    margin: 0 0 0.5rem;
+
+    a {
+      color: functions.palette(fg-bold);
+      text-decoration: none;
+
+      &:hover {
+        color: functions.palette(accent);
+      }
+    }
+  }
+
+  .meta {
+    font-size: 0.85rem;
+    color: functions.palette(fg-light);
+    margin: 0 0 0.5rem;
+  }
+}
