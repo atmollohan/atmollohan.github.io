@@ -3,6 +3,7 @@ module.exports = {
     title: 'Mollo Tech | Portfolio | Andrew Mollohan',
     author: 'Andrew Mollohan',
     description: 'Mollo Tech | Portfolio',
+    siteUrl: 'https://atmollohan.github.io',
   },
   plugins: [
     {
@@ -44,5 +45,6 @@ module.exports = {
       },
     },
     `gatsby-transformer-remark`,
+    `gatsby-plugin-sitemap`,
   ],
 }

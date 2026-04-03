@@ -30,17 +30,21 @@ const AboutContent = ({ article, articleTimeout, onCloseArticle, html }) => {
       <div dangerouslySetInnerHTML={{ __html: html }} />
       <div className="row">
         <span className="image main">
-          <img src={wholeFamSki} alt="retro mollohans at killington" />
+          <img
+            src={wholeFamSki}
+            alt="retro mollohans at killington"
+            loading="lazy"
+          />
         </span>
         <span className="image main">
-          <img src={famPic} alt="mollohans at phili" />
+          <img src={famPic} alt="mollohans at phili" loading="lazy" />
         </span>
       </div>
       <span className="image main">
-        <img src={buGrad} alt="andrew mollohan BU" />
+        <img src={buGrad} alt="andrew mollohan BU" loading="lazy" />
       </span>
       <span className="image main">
-        <img src={optumPats} alt="OptumPatriots" />
+        <img src={optumPats} alt="OptumPatriots" loading="lazy" />
       </span>
       {close}
     </article>
