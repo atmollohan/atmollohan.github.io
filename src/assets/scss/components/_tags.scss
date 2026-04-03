@@ -15,17 +15,9 @@
   font-size: 0.7rem;
   font-weight: functions.font(weight);
   background-color: functions.palette(bg-alt);
-  color: functions.palette(fg);
+  color: functions.palette(fg-light);
   border: 1px solid functions.palette(border);
   border-radius: 3px;
-  transition:
-    background-color #{functions.duration(transition)} ease-in-out,
-    color #{functions.duration(transition)} ease-in-out;
-
-  &:hover {
-    background-color: functions.palette(border);
-    color: functions.palette(fg-bold);
-  }
 }
 
 /* Project Cards */

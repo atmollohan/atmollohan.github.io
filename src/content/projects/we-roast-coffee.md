@@ -2,7 +2,7 @@
 slug: '/projects/we-roast-coffee'
 title: 'We Roast Coffee - E-commerce Platform'
 company: 'We Roast Coffee'
-role: 'Co-founder / Technical Lead'
+role: 'Technical Lead'
 period: '2020 - 2021'
 tags:
   - Gatsby
