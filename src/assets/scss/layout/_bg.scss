@@ -1,7 +1,5 @@
-@use "../libs/functions";
-@use "../libs/skel";
-
-
+@use '../libs/functions';
+@use '../libs/skel';
 
 /* BG */
 
@@ -31,14 +29,17 @@
       'transition',
       'background-color #{functions.duration(bg)} ease-in-out'
     );
-    @include skel.vendor('transition-delay', '#{functions.duration(intro)}');
-    background-image: linear-gradient(
+    @include skel.vendor('transition-delay', '0.25s');
+    background-image:
+      linear-gradient(
         to top,
         #{functions.palette(bg-overlay)},
         #{functions.palette(bg-overlay)}
       ),
       url('../../images/overlay.png');
-    background-size: auto, 256px 256px;
+    background-size:
+      auto,
+      256px 256px;
     background-position: center, center;
     background-repeat: no-repeat, repeat;
     z-index: 2;

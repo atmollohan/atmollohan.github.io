@@ -41,32 +41,16 @@
     );
     position: relative;
     margin-top: 3.5rem;
-
-    &:before {
-      content: '';
-      display: block;
-      position: absolute;
-      top: calc(-3.5rem - 1px);
-      left: calc(50% - #{functions.size(border-width) * 1});
-      width: functions.size(border-width);
-      height: calc(3.5rem + 1px);
-      background: functions.palette(border);
-    }
   }
 
   > :first-child {
     margin-top: 0;
-
-    &:before {
-      display: none;
-    }
   }
 
   .logo {
     width: 5.5rem;
     height: 5.5rem;
     line-height: 5.5rem;
-    border: solid functions.size(border-width) functions.palette(border);
     border-radius: 100%;
 
     .icon {
@@ -77,10 +61,6 @@
   }
 
   .content {
-    border-style: solid;
-    border-color: functions.palette(border);
-    border-top-width: functions.size(border-width);
-    border-bottom-width: functions.size(border-width);
     max-width: 100%;
 
     .inner {
@@ -132,7 +112,7 @@
           letter-spacing: functions.font(letter-spacing);
           font-size: 0.8rem;
           font-family: functions.font(family);
-          border: 1px solid functions.palette(border);
+          border: none;
           border-radius: 4px;
           background-color: transparent;
           color: functions.palette(fg-bold) !important;
@@ -144,7 +124,6 @@
           &:hover,
           &:focus {
             background-color: functions.palette(accent);
-            border-color: functions.palette(accent);
             color: #1b1f22 !important;
             transform: translateY(-2px);
             box-shadow: 0 6px 20px rgba(245, 158, 11, 0.4);
@@ -161,14 +140,7 @@
 
     &.use-middle {
       &:after {
-        content: '';
-        display: block;
-        position: absolute;
-        top: 0;
-        left: calc(50% - #{functions.size(border-width) * 1});
-        width: functions.size(border-width);
-        height: 100%;
-        background: functions.palette(border);
+        display: none;
       }
 
       ul {
@@ -263,19 +235,18 @@
         max-width: 100%;
 
         li {
-          border-left: 0;
-          border-top: solid functions.size(border-width)
-            functions.palette(border);
+          border: none;
 
           &:first-child {
-            border-top: 0;
+            border: none;
           }
 
-          a {
+          button {
             height: 3rem;
             line-height: 3rem;
             min-width: 0;
             width: 100%;
+            border: none;
           }
         }
       }
