@@ -1,182 +1,213 @@
-@use "../libs/functions";
-@use "../libs/skel";
-
-
+@use '../libs/functions';
+@use '../libs/skel';
 
 /* Type */
 
-	html {
-		font-size: 16pt;
+html {
+  font-size: 16pt;
 
-		@include skel.breakpoint(xlarge) {
-			font-size: 12pt;
-		}
+  @include skel.breakpoint(xlarge) {
+    font-size: 12pt;
+  }
 
-		@include skel.breakpoint(small) {
-			font-size: 11pt;
-		}
+  @include skel.breakpoint(small) {
+    font-size: 11pt;
+  }
 
-		@include skel.breakpoint(xxsmall) {
-			font-size: 10pt;
-		}
-	}
+  @include skel.breakpoint(xxsmall) {
+    font-size: 10pt;
+  }
+}
 
-	body, input, select, textarea {
-		color: functions.palette(fg);
-		font-family: functions.font(family);
-		font-weight: functions.font(weight);
-		font-size: 1rem;
-		line-height: 1.65;
-	}
+body,
+input,
+select,
+textarea {
+  color: functions.palette(fg);
+  font-family: functions.font(family);
+  font-weight: functions.font(weight);
+  font-size: 1rem;
+  line-height: 1.65;
+}
 
-	a {
-		@include skel.vendor('transition', (
-			'color #{functions.duration(transition)} ease-in-out',
-			'background-color #{functions.duration(transition)} ease-in-out',
-			'border-bottom-color #{functions.duration(transition)} ease-in-out'
-		));
-		border-bottom: dotted 1px functions.palette(fg-light);
-		text-decoration: none;
-		color: inherit;
+a {
+  @include skel.vendor(
+    'transition',
+    ('color 0.3s ease', 'border-bottom-color 0.3s ease')
+  );
+  border-bottom: dotted 1px functions.palette(fg-light);
+  text-decoration: none;
+  color: inherit;
+  position: relative;
 
-		&:hover {
-			border-bottom-color: transparent;
-		}
-	}
+  &:hover {
+    border-bottom-color: transparent;
+    color: functions.palette(accent);
+  }
 
-	strong, b {
-		color: functions.palette(fg-bold);
-		font-weight: functions.font(weight-bold);
-	}
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: functions.palette(accent);
+    transition: width 0.3s ease;
+  }
 
-	em, i {
-		font-style: italic;
-	}
+  &:hover:after {
+    width: 100%;
+  }
 
-	p {
-		margin: 0 0 functions.size(element-margin) 0;
-	}
+  // Override for icons - no underline animation
+  &.icon:hover:after {
+    display: none;
+  }
+}
 
-	h1, h2, h3, h4, h5, h6 {
-		color: functions.palette(fg-bold);
-		font-weight: functions.font(weight-bold);
-		line-height: 1.5;
-		margin: 0 0 (functions.size(element-margin) * 0.5) 0;
-		text-transform: uppercase;
-		letter-spacing: functions.font(letter-spacing);
+strong,
+b {
+  color: functions.palette(fg-bold);
+  font-weight: functions.font(weight-bold);
+}
 
-		a {
-			color: inherit;
-			text-decoration: none;
-		}
+em,
+i {
+  font-style: italic;
+}
 
-		&.major {
-			border-bottom: solid functions.size(border-width) functions.palette(border);
-			width: -moz-max-content;
-			width: -webkit-max-content;
-			width: -ms-max-content;
-			width: max-content;
-			padding-bottom: 0.5rem;
-			margin: 0 0 (functions.size(element-margin) * 1) 0;
-		}
-	}
+p {
+  margin: 0 0 functions.size(element-margin) 0;
+}
 
-	h1 {
-		font-size: 2.25rem;
-		line-height: 1.3;
-		letter-spacing: functions.font(letter-spacing-heading);
-	}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: functions.palette(fg-bold);
+  font-weight: functions.font(weight-bold);
+  line-height: 1.5;
+  margin: 0 0 (functions.size(element-margin) * 0.5) 0;
+  text-transform: uppercase;
+  letter-spacing: functions.font(letter-spacing);
 
-	h2 {
-		font-size: 1.5rem;
-		line-height: 1.4;
-		letter-spacing: functions.font(letter-spacing-heading);
-	}
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
 
-	h3 {
-		font-size: 1rem;
-	}
+  &.major {
+    border-bottom: solid functions.size(border-width) functions.palette(border);
+    width: -moz-max-content;
+    width: -webkit-max-content;
+    width: -ms-max-content;
+    width: max-content;
+    padding-bottom: 0.5rem;
+    margin: 0 0 (functions.size(element-margin) * 1) 0;
+  }
+}
 
-	h4 {
-		font-size: 0.8rem;
-	}
+h1 {
+  font-size: 2.25rem;
+  line-height: 1.3;
+  letter-spacing: functions.font(letter-spacing-heading);
+}
 
-	h5 {
-		font-size: 0.7rem;
-	}
+h2 {
+  font-size: 1.5rem;
+  line-height: 1.4;
+  letter-spacing: functions.font(letter-spacing-heading);
+}
 
-	h6 {
-		font-size: 0.6rem;
-	}
+h3 {
+  font-size: 1rem;
+}
 
-	@include skel.breakpoint(small) {
-		h1 {
-			font-size: 1.75rem;
-			line-height: 1.4;
-		}
+h4 {
+  font-size: 0.8rem;
+}
 
-		h2 {
-			font-size: 1.25em;
-			line-height: 1.5;
-		}
-	}
+h5 {
+  font-size: 0.7rem;
+}
 
-	sub {
-		font-size: 0.8rem;
-		position: relative;
-		top: 0.5rem;
-	}
+h6 {
+  font-size: 0.6rem;
+}
 
-	sup {
-		font-size: 0.8rem;
-		position: relative;
-		top: -0.5rem;
-	}
+@include skel.breakpoint(small) {
+  h1 {
+    font-size: 1.75rem;
+    line-height: 1.4;
+  }
 
-	blockquote {
-		border-left: solid (functions.size(border-width) * 4) functions.palette(border);
-		font-style: italic;
-		margin: 0 0 functions.size(element-margin) 0;
-		padding: calc(functions.size(element-margin) / 4) 0 calc(functions.size(element-margin) / 4) functions.size(element-margin);
-	}
+  h2 {
+    font-size: 1.25em;
+    line-height: 1.5;
+  }
+}
 
-	code {
-		background: functions.palette(border-bg);
-		border-radius: functions.size(border-radius);
-		font-family: functions.font(family-fixed);
-		font-size: 0.9rem;
-		margin: 0 0.25rem;
-		padding: 0.25rem 0.65rem;
-	}
+sub {
+  font-size: 0.8rem;
+  position: relative;
+  top: 0.5rem;
+}
 
-	pre {
-		-webkit-overflow-scrolling: touch;
-		font-family: functions.font(family-fixed);
-		font-size: 0.9rem;
-		margin: 0 0 functions.size(element-margin) 0;
+sup {
+  font-size: 0.8rem;
+  position: relative;
+  top: -0.5rem;
+}
 
-		code {
-			display: block;
-			line-height: 1.75;
-			padding: 1rem 1.5rem;
-			overflow-x: auto;
-		}
-	}
+blockquote {
+  border-left: solid (functions.size(border-width) * 4)
+    functions.palette(border);
+  font-style: italic;
+  margin: 0 0 functions.size(element-margin) 0;
+  padding: calc(functions.size(element-margin) / 4) 0
+    calc(functions.size(element-margin) / 4) functions.size(element-margin);
+}
 
-	hr {
-		border: 0;
-		border-bottom: solid functions.size(border-width) functions.palette(border);
-		margin: (functions.size(element-margin) * 1.375) 0;
-	}
+code {
+  background: functions.palette(border-bg);
+  border-radius: functions.size(border-radius);
+  font-family: functions.font(family-fixed);
+  font-size: 0.9rem;
+  margin: 0 0.25rem;
+  padding: 0.25rem 0.65rem;
+}
 
-	.align-left {
-		text-align: left;
-	}
+pre {
+  -webkit-overflow-scrolling: touch;
+  font-family: functions.font(family-fixed);
+  font-size: 0.9rem;
+  margin: 0 0 functions.size(element-margin) 0;
 
-	.align-center {
-		text-align: center;
-	}
+  code {
+    display: block;
+    line-height: 1.75;
+    padding: 1rem 1.5rem;
+    overflow-x: auto;
+  }
+}
 
-	.align-right {
-		text-align: right;
-	}
+hr {
+  border: 0;
+  border-bottom: solid functions.size(border-width) functions.palette(border);
+  margin: (functions.size(element-margin) * 1.375) 0;
+}
+
+.align-left {
+  text-align: left;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.align-right {
+  text-align: right;
+}

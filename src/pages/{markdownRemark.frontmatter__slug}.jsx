@@ -45,26 +45,9 @@ export default function BlogPostTemplate({ data }) {
         </p>
 
         {frontmatter.tags && frontmatter.tags.length > 0 && (
-          <div
-            style={{
-              display: 'flex',
-              flexWrap: 'wrap',
-              gap: '0.5rem',
-              marginBottom: '2rem',
-            }}
-          >
+          <div className="tech-tags">
             {frontmatter.tags.map((tag) => (
-              <span
-                key={tag}
-                style={{
-                  padding: '0.25rem 0.75rem',
-                  fontSize: '0.7rem',
-                  backgroundColor: '#000000',
-                  color: 'rgba(255,255,255,0.5)',
-                  border: '1px solid #ffffff',
-                  borderRadius: '3px',
-                }}
-              >
+              <span key={tag} className="tag">
                 {tag}
               </span>
             ))}

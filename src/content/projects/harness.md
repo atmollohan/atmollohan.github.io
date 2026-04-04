@@ -8,10 +8,11 @@ tags:
   - Go
   - TypeScript
   - Python
-  - AWS
+  - GCP
   - Kubernetes
   - Postgres
   - DevSecOps
+  - Security
 ---
 
 ## Overview
@@ -24,10 +25,10 @@ Started as Software Engineer II, promoted to Senior Software Engineer I, then Se
 
 ## Tech Stack
 
-- **Frontend**: Angular, React, TypeScript
-- **Backend**: Go, Node.js, Python
-- **Cloud**: AWS, Kubernetes
+- **Backend**: Go, Python
 - **Security Tools**: Integrated with 20+ security scanners (SAST, DAST, SCA, container scanning)
+- **Cloud**: GCP, Kubernetes, Docker, Terraform
+- **Frontend**: React, TypeScript, Webpack, Microfrontends
 
 ## Key Projects
 

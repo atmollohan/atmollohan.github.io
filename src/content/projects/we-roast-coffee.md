@@ -20,7 +20,7 @@ We Roast Coffee is a local coffee company in northern Rhode Island. I worked wit
 
 ## Role
 
-Co-founded technical side of the business, building and maintaining the e-commerce platform and digital assets.
+Solo developer building and maintaining the e-commerce platform and digital assets for a local coffee company.
 
 ## Tech Stack
 

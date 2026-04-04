@@ -6,6 +6,7 @@ import twins from '../images/fampiece-crop.jpg'
 
 const IntroContent = ({ article, articleTimeout, onCloseArticle, html }) => {
   const [response, setResponse] = useState('')
+  const [animating, setAnimating] = useState(false)
 
   const close = (
     <div
@@ -26,6 +27,13 @@ const IntroContent = ({ article, articleTimeout, onCloseArticle, html }) => {
     ></div>
   )
 
+  const handleGuess = (guess) => {
+    if (animating) return
+    setAnimating(true)
+    setResponse(guess)
+    setTimeout(() => setAnimating(false), 600)
+  }
+
   return (
     <article
       id="intro"
@@ -38,19 +46,31 @@ const IntroContent = ({ article, articleTimeout, onCloseArticle, html }) => {
       <div dangerouslySetInnerHTML={{ __html: html }} />
       <p>Can you guess which one is me?</p>
       <div>
-        <div>
-          <button className="button" onClick={() => setResponse('left')}>
+        <div className="guess-buttons">
+          <button
+            className={`button ${response === 'left' ? 'correct' : ''}`}
+            onClick={() => handleGuess('left')}
+          >
             Left
           </button>
-          <button className="button" onClick={() => setResponse('right')}>
+          <button
+            className={`button ${response === 'right' ? 'wrong' : ''}`}
+            onClick={() => handleGuess('right')}
+          >
             Right
           </button>
         </div>
         <br></br>
-        {response === 'right' && <p>It&apos;s okay... I forgive you.</p>}
-        {response === 'left' && <p>I knew you could do it!</p>}
+        {response === 'right' && (
+          <p className="feedback wrong-feedback">
+            It&apos;s okay... I forgive you.
+          </p>
+        )}
+        {response === 'left' && (
+          <p className="feedback correct-feedback">I knew you could do it!</p>
+        )}
         <div
-          className="image main"
+          className="image main twin-image"
           style={{
             position: 'relative',
             display: 'block',
@@ -65,10 +85,22 @@ const IntroContent = ({ article, articleTimeout, onCloseArticle, html }) => {
               display: 'block',
               maxWidth: '100%',
               margin: '0 auto',
-              animation:
-                response === 'left' ? 'bounce 0.6s ease-in-out' : 'none',
             }}
+            className={
+              response === 'left'
+                ? 'correct-guess'
+                : response === 'right'
+                  ? 'wrong-guess'
+                  : ''
+            }
           />
+          {response && (
+            <div className="twin-overlay">
+              <span className="twin-label">
+                {response === 'left' ? "✓ That's me!" : "✗ That's my twin!"}
+              </span>
+            </div>
+          )}
         </div>
         <br></br>
         <p>I grew up as one of a pair. Believe it or not, we are fraternal.</p>

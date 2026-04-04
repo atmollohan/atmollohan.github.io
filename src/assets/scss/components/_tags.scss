@@ -14,10 +14,19 @@
   padding: 0.25rem 0.75rem;
   font-size: 0.7rem;
   font-weight: functions.font(weight);
-  background-color: functions.palette(bg-alt);
-  color: functions.palette(fg-light);
-  border: 1px solid functions.palette(border);
+  background-color: rgba(255, 255, 255, 0.05);
+  color: functions.palette(fg);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 3px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    background-color: functions.palette(accent);
+    border-color: functions.palette(accent);
+    color: functions.palette(bg);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(245, 158, 11, 0.3);
+  }
 }
 
 /* Project Cards */
@@ -32,6 +41,12 @@
   padding: 1.5rem;
   background-color: functions.palette(bg-alt);
   border-left: 3px solid functions.palette(accent);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  }
 
   h3 {
     margin: 0 0 0.5rem;
@@ -39,6 +54,7 @@
     a {
       color: functions.palette(fg-bold);
       text-decoration: none;
+      transition: color 0.3s ease;
 
       &:hover {
         color: functions.palette(accent);

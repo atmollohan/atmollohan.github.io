@@ -1,197 +1,204 @@
-@use "../libs/functions";
-@use "../libs/skel";
-
-
+@use '../libs/functions';
+@use '../libs/skel';
 
 /* List */
 
-	ol {
-		list-style: decimal;
-		margin: 0 0 functions.size(element-margin) 0;
-		padding-left: 1.25em;
+ol {
+  list-style: decimal;
+  margin: 0 0 functions.size(element-margin) 0;
+  padding-left: 1.25em;
 
-		li {
-			padding-left: 0.25em;
-		}
-	}
+  li {
+    padding-left: 0.25em;
+  }
+}
 
-	ul {
-		list-style: disc;
-		margin: 0 0 functions.size(element-margin) 0;
-		padding-left: 1em;
+ul {
+  list-style: disc;
+  margin: 0 0 functions.size(element-margin) 0;
+  padding-left: 1em;
 
-		li {
-			padding-left: 0.5em;
-		}
+  li {
+    padding-left: 0.5em;
+  }
 
-		&.alt {
-			list-style: none;
-			padding-left: 0;
+  &.alt {
+    list-style: none;
+    padding-left: 0;
 
-			li {
-				border-top: solid functions.size(border-width) functions.palette(border);
-				padding: 0.5em 0;
+    li {
+      border-top: solid functions.size(border-width) functions.palette(border);
+      padding: 0.5em 0;
 
-				&:first-child {
-					border-top: 0;
-					padding-top: 0;
-				}
-			}
-		}
+      &:first-child {
+        border-top: 0;
+        padding-top: 0;
+      }
+    }
+  }
 
-		&.icons {
-			cursor: default;
-			list-style: none;
-			padding-left: 0;
+  &.icons {
+    cursor: default;
+    list-style: none;
+    padding-left: 0;
 
-			li {
-				display: inline-block;
-				padding: 0 0.75em 0 0;
+    li {
+      display: inline-block;
+      padding: 0 0.75em 0 0;
 
-				&:last-child {
-					padding-right: 0;
-				}
+      &:last-child {
+        padding-right: 0;
+      }
 
-				a {
-					border-radius: 100%;
-					box-shadow: inset 0 0 0 functions.size(border-width) functions.palette(border);
-					display: inline-block;
-					height: 2.25rem;
-					line-height: 2.25rem;
-					text-align: center;
-					width: 2.25rem;
+      a {
+        border-radius: 100%;
+        box-shadow: inset 0 0 0 functions.size(border-width)
+          functions.palette(border);
+        display: inline-block;
+        height: 2.25rem;
+        line-height: 2.25rem;
+        text-align: center;
+        width: 2.25rem;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        color: functions.palette(fg);
 
-					&:hover {
-						background-color: functions.palette(border-bg);
-					}
+        &:hover {
+          background-color: functions.palette(accent);
+          box-shadow: 0 4px 12px rgba(245, 158, 11, 0.4);
+          transform: translateY(-2px);
+          border-color: functions.palette(accent);
+          color: functions.palette(bg);
+        }
 
-					&:active {
-						background-color: functions.palette(border-bg-alt);
-					}
-				}
-			}
-		}
+        &:active {
+          background-color: functions.palette(accent);
+          transform: translateY(0);
+          color: functions.palette(bg);
+        }
+      }
+    }
+  }
 
-		&.actions {
-			cursor: default;
-			list-style: none;
-			padding-left: 0;
+  &.actions {
+    cursor: default;
+    list-style: none;
+    padding-left: 0;
 
-			li {
-				display: inline-block;
-				padding: 0 (functions.size(element-margin) * 0.5) 0 0;
-				vertical-align: middle;
+    li {
+      display: inline-block;
+      padding: 0 (functions.size(element-margin) * 0.5) 0 0;
+      vertical-align: middle;
 
-				&:last-child {
-					padding-right: 0;
-				}
-			}
+      &:last-child {
+        padding-right: 0;
+      }
+    }
 
-			&.small {
-				li {
-					padding: 0 (functions.size(element-margin) * 0.25) 0 0;
-				}
-			}
+    &.small {
+      li {
+        padding: 0 (functions.size(element-margin) * 0.25) 0 0;
+      }
+    }
 
-			&.vertical {
-				li {
-					display: block;
-					padding: (functions.size(element-margin) * 0.5) 0 0 0;
+    &.vertical {
+      li {
+        display: block;
+        padding: (functions.size(element-margin) * 0.5) 0 0 0;
 
-					&:first-child {
-						padding-top: 0;
-					}
+        &:first-child {
+          padding-top: 0;
+        }
 
-					> * {
-						margin-bottom: 0;
-					}
-				}
+        > * {
+          margin-bottom: 0;
+        }
+      }
 
-				&.small {
-					li {
-						padding: (functions.size(element-margin) * 0.25) 0 0 0;
+      &.small {
+        li {
+          padding: (functions.size(element-margin) * 0.25) 0 0 0;
 
-						&:first-child {
-							padding-top: 0;
-						}
-					}
-				}
-			}
+          &:first-child {
+            padding-top: 0;
+          }
+        }
+      }
+    }
 
-			&.fit {
-				display: table;
-				margin-left: (functions.size(element-margin) * -0.5);
-				padding: 0;
-				table-layout: fixed;
-				width: calc(100% + #{(functions.size(element-margin) * 0.5)});
+    &.fit {
+      display: table;
+      margin-left: (functions.size(element-margin) * -0.5);
+      padding: 0;
+      table-layout: fixed;
+      width: calc(100% + #{(functions.size(element-margin) * 0.5)});
 
-				li {
-					display: table-cell;
-					padding: 0 0 0 (functions.size(element-margin) * 0.5);
+      li {
+        display: table-cell;
+        padding: 0 0 0 (functions.size(element-margin) * 0.5);
 
-					> * {
-						margin-bottom: 0;
-					}
-				}
+        > * {
+          margin-bottom: 0;
+        }
+      }
 
-				&.small {
-					margin-left: (functions.size(element-margin) * -0.25);
-					width: calc(100% + #{(functions.size(element-margin) * 0.25)});
+      &.small {
+        margin-left: (functions.size(element-margin) * -0.25);
+        width: calc(100% + #{(functions.size(element-margin) * 0.25)});
 
-					li {
-						padding: 0 0 0 (functions.size(element-margin) * 0.25);
-					}
-				}
-			}
+        li {
+          padding: 0 0 0 (functions.size(element-margin) * 0.25);
+        }
+      }
+    }
 
-			@include skel.breakpoint(xsmall) {
-				margin: 0 0 functions.size(element-margin) 0;
+    @include skel.breakpoint(xsmall) {
+      margin: 0 0 functions.size(element-margin) 0;
 
-				li {
-					padding: (functions.size(element-margin) * 0.5) 0 0 0;
-					display: block;
-					text-align: center;
-					width: 100%;
+      li {
+        padding: (functions.size(element-margin) * 0.5) 0 0 0;
+        display: block;
+        text-align: center;
+        width: 100%;
 
-					&:first-child {
-						padding-top: 0;
-					}
+        &:first-child {
+          padding-top: 0;
+        }
 
-					> * {
-						width: 100%;
-						margin: 0 !important;
+        > * {
+          width: 100%;
+          margin: 0 !important;
 
-						&.icon {
-							&:before {
-								margin-left: -2em;
-							}
-						}
-					}
-				}
+          &.icon {
+            &:before {
+              margin-left: -2em;
+            }
+          }
+        }
+      }
 
-				&.small {
-					li {
-						padding: (functions.size(element-margin) * 0.25) 0 0 0;
+      &.small {
+        li {
+          padding: (functions.size(element-margin) * 0.25) 0 0 0;
 
-						&:first-child {
-							padding-top: 0;
-						}
-					}
-				}
-			}
-		}
-	}
+          &:first-child {
+            padding-top: 0;
+          }
+        }
+      }
+    }
+  }
+}
 
-	dl {
-		margin: 0 0 functions.size(element-margin) 0;
+dl {
+  margin: 0 0 functions.size(element-margin) 0;
 
-		dt {
-			display: block;
-			font-weight: functions.font(weight-bold);
-			margin: 0 0 (functions.size(element-margin) * 0.5) 0;
-		}
+  dt {
+    display: block;
+    font-weight: functions.font(weight-bold);
+    margin: 0 0 (functions.size(element-margin) * 0.5) 0;
+  }
 
-		dd {
-			margin-left: functions.size(element-margin);
-		}
-	}
+  dd {
+    margin-left: functions.size(element-margin);
+  }
+}

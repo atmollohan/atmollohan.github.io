@@ -5,11 +5,16 @@ company: 'ZeroNorth'
 role: 'Software Engineer II'
 period: 'February 2021 - November 2021'
 tags:
+  - Go
   - Python
-  - TypeScript
   - Kubernetes
+  - TypeScript
   - Angular
+  - AWS
+  - MySQL
   - Security
+  - DevOps
+  - DevSecOps
 ---
 
 ## Overview
@@ -22,16 +27,17 @@ As a Software Engineer II, I worked as a full-stack developer building both the 
 
 ## Tech Stack
 
+- **Backend**: Python, Node.js
 - **Frontend**: Angular, TypeScript
-- **Backend**: Node.js, TypeScript libraries
-- **Security**: Python-based security runners, integration with 15+ scanners
+- **Infrastructure**: Kubernetes
+- **Security**: Security runners, integration with 15+ scanners
 - **Cloud**: AWS
 
 ## Key Projects
 
 ### Security Orchestration Engine
 
-Built the core engine that orchestrates security scans across multiple tools and environments. Designed workflows for scheduling, parallel execution, and result aggregation.
+Built the core engine that orchestrates security scans across multiple tools and environments. Designed workflows for scheduling, parallel execution, and result aggregation. Deployed on AWS with Kubernetes orchestration.
 
 ### Scanner Integrations
 

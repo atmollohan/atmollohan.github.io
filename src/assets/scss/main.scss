@@ -62,3 +62,178 @@
     transform: scale(1.15) rotate(3deg);
   }
 }
+
+/* Twin Guessing Game */
+.guess-buttons {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  margin: 1.5rem 0;
+
+  .button {
+    min-width: 120px;
+
+    &.correct {
+      background: functions.palette(gradient);
+      border-color: transparent;
+      color: #1b1f22 !important;
+      font-weight: 600;
+      animation: pulseCorrect 0.6s ease-in-out;
+    }
+
+    &.wrong {
+      border-color: rgba(255, 100, 100, 0.5);
+      color: #ff6b6b !important;
+      animation: shakeWrong 0.5s ease-in-out;
+
+      &:hover {
+        background: rgba(255, 100, 100, 0.1);
+        border-color: #ff6b6b;
+      }
+    }
+  }
+}
+
+.feedback {
+  text-align: center;
+  font-size: 1.1rem;
+  margin: 1rem 0;
+  animation: fadeInUp 0.4s ease-out;
+
+  &.correct-feedback {
+    color: functions.palette(accent);
+    font-weight: 500;
+  }
+
+  &.wrong-feedback {
+    color: #ff6b6b;
+  }
+}
+
+.twin-image {
+  position: relative;
+
+  .twin-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    animation: fadeInUp 0.4s ease-out;
+  }
+
+  .twin-label {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    background: rgba(27, 31, 34, 0.9);
+    border: 2px solid functions.palette(accent);
+    color: functions.palette(accent);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  }
+
+  img {
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &.correct-guess {
+    animation: celebrate 0.6s ease-in-out;
+
+    img {
+      filter: brightness(1.1);
+    }
+  }
+
+  &.wrong-guess {
+    animation: oops 0.5s ease-in-out;
+  }
+}
+
+@keyframes pulseCorrect {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(245, 158, 11, 0.7);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 0 0 15px rgba(245, 158, 11, 0);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(245, 158, 11, 0);
+  }
+}
+
+@keyframes shakeWrong {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-5px);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(5px);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes celebrate {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.02) rotate(-1deg);
+  }
+  50% {
+    transform: scale(1) rotate(1deg);
+  }
+  75% {
+    transform: scale(1.02) rotate(-1deg);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes oops {
+  0% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(-8px) rotate(-2deg);
+  }
+  40% {
+    transform: translateX(8px) rotate(2deg);
+  }
+  60% {
+    transform: translateX(-4px) rotate(-1deg);
+  }
+  80% {
+    transform: translateX(4px) rotate(1deg);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

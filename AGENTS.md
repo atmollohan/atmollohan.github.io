@@ -19,15 +19,15 @@ npm install
 
 ## Build/Lint/Test Commands
 
-| Command           | Description                                                      |
-| ----------------- | ---------------------------------------------------------------- |
-| `npm run dev` | Start Gatsby development server (localhost:8000)                 |
-| `npm run build`   | Build production bundle to `/public`                             |
-| `npm run clean`   | Clean Gatsby cache and remove `node_modules`/`package-lock.json` |
-| `npm run format`  | Format all `.js` files with Prettier                             |
-| `npm run lint`    | Run ESLint on all JS files                                       |
-| `npm run deploy`  | Build with prefix paths and deploy to `gh-pages` branch          |
-| `npm run test`    | Run Jest tests                                                   |
+| Command          | Description                                                      |
+| ---------------- | ---------------------------------------------------------------- |
+| `npm run dev`    | Start Gatsby development server (localhost:8000)                 |
+| `npm run build`  | Build production bundle to `/public`                             |
+| `npm run clean`  | Clean Gatsby cache and remove `node_modules`/`package-lock.json` |
+| `npm run format` | Format all `.js` files with Prettier                             |
+| `npm run lint`   | Run ESLint on all JS files                                       |
+| `npm run deploy` | Build with prefix paths and deploy to `gh-pages` branch          |
+| `npm run test`   | Run Jest tests                                                   |
 
 ### Running Tests
 
@@ -76,8 +76,8 @@ import '../assets/scss/main.scss'
 
 #### Components
 
-- Use **functional components** for presentational components with hooks for state
-- Use **class components** for complex page-level state management (see `src/pages/index.js`)
+- Use **functional components** for all components with hooks for state
+- Use React hooks (`useState`, `useEffect`, `useCallback`, `useRef`) for state management
 - Always define `propTypes` at the bottom of the file
 - Mark required props with `.isRequired`
 
@@ -97,9 +97,8 @@ export default MyComponent
 
 #### State Management
 
-- Use React hooks (`useState`, `useEffect`) for functional components
-- Use `this.state` and `this.setState` for class components
-- Clean up timeouts/intervals in `componentWillUnmount` or with cleanup functions
+- Use React hooks (`useState`, `useEffect`, `useCallback`, `useRef`) for all components
+- Clean up timeouts/intervals in `useEffect` cleanup function or `useCallback`
 
 #### Async/Await and Promises
 

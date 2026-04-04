@@ -13,6 +13,8 @@ tags:
   - AI/ML
   - DevOps
   - Security
+  - IoT
+  - MLOps
 ---
 
 ## Overview
@@ -31,10 +33,10 @@ As a Senior Platform Engineer, I work on the cloud platform team responsible for
 ## Tech Stack
 
 - **Backend**: Go, Python, TypeScript
-- **Cloud**: AWS (EC2, ECS, EKS, Lambda, S3, RDS)
-- **Infrastructure**: Kubernetes, Docker, Terraform
-- **AI/ML**: TensorFlow, PyTorch, model deployment
-- **Data**: PostgreSQL, Redis, time-series databases
+- **Cloud**: AWS (IAM, VPC, EC2, EKS, S3)
+- **Infrastructure**: Kubernetes, Docker, OpenTofu, Pulumi, GitOps
+- **AI/ML**: MLflow, Auto-labeling, MLOps
+- **IoT**: Distributed async, edge computing
 
 ## Key Projects
 

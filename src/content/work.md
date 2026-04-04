@@ -49,18 +49,23 @@ Started as Software Engineer II, promoted to Senior Software Engineer I then II.
 Boston-based startup providing a platform for automating and orchestrating security scanning. Immersed myself in cybersecurity, working with Angular frontend, Node API, TypeScript libraries, and Python security runners. Integrated with 15+ security scanning tools.
 
 <span class="tech-tags">
+<span class="tag">Go</span>
 <span class="tag">Python</span>
 <span class="tag">TypeScript</span>
 <span class="tag">Kubernetes</span>
 <span class="tag">Angular</span>
+<span class="tag">AWS</span>
+<span class="tag">MySQL</span>
 <span class="tag">Security</span>
+<span class="tag">DevOps</span>
+<span class="tag">DevSecOps</span>
 </span>
 
 ---
 
 ### 2020 - 2021
 
-**[We Roast Coffee](/projects/we-roast-coffee)** - Co-founder / Technical Lead
+**[We Roast Coffee](/projects/we-roast-coffee)** - Technical Lead / Solo Developer
 
 Worked with a friend to launch the digital assets for his local coffee company. Built Shopify online store with memorable domain (weroast.coffee), plus a JAMstack blog proof-of-concept using Gatsby, Auth0, Contentful, and Netlify.
 
@@ -73,6 +78,18 @@ Worked with a friend to launch the digital assets for his local coffee company. 
 <span class="tag">Netlify</span>
 </span>
 
+**[PCRI Annual Summit](/projects/pcri)** - Event Technology Consultant
+
+Consulted for PCRI (Professional Conference and Research Institute) to manage technical execution of their annual healthcare summit. Managed event registration via Eventbrite, configured Zoom for hybrid event delivery, and built API integrations to generate attendee credential lists. Executed two consecutive summits with 500+ attendees each year.
+
+<span class="tech-tags">
+<span class="tag">Eventbrite</span>
+<span class="tag">Zoom</span>
+<span class="tag">API Integration</span>
+<span class="tag">Python</span>
+<span class="tag">Automation</span>
+</span>
+
 ---
 
 ### 2018 - 2021
@@ -82,16 +99,14 @@ Worked with a friend to launch the digital assets for his local coffee company. 
 Started as Technology Development Intern (summer 2017), received return offer early in senior year, then full-time as Technology Development Associate, promoted to Software Engineer. Optum is the tech subsidiary of United Health Group, serving 49+ million members.
 
 <span class="tech-tags">
-<span class="tag">Java</span>
-<span class="tag">SQL</span>
-<span class="tag">Oracle</span>
-<span class="tag">Angular</span>
-<span class="tag">Node</span>
-<span class="tag">Python</span>
-<span class="tag">React</span>
 <span class="tag">DevOps</span>
 <span class="tag">Big Data</span>
 <span class="tag">ML</span>
+<span class="tag">React</span>
+<span class="tag">Node</span>
+<span class="tag">Python</span>
+<span class="tag">SQL</span>
+<span class="tag">Java</span>
 </span>
 
 ---
