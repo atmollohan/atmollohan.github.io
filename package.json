@@ -28,8 +28,11 @@
     "clean": "gatsby clean && rm -rf node_modules/ package-lock.json",
     "dev": "gatsby develop",
     "format": "prettier --write '**/*.js'",
+    "format:check": "prettier --check '**/*.js'",
     "lint": "eslint --ignore-path .gitignore .",
     "test": "jest",
+    "validate": "npm run format && npm run lint && npm test && npm run build",
+    "validate:fast": "npm run format && npm run lint && npm test",
     "deploy": "gatsby build --prefix-paths && gh-pages -d public -b gh-pages"
   },
   "devDependencies": {

@@ -19,15 +19,18 @@ npm install
 
 ## Build/Lint/Test Commands
 
-| Command          | Description                                                      |
-| ---------------- | ---------------------------------------------------------------- |
-| `npm run dev`    | Start Gatsby development server (localhost:8000)                 |
-| `npm run build`  | Build production bundle to `/public`                             |
-| `npm run clean`  | Clean Gatsby cache and remove `node_modules`/`package-lock.json` |
-| `npm run format` | Format all `.js` files with Prettier                             |
-| `npm run lint`   | Run ESLint on all JS files                                       |
-| `npm run deploy` | Build with prefix paths and deploy to `gh-pages` branch          |
-| `npm run test`   | Run Jest tests                                                   |
+| Command                 | Description                                                      |
+| ----------------------- | ---------------------------------------------------------------- |
+| `npm run dev`           | Start Gatsby development server (localhost:8000)                 |
+| `npm run build`         | Build production bundle to `/public`                             |
+| `npm run clean`         | Clean Gatsby cache and remove `node_modules`/`package-lock.json` |
+| `npm run format`        | Format all `.js` files with Prettier                             |
+| `npm run format:check`  | Check formatting without fixing                                  |
+| `npm run lint`          | Run ESLint on all JS files                                       |
+| `npm run test`          | Run Jest tests                                                   |
+| `npm run validate`      | Run full validation (format, lint, test, build)                  |
+| `npm run validate:fast` | Run fast validation (format, lint, test)                         |
+| `npm run deploy`        | Build with prefix paths and deploy to `gh-pages` branch          |
 
 ### Running Tests
 
