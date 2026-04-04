@@ -1,7 +1,5 @@
-@use "../libs/functions";
-@use "../libs/skel";
-
-
+@use '../libs/functions';
+@use '../libs/skel';
 
 /* Header */
 
@@ -37,7 +35,10 @@
   text-align: center;
 
   > * {
-    @include skel.vendor('transition', 'opacity #{functions.duration(article)} ease-in-out');
+    @include skel.vendor(
+      'transition',
+      'opacity #{functions.duration(article)} ease-in-out'
+    );
     position: relative;
     margin-top: 3.5rem;
 
@@ -120,7 +121,8 @@
 
       li {
         padding-left: 0;
-        border-left: solid functions.size(border-width) functions.palette(border);
+        border-left: solid functions.size(border-width)
+          functions.palette(border);
 
         &:first-child {
           border-left: 0;
@@ -138,14 +140,22 @@
           font-family: functions.font(family);
           border: none;
           box-shadow: none;
+          background-color: transparent;
+          color: functions.palette(fg-bold) !important;
+          cursor: pointer;
+          transition: all functions.duration(transition) ease-in-out;
 
           &:hover,
           &:focus {
-            background-color: functions.palette(border-bg);
+            background-color: functions.palette(accent);
+            color: #fff !important;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(255, 107, 53, 0.3);
           }
 
           &:active {
-            background-color: functions.palette(border-bg-alt);
+            background-color: functions.palette(accent);
+            transform: translateY(0);
           }
         }
       }
@@ -256,7 +266,8 @@
 
         li {
           border-left: 0;
-          border-top: solid functions.size(border-width) functions.palette(border);
+          border-top: solid functions.size(border-width)
+            functions.palette(border);
 
           &:first-child {
             border-top: 0;

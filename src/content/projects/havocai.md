@@ -5,18 +5,19 @@ company: 'HavocAI'
 role: 'Senior Platform Engineer'
 period: 'November 2025 - Present'
 tags:
+  - AWS
+  - Kubernetes
   - Go
   - Python
   - TypeScript
-  - AWS
-  - Kubernetes
   - AI/ML
-  - Edge Computing
+  - DevOps
+  - Security
 ---
 
 ## Overview
 
-HavocAI is building autonomous vessels — including 100-foot robot boats — for sea, air, and land operations. I lead the cloud infrastructure that powers these systems.
+HavocAI is building autonomous vessels, including 100-foot robot boats, for sea, air, and land operations. I lead the cloud infrastructure that powers these systems.
 
 ## Role
 

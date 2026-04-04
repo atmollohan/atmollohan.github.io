@@ -5,12 +5,11 @@ company: 'ZeroNorth'
 role: 'Software Engineer II'
 period: 'February 2021 - November 2021'
 tags:
-  - Angular
-  - Node.js
-  - TypeScript
   - Python
+  - TypeScript
+  - Kubernetes
+  - Angular
   - Security
-  - Full-Stack
 ---
 
 ## Overview

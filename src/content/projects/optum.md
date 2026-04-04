@@ -9,8 +9,12 @@ tags:
   - SQL
   - Oracle
   - Angular
-  - Full-Stack
-  - Healthcare
+  - Node
+  - Python
+  - React
+  - DevOps
+  - Big Data
+  - ML
 ---
 
 ## Overview
