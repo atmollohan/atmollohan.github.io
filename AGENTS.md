@@ -250,3 +250,21 @@ title: 'Intro'
 - [Gatsby Documentation](https://www.gatsbyjs.com/docs/)
 - [Prettier Docs](https://prettier.io/docs/en/index.html)
 - [react-use Hooks](https://github.com/streamich/react-use)
+
+## Project Status
+
+### Completed
+
+- Modern UI with amber accent color and hover effects
+- Functional components with hooks (useState, useEffect, useCallback, useRef)
+- Unit tests for Header, Footer, SocialLinks, Intro components (19 tests)
+- Click-outside-to-close article functionality
+- All content updated with accurate tech stacks
+
+### Future Improvements
+
+- TypeScript migration
+- Accessibility audit (contrast ratios, ARIA labels)
+- Image optimization/lazy loading
+- Add blog section
+- Update Gatsby to latest version
