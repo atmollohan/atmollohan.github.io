@@ -7,17 +7,16 @@ period: 'November 2021 - November 2025'
 tags:
   - Go
   - TypeScript
-  - Angular
-  - Node.js
   - Python
   - AWS
   - Kubernetes
+  - Postgres
   - DevSecOps
 ---
 
 ## Overview
 
-Harness is a leading cloud software development platform. After ZeroNorth was acquired by Harness in 2021, I helped build the first security center product — Security Testing Orchestration (STO).
+Harness is a leading cloud software development platform. After ZeroNorth was acquired by Harness in 2021, I helped build the first security center product, Security Testing Orchestration (STO).
 
 ## Role
 
