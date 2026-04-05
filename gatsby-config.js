@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Mollo Tech | Portfolio | Andrew Mollohan',
+    title: 'Landing Page',
     author: 'Andrew Mollohan',
     description: 'Mollo Tech | Portfolio',
     siteUrl: 'https://atmollohan.github.io',
@@ -12,10 +12,10 @@ module.exports = {
         name: 'atmollohan-portfolio',
         short_name: 'portfolio',
         start_url: '/',
-        background_color: '#663399',
-        theme_color: '#663399',
-        display: 'minimal-ui',
-        icon: 'src/images/spaceCase.png', // This path is relative to the root of the site.
+        background_color: '#f59e0b',
+        theme_color: '#f59e0b',
+        display: 'standalone',
+        icon: 'src/images/favicon-32x32.png',
       },
     },
     {

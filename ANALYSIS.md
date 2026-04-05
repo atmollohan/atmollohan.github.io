@@ -67,11 +67,9 @@ This is Andrew Mollohan's personal portfolio website - a Gatsby (React-based) st
 │   │   ├── ikonStash.jpg
 │   │   ├── overlay.png
 │   │   ├── pioneers.jpg
-│   │   ├── spaceCase.png     # PWA icon
+│   │   ├── favicon.ico     # PWA icon
 │   │   ├── wholefam.jpg
 │   │   ├── wholeFamSki.jpg
-│   │   ├── znBanner.jpg
-│   │   ├── znlogo.jpg
 │   │   └── gifs/             # cool.gif, cool2.gif, cool3.gif, cool4.gif, bw1.gif
 │   └── pages/
 │       ├── 404.js
@@ -190,9 +188,9 @@ The markdown files are parsed by `gatsby-transformer-remark` but appear unused b
 
 ### 5. PWA Configuration
 
-- Manifest icon: `src/images/spaceCase.png`
-- Theme color: `#663399` (purple)
-- Background color: `#663399` (purple)
+- Manifest icon: `src/images/favicon.ico`
+- Theme color: `#f59e0b` (purple)
+- Background color: `#f59e0b` (purple)
 
 ## Common npm Issues & Solutions
 
