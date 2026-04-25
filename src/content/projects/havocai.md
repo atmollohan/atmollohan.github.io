@@ -10,50 +10,63 @@ tags:
   - Go
   - Python
   - TypeScript
-  - AI/ML
+  - Helm
+  - Pulumi
+  - OpenTofu
   - DevOps
   - Security
-  - IoT
-  - MLOps
+  - CI/CD
+  - Platform Engineering
 ---
 
 ## Overview
 
-HavocAI is building autonomous vessels, including 100-foot robot boats, for sea, air, and land operations. I lead the cloud infrastructure that powers these systems.
+HavocAI is building collaborative autonomy technologies for sea, air, and land operations. The company develops autonomous surface vessels and the software stack that enables a single human operator to command thousands of autonomous assets.
 
 ## Role
 
-As a Senior Platform Engineer, I work on the cloud platform team responsible for:
+As a Senior Platform Engineer on a two-person team (both senior level), I own the cloud infrastructure that the entire company runs on. I am responsible for:
 
-- Building and maintaining backend services that communicate with vessels
-- Developing AI/ML infrastructure for autonomous navigation
-- Creating edge/cloud integration pipelines
-- Ensuring production reliability for systems operating at sea
+- All AWS infrastructure and architecture
+- Kubernetes clusters and deployments
+- Helm charts for all services - managing all internal and external Helm charts deployed across the entire company
+- Automation and CI/CD pipelines
+- Security hardening and compliance
+- Running release trains for the entire software stack to internal and external users
 
 ## Tech Stack
 
 - **Backend**: Go, Python, TypeScript
-- **Cloud**: AWS (IAM, VPC, EC2, EKS, S3)
-- **Infrastructure**: Kubernetes, Docker, OpenTofu, Pulumi, GitOps
-- **AI/ML**: MLflow, Auto-labeling, MLOps
-- **IoT**: Distributed async, edge computing
+- **Cloud**: AWS (IAM, VPC, EC2, EKS, S3, Lambda, CodeBuild, CloudWatch, CloudTrail, Cost Management)
+- **Infrastructure**: Kubernetes, Helm, Docker, Pulumi, OpenTofu
+- **Observability**: Grafana, Prometheus, VictoriaMetrics
+- **CI/CD**: GitHub Actions, Balena, GitOps
+- **Security**: AWS Security Hub, Vault, hardening
 
 ## Key Projects
 
-### Vessel Communication Platform
+### Platform Foundation
 
-Built real-time communication layer between shore-based operations and autonomous vessels. Handles telemetry data, command/control signals, and mission planning.
+Currently owning and expanding the cloud platform with my team. Everything at HavocAI runs on infrastructure I design, deploy, and maintain.
 
-### AI/ML Pipeline
+### Release Trains
 
-Designed and implemented ML training and inference pipelines for navigation models. Integrated with edge devices on vessels for real-time decision making.
+Implemented and run automated release trains delivering the entire software stack to internal and external users on a regular cadence.
 
-### Edge-Cloud Integration
+### Helm Chart Management
 
-Developed robust connectivity solutions for intermittent network conditions at sea. Implemented offline-first patterns and intelligent data synchronization.
+Manage all internal and external Helm charts deployed across the entire company. Own the chart library and ensure consistency across all services.
+
+### Security & Compliance
+
+Implemented security hardening across all infrastructure. Built automated security scanning and compliance checks.
+
+### Multi-Environment Deployments
+
+Designed and maintain deployments across development, staging, and production environments with proper separation and security controls.
 
 ## Impact
 
-- Leading infrastructure for next-generation autonomous maritime systems
-- Building systems that must operate reliably in harsh marine environments
-- Bridging cutting-edge AI research with production systems
+- Currently owning the platform that supports 160+ internal employees, partners, and customers
+- Enable autonomous maritime operations through reliable, secure cloud infrastructure
+- Deliver releases at company scale with minimal manual intervention
