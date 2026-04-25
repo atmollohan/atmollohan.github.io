@@ -9,17 +9,20 @@ title: 'Work'
 
 **[HavocAI](/projects/havocai)** - Senior Platform Engineer
 
-Working on the cloud platform for a maritime autonomy company building autonomous vessels and collaborative AI systems for sea, air, and land operations. HavocAI is developing cutting-edge autonomous boat technology, including 100-foot robot vessels, and I lead the cloud infrastructure that powers these systems.
+Currently owning the cloud platform on a small but growing team supporting all internal employees, partners, and customers. Owns all company infrastructure - from AWS and Kubernetes to Helm charts, automation, and security. Manages all internal and external Helm charts deployed across the company. Runs release trains for the entire software stack to internal and external users.
 
 <span class="tech-tags">
 <span class="tag">AWS</span>
 <span class="tag">Kubernetes</span>
+<span class="tag">Helm</span>
+<span class="tag">Pulumi</span>
+<span class="tag">OpenTofu</span>
 <span class="tag">Go</span>
 <span class="tag">Python</span>
 <span class="tag">TypeScript</span>
-<span class="tag">AI/ML</span>
 <span class="tag">DevOps</span>
 <span class="tag">Security</span>
+<span class="tag">CI/CD</span>
 </span>
 
 ---

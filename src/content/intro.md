@@ -7,14 +7,19 @@ Oh... I didn't see you there. It looks like you stumbled across my portfolio. Fe
 
 Here's what I work with:
 
-- **Backend**: Go, Python, Node.js, TypeScript
-- **Frontend**: React, Gatsby, Angular
-- **Cloud & Infrastructure**: AWS, GCP, Docker, Kubernetes
-- **Databases**: PostgreSQL, MongoDB, MySQL
-- **AI/ML**: TensorFlow, PyTorch, scikit-learn, RAG workflows, LLMs
+- **Cloud**: AWS, GCP, Azure, Lambda
+- **Containers & Orchestration**: Kubernetes, OpenShift, Docker, Helm
+- **Infrastructure as Code**: Pulumi, OpenTofu
+- **Observability**: CloudWatch, CloudTrail, Grafana, Prometheus, VictoriaMetrics
+- **Networking**: Cloudflare, Tailscale, Edge Computing, MQTT
+- **AI/ML**: TensorFlow, PyTorch, scikit-learn, MLflow
 - **AI Agents**: Claude Code, Codex, OpenCode, Ollama, MCP
-- **DevOps**: GitHub Actions, CI/CD, Infrastructure as Code
-- **Security**: AppSec, SAST/DAST tools, vulnerability scanning
+- **Backend**: Go, Python, Node.js, TypeScript
+- **DevOps**: GitHub Actions, Balena, CI/CD
+- **Security**: AppSec, Snyk, Aqua, Semgrep, Burp, SAST/DAST, vulnerability scanning
+- **Databases**: PostgreSQL, MongoDB, MySQL
+- **Frontend**: React, Gatsby, Angular, Vue, Next.js
+- **Hardware**: Custom PCs, Home Lab, Game Hosting, Raspberry Pi
 
 I've been diving deep into agentic AI programming lately, leveraging AI coding agents to accelerate development, automate repetitive tasks, and explore new ways of building software. Running local LLMs with Ollama and pairing with tools like Claude Code has been a blast. The future of development is collaborative: human intuition paired with AI agents.
 
