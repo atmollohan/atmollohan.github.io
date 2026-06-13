@@ -64,9 +64,48 @@ describe('About', () => {
       />
     )
     const images = screen.getAllByRole('img', { hidden: true })
-    expect(images.length).toBeGreaterThanOrEqual(4)
+    expect(images.length).toBeGreaterThanOrEqual(5)
     images.forEach((img) => {
       expect(img).toHaveAttribute('alt')
     })
+  })
+
+  it('renders the twin guessing game', () => {
+    render(
+      <About
+        article="about"
+        articleTimeout={true}
+        onCloseArticle={mockOnCloseArticle}
+      />
+    )
+    expect(
+      screen.getByText(/Can you guess which one is me/i)
+    ).toBeInTheDocument()
+    expect(screen.getByText('Left')).toBeInTheDocument()
+    expect(screen.getByText('Right')).toBeInTheDocument()
+  })
+
+  it('shows correct feedback when left is clicked', () => {
+    render(
+      <About
+        article="about"
+        articleTimeout={true}
+        onCloseArticle={mockOnCloseArticle}
+      />
+    )
+    fireEvent.click(screen.getByText('Left'))
+    expect(screen.getByText(/i knew you could do it/i)).toBeInTheDocument()
+  })
+
+  it('shows wrong feedback when right is clicked', () => {
+    render(
+      <About
+        article="about"
+        articleTimeout={true}
+        onCloseArticle={mockOnCloseArticle}
+      />
+    )
+    fireEvent.click(screen.getByText('Right'))
+    expect(screen.getByText(/it.s okay.* i forgive you/i)).toBeInTheDocument()
   })
 })

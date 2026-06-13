@@ -10,21 +10,25 @@ const Header = (props) => (
       <div className="inner">
         <h1>Mollo Tech</h1>
         <p className="subhead">Andrew Mollohan</p>
-        <p>Head of an engineer, heart of a pioneer.</p>
+        <p className="tagline">Cloud Platform Engineer</p>
+        <p className="byline">Building infrastructure for autonomous systems</p>
       </div>
     </div>
     <nav aria-label="Main navigation">
       <ul>
-        {['intro', 'work', 'about', 'contact'].map((section) => (
+        {['work', 'intro', 'about', 'contact'].map((section) => (
           <li key={section}>
             <button
+              className={section === 'work' ? 'button special' : ''}
               aria-current={props.article === section ? 'page' : undefined}
               aria-expanded={props.article === section}
               onClick={() => {
                 props.onOpenArticle(section)
               }}
             >
-              {section.charAt(0).toUpperCase() + section.slice(1)}
+              {section === 'work'
+                ? "What I've Built"
+                : section.charAt(0).toUpperCase() + section.slice(1)}
             </button>
           </li>
         ))}
