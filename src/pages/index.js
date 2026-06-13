@@ -80,6 +80,7 @@ const IndexPage = ({ location }) => {
           <Header
             onOpenArticle={handleOpenArticle}
             timeout={showContent && !isArticleVisible}
+            article={article}
           />
           <Main
             isArticleVisible={isArticleVisible}
@@ -100,10 +101,30 @@ const IndexPage = ({ location }) => {
 export const Head = () => (
   <>
     <title>Mollo Tech | Portfolio | Andrew Mollohan</title>
-    <meta name="description" content="Portfolio of Andrew Mollohan" />
+    <meta
+      name="description"
+      content="Portfolio of Andrew Mollohan — cloud platform engineer building scalable infrastructure, DevSecOps tools, and AI-augmented developer experiences."
+    />
     <meta
       name="keywords"
-      content="portfolio, software engineer, developer, Boston"
+      content="portfolio, software engineer, cloud platform, Kubernetes, DevSecOps, AWS, Boston"
+    />
+    <meta property="og:title" content="Mollo Tech | Andrew Mollohan" />
+    <meta
+      property="og:description"
+      content="Cloud platform engineer building scalable infrastructure, DevSecOps tools, and AI-augmented developer experiences."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://atmollohan.github.io" />
+    <meta
+      property="og:image"
+      content="https://atmollohan.github.io/icons/icon-512x512.png"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Mollo Tech | Andrew Mollohan" />
+    <meta
+      name="twitter:description"
+      content="Cloud platform engineer building scalable infrastructure, DevSecOps tools, and AI-augmented developer experiences."
     />
     <html lang="en" />
   </>

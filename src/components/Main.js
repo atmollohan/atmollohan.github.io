@@ -13,9 +13,10 @@ const Main = ({
   setWrapperRef,
 }) => {
   return (
-    <div
+    <main
       ref={setWrapperRef}
       id="main"
+      role="main"
       style={timeout ? { display: 'flex' } : { display: 'none' }}
     >
       <Intro
@@ -41,7 +42,7 @@ const Main = ({
         articleTimeout={articleTimeout}
         onCloseArticle={onCloseArticle}
       />
-    </div>
+    </main>
   )
 }
 

@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 import { StaticQuery, graphql } from 'gatsby'
 import SocialLinks from './SocialLinks'
+import GitHubActivity from './GitHubActivity'
 import twins from '../images/fampiece-crop.jpg'
 
 const IntroContent = ({ article, articleTimeout, onCloseArticle, html }) => {
@@ -105,6 +106,7 @@ const IntroContent = ({ article, articleTimeout, onCloseArticle, html }) => {
         <br></br>
         <p>I grew up as one of a pair. Believe it or not, we are fraternal.</p>
       </div>
+      <GitHubActivity username="atmollohan" />
       <SocialLinks />
       {close}
     </article>
