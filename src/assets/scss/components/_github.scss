@@ -1,0 +1,102 @@
+@use '../libs/functions';
+@use '../libs/skel';
+
+.github-activity {
+  margin: 2rem 0;
+
+  h3 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  .github-repos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
+
+    @include skel.breakpoint(small) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .github-repo-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    padding: 0.75rem;
+    border: 1px solid functions.palette(border-bg);
+    border-radius: functions.size(border-radius);
+    text-decoration: none;
+    color: functions.palette(fg);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+      border-color: functions.palette(accent);
+      background: rgba(245, 158, 11, 0.05);
+      transform: translateY(-1px);
+    }
+
+    &:focus-visible {
+      outline: 2px solid functions.palette(accent);
+      outline-offset: 2px;
+    }
+
+    .repo-name {
+      font-weight: 600;
+      font-size: 0.85rem;
+      color: functions.palette(accent);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+
+    .repo-description {
+      font-size: 0.75rem;
+      line-height: 1.4;
+      color: functions.palette(fg-light);
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    .repo-meta {
+      display: flex;
+      gap: 0.75rem;
+      font-size: 0.7rem;
+      color: functions.palette(fg-light);
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .repo-language {
+      padding: 0.1rem 0.4rem;
+      border-radius: 3px;
+      background: functions.palette(border-bg);
+    }
+
+    .repo-stars {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.15rem;
+    }
+  }
+
+  .github-footer {
+    text-align: center;
+    margin-top: 1rem;
+
+    a {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+    }
+  }
+
+  .github-loading,
+  .github-error {
+    text-align: center;
+    font-size: 0.85rem;
+    color: functions.palette(fg-light);
+  }
+}

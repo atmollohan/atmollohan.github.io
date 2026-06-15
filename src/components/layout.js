@@ -24,7 +24,14 @@ const Layout = ({ children, location }) => {
     )
   }
 
-  return <>{content}</>
+  return (
+    <>
+      <a href="#main" className="skip-to-content">
+        Skip to content
+      </a>
+      {content}
+    </>
+  )
 }
 
 Layout.propTypes = {

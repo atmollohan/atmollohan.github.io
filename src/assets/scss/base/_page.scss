@@ -31,3 +31,28 @@
 			}
 
 	}
+
+	// Focus-visible styles for keyboard users
+	:focus-visible {
+		outline: 2px solid functions.palette(accent);
+		outline-offset: 2px;
+		border-radius: 2px;
+	}
+
+	// Skip to content link - visually hidden until focused
+	.skip-to-content {
+		position: absolute;
+		top: -100%;
+		left: 0;
+		z-index: 99999;
+		padding: 0.5rem 1rem;
+		background: functions.palette(accent);
+		color: functions.palette(bg);
+		font-weight: 600;
+		text-decoration: none;
+		border-radius: 0 0 4px 0;
+
+		&:focus {
+			top: 0;
+		}
+	}

@@ -9,48 +9,29 @@ const Header = (props) => (
     <div className="content">
       <div className="inner">
         <h1>Mollo Tech</h1>
-        <h3>Andrew Mollohan</h3>
-        <p>Head of an engineer, heart of a pioneer.</p>
+        <p className="subhead">Andrew Mollohan</p>
+        <p className="tagline">Cloud Platform Engineer</p>
+        <p className="byline">Building infrastructure for autonomous systems</p>
       </div>
     </div>
-    <nav>
+    <nav aria-label="Main navigation">
       <ul>
-        <li>
-          <button
-            onClick={() => {
-              props.onOpenArticle('intro')
-            }}
-          >
-            Intro
-          </button>
-        </li>
-        <li>
-          <button
-            onClick={() => {
-              props.onOpenArticle('work')
-            }}
-          >
-            Work
-          </button>
-        </li>
-        <li>
-          <button
-            onClick={() => {
-              props.onOpenArticle('about')
-            }}
-          >
-            About
-          </button>
-        </li>
-        <li>
-          <button
-            onClick={() => {
-              props.onOpenArticle('contact')
-            }}
-          >
-            Contact
-          </button>
-        </li>
+        {['work', 'intro', 'about', 'contact'].map((section) => (
+          <li key={section}>
+            <button
+              className={section === 'work' ? 'button special' : ''}
+              aria-current={props.article === section ? 'page' : undefined}
+              aria-expanded={props.article === section}
+              onClick={() => {
+                props.onOpenArticle(section)
+              }}
+            >
+              {section === 'work'
+                ? "What I've Built"
+                : section.charAt(0).toUpperCase() + section.slice(1)}
+            </button>
+          </li>
+        ))}
       </ul>
     </nav>
   </header>
@@ -59,6 +40,7 @@ const Header = (props) => (
 Header.propTypes = {
   onOpenArticle: PropTypes.func,
   timeout: PropTypes.bool,
+  article: PropTypes.string,
 }
 
 export default Header

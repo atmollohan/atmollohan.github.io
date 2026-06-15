@@ -16,7 +16,6 @@ tags:
   - DevOps
   - Security
   - CI/CD
-  - Platform Engineering
 ---
 
 ## Overview
@@ -36,12 +35,12 @@ As a Senior Platform Engineer on a two-person team (both senior level), I own th
 
 ## Tech Stack
 
-- **Backend**: Go, Python, TypeScript
 - **Cloud**: AWS (IAM, VPC, EC2, EKS, S3, Lambda, CodeBuild, CloudWatch, CloudTrail, Cost Management)
 - **Infrastructure**: Kubernetes, Helm, Docker, Pulumi, OpenTofu
 - **Observability**: Grafana, Prometheus, VictoriaMetrics
 - **CI/CD**: GitHub Actions, Balena, GitOps
-- **Security**: AWS Security Hub, Vault, hardening
+- **Backend**: Go, Python, TypeScript
+- **Security**: AWS Security Hub, Dependabot, Trivy
 
 ## Key Projects
 
@@ -67,6 +66,6 @@ Designed and maintain deployments across development, staging, and production en
 
 ## Impact
 
-- Currently owning the platform that supports 160+ internal employees, partners, and customers
+- Currently owning the platform that supports 200+ internal employees, partners, and customers
 - Enable autonomous maritime operations through reliable, secure cloud infrastructure
 - Deliver releases at company scale with minimal manual intervention
