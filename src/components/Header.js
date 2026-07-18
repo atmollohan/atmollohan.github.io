@@ -17,7 +17,7 @@ const Header = (props) => (
         {['work', 'intro', 'about', 'contact'].map((section) => (
           <li key={section}>
             <button
-              className={section === 'work' ? 'button special' : ''}
+              className={''}
               aria-current={props.article === section ? 'page' : undefined}
               aria-expanded={props.article === section}
               onClick={() => {
