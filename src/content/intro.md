@@ -3,20 +3,20 @@ slug: '/intro'
 title: 'Intro'
 ---
 
-I specialize in building scalable cloud infrastructure, automating developer workflows, and shipping secure software — fast. Whether it's Kubernetes clusters at sea or DevSecOps platforms used by enterprises, I take hard problems and turn them into working systems.
+I build scalable cloud infrastructure, automate developer workflows, and ship secure software — fast. Whether it's Kubernetes clusters at sea or DevSecOps platforms used by enterprises, I take hard problems and turn them into working systems.
 
 **Core toolkit:**
 
 - ☁️ **Cloud**: AWS, GCP, Azure
 - 🐳 **Containers & Orchestration**: Kubernetes, Docker, Helm, OpenShift
-- 🏗️ **Infrastructure as Code**: Terraform, Pulumi, OpenTofu
+- 🏗️ **Infrastructure as Code**: Pulumi, Terraform, OpenTofu
 - 👁️ **Observability**: Grafana, Prometheus, CloudWatch, CloudTrail, VictoriaMetrics
 - 🌐 **Networking**: Cloudflare, Tailscale, Edge Computing, MQTT, Cilium
-- 🤖 **AI/ML**: TensorFlow, PyTorch, scikit-learn, MLflow
-- 🧠 **AI Agents**: Claude Code, Codex, OpenCode, Ollama, MCP
+- 🧠 **Agentic AI**: Claude Code, Codex, OpenCode, Ollama, MCP
+- 🤖 **ML/AI**: TensorFlow, PyTorch, scikit-learn, MLflow
 - ⚙️ **Backend**: Go, Python, Node.js, TypeScript
 - 🔄 **DevOps**: GitHub Actions, Jenkins, Balena, CI/CD
-- 🔒 **Security**: AppSec, Snyk, Aqua, Semgrep, Burp, SAST/DAST
+- 🔒 **Security**: Trivy, Syft, Checkov, ZAP, Burp, SAST/DAST, AppSec
 - 🗄️ **Databases**: PostgreSQL, MongoDB, MySQL
 - 🖥️ **Frontend**: React, Gatsby, Vue, Next.js, Angular
 - 🔧 **Hardware**: Custom PCs, Home Lab, Game Hosting, Raspberry Pi

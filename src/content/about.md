@@ -27,9 +27,14 @@ I attended [Boston University](https://www.bu.edu/), majored in applied mathemat
 When I'm not coding, you'll find me:
 
 - Running: I picked up the habit during COVID and have completed a couple half marathons since
+- Biking: exploring trails around New England
 - Skiing: winters in Vermont with friends and family
+- Hiking: anything from local trails to bigger adventures
+- Gaming: always have something going, whether it's a new release or a classic
 - Brewing coffee: I helped a friend launch [We Roast Coffee](https://weroast.coffee/), a local coffee shop in our hometown that's become a community staple
-- Building side projects: Discord bots with economy systems, automation scripts, home automation with Raspberry Pis, and whatever else catches my interest
+- Building side projects: Discord bots with economy systems, AI meal planners, arcade games, home automation with Raspberry Pis, and whatever else catches my interest
+
+I'm a Boston sports fan through and through — Patriots, Red Sox, Celtics. You'll find me watching games whenever I can.
 
 I grew up as one of a pair (yes, we're fraternal!). My family means everything to me, and I wouldn't be where I am today without their support, especially when it came to making big decisions like choosing a college.
 

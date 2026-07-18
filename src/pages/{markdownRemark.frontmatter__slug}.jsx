@@ -1,47 +1,23 @@
 import * as React from 'react'
 import { graphql, Link } from 'gatsby'
+import Layout from '../components/layout'
 
-export default function BlogPostTemplate({ data }) {
+export default function ProjectTemplate({ data }) {
   const { markdownRemark } = data
   const { frontmatter, html } = markdownRemark
 
   return (
-    <div
-      style={{
-        minHeight: '100vh',
-        backgroundColor: '#1b1f22',
-        padding: '4rem 2rem',
-        color: '#ffffff',
-      }}
-    >
-      <div style={{ maxWidth: '800px', margin: '0 auto' }}>
-        <Link
-          to="/"
-          style={{
-            color: '#ff6b35',
-            textDecoration: 'none',
-            fontSize: '1rem',
-            marginBottom: '2rem',
-            display: 'inline-block',
-          }}
-        >
-          ← Back to Home
+    <Layout location={{ pathname: frontmatter.slug }}>
+      <article id="project-detail" className="active">
+        <Link to="/" className="back-link">
+          &larr; Back to Home
         </Link>
 
-        <h1
-          style={{
-            fontSize: '2.5rem',
-            fontWeight: '300',
-            marginBottom: '0.5rem',
-            color: '#ffffff',
-          }}
-        >
-          {frontmatter.title}
-        </h1>
+        <h1 className="project-title">{frontmatter.title}</h1>
 
-        <p style={{ color: 'rgba(255,255,255,0.5)', marginBottom: '1.5rem' }}>
-          <strong style={{ color: '#ffffff' }}>{frontmatter.company}</strong> |{' '}
-          {frontmatter.role} | {frontmatter.period}
+        <p className="project-meta">
+          <strong>{frontmatter.company}</strong> | {frontmatter.role} |{' '}
+          {frontmatter.period}
         </p>
 
         {frontmatter.tags && frontmatter.tags.length > 0 && (
@@ -55,11 +31,11 @@ export default function BlogPostTemplate({ data }) {
         )}
 
         <div
-          style={{ color: 'rgba(255,255,255,0.7)', lineHeight: '1.7' }}
+          className="project-content"
           dangerouslySetInnerHTML={{ __html: html }}
         />
-      </div>
-    </div>
+      </article>
+    </Layout>
   )
 }
 
@@ -67,6 +43,7 @@ export const pageQuery = graphql`
   query ($id: String!) {
     markdownRemark(id: { eq: $id }) {
       html
+      excerpt(pruneLength: 160)
       frontmatter {
         slug
         title
@@ -78,3 +55,38 @@ export const pageQuery = graphql`
     }
   }
 `
+
+export const Head = ({ data }) => {
+  const { frontmatter, excerpt } = data.markdownRemark
+  const siteUrl = 'https://mollo.tech'
+  const pageUrl = `${siteUrl}${frontmatter.slug}`
+
+  return (
+    <>
+      <title>{`${frontmatter.title} | Andrew Mollohan`}</title>
+      <meta
+        name="description"
+        content={`${frontmatter.role} at ${frontmatter.company}. ${excerpt}`}
+      />
+      <link rel="canonical" href={pageUrl} />
+
+      <meta property="og:title" content={frontmatter.title} />
+      <meta
+        property="og:description"
+        content={`${frontmatter.role} at ${frontmatter.company}`}
+      />
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content={pageUrl} />
+      <meta property="og:site_name" content="Andrew Mollohan" />
+
+      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:title" content={frontmatter.title} />
+      <meta
+        name="twitter:description"
+        content={`${frontmatter.role} at ${frontmatter.company}`}
+      />
+
+      <html lang="en" />
+    </>
+  )
+}

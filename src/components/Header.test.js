@@ -16,18 +16,10 @@ describe('Header', () => {
     expect(screen.getByText('Andrew Mollohan')).toBeInTheDocument()
   })
 
-  it('renders role tagline', () => {
-    render(<Header onOpenArticle={mockOnOpenArticle} timeout={true} />)
-
-    expect(
-      screen.getByText('Cloud Platform Engineer')
-    ).toBeInTheDocument()
-  })
-
   it('renders all navigation buttons', () => {
     render(<Header onOpenArticle={mockOnOpenArticle} timeout={true} />)
 
-    expect(screen.getByText("What I've Built")).toBeInTheDocument()
+    expect(screen.getByText('Work')).toBeInTheDocument()
     expect(screen.getByText('Intro')).toBeInTheDocument()
     expect(screen.getByText('About')).toBeInTheDocument()
     expect(screen.getByText('Contact')).toBeInTheDocument()
@@ -39,7 +31,7 @@ describe('Header', () => {
     fireEvent.click(screen.getByText('Intro'))
     expect(mockOnOpenArticle).toHaveBeenCalledWith('intro')
 
-    fireEvent.click(screen.getByText("What I've Built"))
+    fireEvent.click(screen.getByText('Work'))
     expect(mockOnOpenArticle).toHaveBeenCalledWith('work')
 
     fireEvent.click(screen.getByText('About'))
