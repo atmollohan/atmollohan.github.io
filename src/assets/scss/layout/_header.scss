@@ -145,35 +145,35 @@
           &:hover,
           &:focus {
             background-color: functions.palette(accent);
-            color: #1b1f22 !important;
+            color: functions.palette(bg) !important;
             transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(245, 158, 11, 0.4);
+            box-shadow: 0 6px 20px rgba(196, 106, 60, 0.4);
           }
 
           &:active {
             background-color: functions.palette(accent);
             transform: translateY(0);
-            box-shadow: 0 2px 8px rgba(245, 158, 11, 0.3);
+            box-shadow: 0 2px 8px rgba(196, 106, 60, 0.3);
           }
 
           &.special {
             background: functions.palette(gradient);
             border: none;
-            color: #1b1f22 !important;
+            color: functions.palette(bg) !important;
             font-weight: functions.font(weight-bold);
-            box-shadow: 0 4px 15px rgba(245, 158, 11, 0.3);
+            box-shadow: 0 4px 15px rgba(196, 106, 60, 0.3);
 
             &:hover,
             &:focus {
               transform: translateY(-2px);
-              box-shadow: 0 8px 25px rgba(245, 158, 11, 0.4);
+              box-shadow: 0 8px 25px rgba(196, 106, 60, 0.4);
               background: functions.palette(gradient);
-              color: #1b1f22 !important;
+              color: functions.palette(bg) !important;
             }
 
             &:active {
               transform: translateY(0);
-              box-shadow: 0 4px 10px rgba(245, 158, 11, 0.3);
+              box-shadow: 0 4px 10px rgba(196, 106, 60, 0.3);
             }
           }
         }

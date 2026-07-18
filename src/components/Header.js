@@ -10,8 +10,6 @@ const Header = (props) => (
       <div className="inner">
         <h1>Mollo Tech</h1>
         <p className="subhead">Andrew Mollohan</p>
-        <p className="tagline">Cloud Platform Engineer</p>
-        <p className="byline">Building infrastructure for autonomous systems</p>
       </div>
     </div>
     <nav aria-label="Main navigation">
@@ -27,7 +25,7 @@ const Header = (props) => (
               }}
             >
               {section === 'work'
-                ? "What I've Built"
+                ? 'Work'
                 : section.charAt(0).toUpperCase() + section.slice(1)}
             </button>
           </li>

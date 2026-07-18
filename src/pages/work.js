@@ -3,13 +3,13 @@ import PropTypes from 'prop-types'
 import { graphql, Link } from 'gatsby'
 import Layout from '../components/layout'
 
-const ProjectCard = ({ title, role, period, slug, tags }) => (
+const WorkCard = ({ title, company, role, period, slug, tags }) => (
   <div className="project-card">
     <h3>
       <Link to={slug}>{title}</Link>
     </h3>
     <p className="meta">
-      {role} | {period}
+      {company} | {role} | {period}
     </p>
     <div className="tech-tags">
       {tags.map((tag) => (
@@ -21,32 +21,33 @@ const ProjectCard = ({ title, role, period, slug, tags }) => (
   </div>
 )
 
-ProjectCard.propTypes = {
+WorkCard.propTypes = {
   title: PropTypes.string.isRequired,
+  company: PropTypes.string.isRequired,
   role: PropTypes.string.isRequired,
   period: PropTypes.string.isRequired,
   slug: PropTypes.string.isRequired,
   tags: PropTypes.array.isRequired,
 }
 
-const ProjectsPage = ({ data }) => {
-  const projects = data.allMarkdownRemark.nodes
+const WorkPage = ({ data }) => {
+  const work = data.allMarkdownRemark.nodes
 
   return (
-    <Layout location={{ pathname: '/projects' }}>
-      <article id="projects" className="active" style={{ display: 'none' }}>
-        <h2 className="major">Projects</h2>
-        <p>Side projects and personal builds.</p>
+    <Layout location={{ pathname: '/work' }}>
+      <article id="work" className="active" style={{ display: 'none' }}>
+        <h2 className="major">Work</h2>
+        <p>Professional experience and key contributions.</p>
         <div className="project-list">
-          {projects.map((project) => (
-            <ProjectCard
-              key={project.frontmatter.slug}
-              title={project.frontmatter.title}
-              company={project.frontmatter.company}
-              role={project.frontmatter.role}
-              period={project.frontmatter.period}
-              slug={project.frontmatter.slug}
-              tags={project.frontmatter.tags || []}
+          {work.map((item) => (
+            <WorkCard
+              key={item.frontmatter.slug}
+              title={item.frontmatter.title}
+              company={item.frontmatter.company}
+              role={item.frontmatter.role}
+              period={item.frontmatter.period}
+              slug={item.frontmatter.slug}
+              tags={item.frontmatter.tags || []}
             />
           ))}
         </div>
@@ -55,14 +56,14 @@ const ProjectsPage = ({ data }) => {
   )
 }
 
-ProjectsPage.propTypes = {
+WorkPage.propTypes = {
   data: PropTypes.object.isRequired,
 }
 
 export const query = graphql`
   query {
     allMarkdownRemark(
-      filter: { frontmatter: { slug: { regex: "^/projects/" } } }
+      filter: { frontmatter: { slug: { regex: "^/work/" } } }
       sort: { frontmatter: { period: DESC } }
     ) {
       nodes {
@@ -81,13 +82,13 @@ export const query = graphql`
 
 export const Head = () => (
   <>
-    <title>Projects | Andrew Mollohan</title>
+    <title>Work | Andrew Mollohan</title>
     <meta
       name="description"
-      content="Side projects and personal builds by Andrew Mollohan"
+      content="Professional experience and work history of Andrew Mollohan - Senior Cloud Engineer"
     />
     <html lang="en" />
   </>
 )
 
-export default ProjectsPage
+export default WorkPage

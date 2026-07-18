@@ -14,9 +14,9 @@
   padding: 0.25rem 0.75rem;
   font-size: 0.7rem;
   font-weight: functions.font(weight);
-  background-color: rgba(255, 255, 255, 0.05);
+  background-color: rgba(245, 237, 228, 0.05);
   color: functions.palette(fg);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(245, 237, 228, 0.2);
   border-radius: 3px;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -25,7 +25,7 @@
     border-color: functions.palette(accent);
     color: functions.palette(bg);
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(245, 158, 11, 0.3);
+    box-shadow: 0 4px 12px rgba(196, 106, 60, 0.3);
   }
 }
 
@@ -39,13 +39,13 @@
 
 .project-card {
   padding: 1.5rem;
-  background-color: functions.palette(bg-alt);
+  background-color: functions.palette(bg-card);
   border-left: 3px solid functions.palette(accent);
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover {
     transform: translateY(-4px);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 24px rgba(30, 24, 20, 0.3);
   }
 
   h3 {
@@ -70,6 +70,12 @@
 }
 
 /* Project Detail Page */
+
+#project-detail {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
 
 .back-link {
   display: inline-flex;
@@ -148,14 +154,14 @@
   }
 
   code {
-    background-color: functions.palette(bg-alt);
+    background-color: functions.palette(bg-card);
     padding: 0.2rem 0.4rem;
     border-radius: 3px;
     font-size: 0.9em;
   }
 
   pre {
-    background-color: functions.palette(bg-alt);
+    background-color: functions.palette(bg-card);
     padding: 1rem;
     border-radius: 4px;
     overflow-x: auto;
