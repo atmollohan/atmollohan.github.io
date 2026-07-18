@@ -222,15 +222,28 @@ chore: update dependencies
 ```
 src/
 ├── assets/
-│   └── scss/           # Sass stylesheets
+│   └── scss/           # Sass stylesheets (Terracotta & Ink palette)
 ├── components/         # Reusable React components
 ├── content/           # Markdown content files
 │   ├── about.md
 │   ├── contact.md
 │   ├── intro.md
-│   └── work.md
+│   ├── work.md        # Professional work timeline
+│   ├── work/          # Individual work pages (/work/*)
+│   │   ├── havocai.md
+│   │   ├── harness.md
+│   │   ├── zeronorth.md
+│   │   ├── we-roast-coffee.md
+│   │   ├── pcri.md
+│   │   └── optum.md
+│   └── projects/      # Side project pages (/projects/*)
+│       ├── lil-chef.md
+│       ├── will-of-the-people.md
+│       ├── echo.md
+│       ├── games.md
+│       └── configs.md
 ├── images/             # Static images and gifs
-├── pages/              # Gatsby pages (index.js, 404.js, v2.js)
+├── pages/              # Gatsby pages (index.js, 404.js, v2.js, work.js, projects.js)
 └── templates/          # (if used) Dynamic page templates
 ```
 
@@ -255,16 +268,21 @@ title: 'Intro'
 
 ### Completed
 
-- Modern UI with amber accent color and hover effects
+- Modern UI with Terracotta & Ink color palette (#1e1814, #2a221c, #f5ede4, #c46a3c)
 - Functional components with hooks (useState, useEffect, useCallback, useRef)
-- Unit tests for Header, Footer, SocialLinks, Intro components (19 tests)
+- Unit tests for Header, Footer, SocialLinks, Intro components (39 tests)
 - Click-outside-to-close article functionality
-- All content updated with accurate tech stacks
+- Professional work separated from side projects (/work vs /projects)
+- All content updated with accurate tech stacks and ownership tone
+- HavocAI: Senior Platform Engineer, Dec 2025-Present, Pulumi/Flux/CNCF
+- Side projects: Lil Chef, Will of People, Echo, Games, Configs
+- Project detail pages with Layout wrapper and SEO (Head API)
 
 ### Future Improvements
 
+- Blog infrastructure (case studies, RSS, per-post SEO)
+- Navigation updates (add Blog link)
 - TypeScript migration
 - Accessibility audit (contrast ratios, ARIA labels)
 - Image optimization/lazy loading
-- Add blog section
 - Update Gatsby to latest version
