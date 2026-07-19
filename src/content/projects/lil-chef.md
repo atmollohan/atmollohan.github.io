@@ -4,12 +4,14 @@ title: 'Lil Chef'
 company: 'Side Project'
 role: 'Creator'
 period: 'Ongoing'
+order: 2
 tags: ['Next.js', 'TypeScript', 'PostgreSQL', 'Ollama', 'Docker', 'Tailwind', 'AI']
+description: 'A local-first web app that generates weekly meal plans using AI. The theme is a rat chef doing the planning, you are just the prep cook.'
 ---
 
 ## Overview
 
-A local-first web app that generates weekly meal plans using AI. The theme is a rat chef doing the planning — you are just the prep cook. One-time preference setup, then weekly plans with leftovers, grocery lists, and step-by-step prep workflows.
+A local-first web app that generates weekly meal plans using AI. The theme is a rat chef doing the planning, you are just the prep cook. One-time preference setup, then weekly plans with leftovers, grocery lists, and step-by-step prep workflows.
 
 ## The Build
 

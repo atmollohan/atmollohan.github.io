@@ -4,12 +4,14 @@ title: 'Echo Protocol'
 company: 'Side Project'
 role: 'Creator'
 period: 'Ongoing'
-tags: ['Python', 'Streamlit', 'Docker']
+order: 4
+tags: ['Python', 'Streamlit', 'Docker', 'Cloudflare Tunnel', 'Tailscale', 'Raspberry Pi']
+description: 'A web tool for generating Beckman Echo liquid handler protocols. Runs locally as a standalone Python app or Docker container so users can connect their own data. Designed to run on a Raspberry Pi.'
 ---
 
 ## Overview
 
-A web tool for generating Beckman Echo liquid handler protocols. Lets lab scientists create CSV transfer files for experiments without writing code. Designed for non-programmers — just fill out a web form and download the protocol.
+A web tool for generating Beckman Echo liquid handler protocols. Lets lab scientists create CSV transfer files for experiments without writing code. Runs locally as a standalone Python app or Docker container so users keep control of their own data. Designed for non-programmers: just fill out a web form and download the protocol. Built to run on a Raspberry Pi, migration planned.
 
 ## The Build
 
@@ -32,7 +34,7 @@ A web tool for generating Beckman Echo liquid handler protocols. Lets lab scient
 
 - Eliminates manual protocol writing for lab scientists
 - Cross-platform deployment from Raspberry Pi to cloud
-- Zero cloud dependencies — runs entirely local
+- Zero cloud dependencies, runs entirely local
 - Cloudflare Tunnel for secure remote access
 
 ## Stack

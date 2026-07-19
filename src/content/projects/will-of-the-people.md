@@ -4,12 +4,14 @@ title: 'The Will of the People'
 company: 'Side Project'
 role: 'Creator'
 period: 'Ongoing'
-tags: ['Node.js', 'Discord.js', 'Docker', 'Jest', 'GitHub Actions']
+order: 1
+tags: ['Node.js', 'Discord.js', 'Docker', 'Jest', 'GitHub Actions', 'Raspberry Pi']
+description: 'A Discord bot that became the engine of a server economy, casino, and voice. Runs on a Raspberry Pi 5 after migrating from AWS EC2 when credits ran out.'
 ---
 
 ## Overview
 
-A Discord bot that became the engine of a server's economy, casino, and voice. Started as a joke and turned into a shared system everyone pushed, tested, argued with, and added to.
+A Discord bot that became the engine of a server's economy, casino, and voice. Started as a joke and turned into a shared system everyone pushed, tested, argued with, and added to. Originally hosted on an AWS EC2 instance, migrated to a Raspberry Pi 3B when credits ran out, then upgraded to a Pi 5.
 
 ## The Build
 

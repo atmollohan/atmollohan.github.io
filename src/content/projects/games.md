@@ -4,7 +4,9 @@ title: 'Games Arcade'
 company: 'Side Project'
 role: 'Creator'
 period: 'Ongoing'
+order: 5
 tags: ['HTML', 'JavaScript', 'Python', 'Docker', 'Cloudflare Tunnel', 'Tailscale']
+description: '7 classic arcade games in a single HTML page, served by a lightweight Python HTTP server. Containerized for ARM64/AMD64 and ready for Raspberry Pi deployment.'
 ---
 
 ## Overview
@@ -31,7 +33,7 @@ tags: ['HTML', 'JavaScript', 'Python', 'Docker', 'Cloudflare Tunnel', 'Tailscale
 
 ## Impact
 
-- 7 games in a single container — lightweight and portable
+- 7 games in a single container, lightweight and portable
 - Multi-arch Docker images for ARM64/AMD64
 - Public access via Cloudflare Tunnel, private via Tailscale
 - One-command deployment on Raspberry Pi

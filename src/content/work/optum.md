@@ -3,37 +3,52 @@ slug: '/work/optum'
 title: 'Optum'
 company: 'Optum'
 role: 'Software Engineer'
-period: '2018 - 2021'
-tags: ['Java', 'Spring Boot', 'PostgreSQL', 'React', 'Docker', 'Kubernetes', 'AWS']
+period: '2017 - 2021'
+tags: ['Python', 'TypeScript', 'Node.js', 'Next.js', 'Scala', 'Spark', 'Docker', 'Kubernetes', 'DevOps', 'Machine Learning', 'MySQL', 'React']
 ---
 
 ## Role
 
-Software Engineer on the healthcare data platform team. Built microservices that process and analyze healthcare data for compliance and reporting.
+Software Engineer at Optum, the tech subsidiary of UnitedHealth Group. Started as a Technology Development Intern (summer 2017), received a return offer early in senior year, then joined full-time as a Technology Development Associate, later promoted to Software Engineer. Worked across multiple product teams spanning big data, distributed systems, machine learning, and web applications.
 
 ## The Work
 
-### Healthcare Data Platform
+### Big Data Pipeline
 
-**Microservices Architecture:**
-- Built Spring Boot microservices for processing healthcare claims data
-- Implemented event-driven architecture for real-time data processing
-- Designed RESTful APIs for data access and reporting
-- Created batch processing pipelines for historical data analysis
+- Built data processing pipelines using Scala and Spark for large-scale healthcare data
+- Designed ETL workflows transforming raw claims data into analytics-ready formats
+- Implemented data validation and compliance rules for HIPAA requirements
 
-**Data Processing:**
-- Built ETL pipelines that transform raw claims data into analytics-ready formats
-- Implemented data validation rules for HIPAA compliance
-- Designed data warehouse schema for healthcare analytics
-- Created automated reporting for regulatory compliance
+### Distributed Scanning Application
+
+- Developed a distributed scanning application with automated test coverage
+- Built and maintained the automated testing infrastructure for the scanning system
+
+### ML Benefits Application
+
+- Shipped a machine learning-powered application for healthcare benefits processing
+- Built the React frontend and Scala backend
+- Deployed to OpenShift using Jenkins CI/CD
+- Handled security and compliance scanning for the application
+
+### Broker Webapp & Marketplace
+
+- Delivered a broker-facing web application and marketplace platform
+- Built React frontend communicating with a Java Spring Boot backend
+- Developed a separate Kafka consumer for asynchronous data processing
+
+### Iframe Plugin (Next.js)
+
+- Built an iframe-based plugin using Next.js that replaced a $1M+ integration into a legacy system
+- Delivered a cost-effective alternative without modifying the legacy codebase
 
 ## Impact
 
-- Built services processing 1M+ healthcare records daily
-- Reduced data processing time from hours to minutes
-- Implemented HIPAA-compliant data handling across all services
-- Designed system that supports 50+ concurrent analysts
+- Saved $1M+ by replacing a legacy integration with an iframe-based Next.js plugin
+- Worked across five distinct product teams, delivering across the full stack
+- Built systems processing millions of healthcare records daily
+- Contributed to Optum's platform serving 50+ million members
 
 ## Stack
 
-Java, Spring Boot, PostgreSQL, React, Docker, Kubernetes, AWS, HIPAA
+Python, TypeScript, Node.js, Next.js, Scala, Spark, Docker, Kubernetes, DevOps, Machine Learning, MySQL, React

@@ -1,7 +1,7 @@
 {
   "name": "atmollohan.github.io",
   "description": "Mollo Tech Landing Page",
-  "version": "1.4.1",
+  "version": "1.5.0",
   "author": "Andrew Mollohan",
   "dependencies": {
     "axios": "^1.13.4",

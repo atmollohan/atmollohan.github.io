@@ -103,7 +103,7 @@ export const Head = () => (
     <title>Mollo Tech | Portfolio | Andrew Mollohan</title>
     <meta
       name="description"
-      content="Portfolio of Andrew Mollohan — cloud platform engineer building scalable infrastructure, DevSecOps tools, and AI-augmented developer experiences."
+      content="Portfolio of Andrew Mollohan, cloud platform engineer building scalable infrastructure, DevSecOps tools, and AI-augmented developer experiences."
     />
     <meta
       name="keywords"

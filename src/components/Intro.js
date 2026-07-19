@@ -1,10 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { StaticQuery, graphql } from 'gatsby'
+import { StaticQuery, graphql, Link } from 'gatsby'
 import SocialLinks from './SocialLinks'
-import GitHubActivity from './GitHubActivity'
 
-const IntroContent = ({ article, articleTimeout, onCloseArticle, html }) => {
+const IntroContent = ({ article, articleTimeout, onCloseArticle, html, projects }) => {
   const close = (
     <div
       role="button"
@@ -32,7 +31,30 @@ const IntroContent = ({ article, articleTimeout, onCloseArticle, html }) => {
     >
       <h2 className="major">What I Do</h2>
       <div dangerouslySetInnerHTML={{ __html: html }} />
-      <GitHubActivity username="atmollohan" />
+      <div className="intro-projects">
+        <h3>Projects</h3>
+        {projects.map((project) => (
+          <Link
+            key={project.frontmatter.slug}
+            to={project.frontmatter.slug}
+            className="intro-project-card"
+          >
+            <span className="project-card-title">
+              {project.frontmatter.title}
+            </span>
+            {project.frontmatter.description && (
+              <span className="project-card-desc">
+                {project.frontmatter.description}
+              </span>
+            )}
+            {project.frontmatter.tags && project.frontmatter.tags.length > 0 && (
+              <span className="project-card-tags">
+                {project.frontmatter.tags.join(', ')}
+              </span>
+            )}
+          </Link>
+        ))}
+      </div>
       <SocialLinks />
       {close}
     </article>
@@ -44,6 +66,7 @@ IntroContent.propTypes = {
   articleTimeout: PropTypes.bool,
   onCloseArticle: PropTypes.func,
   html: PropTypes.string,
+  projects: PropTypes.array.isRequired,
 }
 
 const Intro = (props) => (
@@ -53,10 +76,27 @@ const Intro = (props) => (
         markdownRemark(frontmatter: { slug: { eq: "/intro" } }) {
           html
         }
+        allMarkdownRemark(
+          filter: { frontmatter: { slug: { regex: "^/projects/" } } }
+          sort: { frontmatter: { order: ASC } }
+        ) {
+          nodes {
+            frontmatter {
+              slug
+              title
+              description
+              tags
+            }
+          }
+        }
       }
     `}
     render={(data) => (
-      <IntroContent html={data.markdownRemark.html} {...props} />
+      <IntroContent
+        html={data.markdownRemark.html}
+        projects={data.allMarkdownRemark.nodes}
+        {...props}
+      />
     )}
   />
 )
