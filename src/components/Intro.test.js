@@ -8,9 +8,17 @@ jest.mock('gatsby', () => ({
       markdownRemark: {
         html: '<p>Test intro content</p>',
       },
+      allMarkdownRemark: {
+        nodes: [],
+      },
     })
   ),
   graphql: jest.fn(),
+  Link: ({ children, to, ...props }) => (
+    <a href={to} {...props}>
+      {children}
+    </a>
+  ),
 }))
 
 describe('Intro', () => {

@@ -60,9 +60,7 @@ describe('GitHubActivity', () => {
     render(<GitHubActivity username="atmollohan" />)
 
     await waitFor(() => {
-      expect(
-        screen.getByText(/unable to load projects/i)
-      ).toBeInTheDocument()
+      expect(screen.getByText(/unable to load projects/i)).toBeInTheDocument()
     })
 
     const link = screen.getByText(/github.com\/atmollohan/i)

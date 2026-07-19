@@ -3,7 +3,13 @@ import PropTypes from 'prop-types'
 import { StaticQuery, graphql, Link } from 'gatsby'
 import SocialLinks from './SocialLinks'
 
-const IntroContent = ({ article, articleTimeout, onCloseArticle, html, projects }) => {
+const IntroContent = ({
+  article,
+  articleTimeout,
+  onCloseArticle,
+  html,
+  projects,
+}) => {
   const close = (
     <div
       role="button"
@@ -47,11 +53,12 @@ const IntroContent = ({ article, articleTimeout, onCloseArticle, html, projects 
                 {project.frontmatter.description}
               </span>
             )}
-            {project.frontmatter.tags && project.frontmatter.tags.length > 0 && (
-              <span className="project-card-tags">
-                {project.frontmatter.tags.join(', ')}
-              </span>
-            )}
+            {project.frontmatter.tags &&
+              project.frontmatter.tags.length > 0 && (
+                <span className="project-card-tags">
+                  {project.frontmatter.tags.join(', ')}
+                </span>
+              )}
           </Link>
         ))}
       </div>
