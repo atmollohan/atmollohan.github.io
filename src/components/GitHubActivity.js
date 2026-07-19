@@ -41,7 +41,7 @@ const GitHubActivity = ({ username }) => {
     return (
       <div className="github-activity">
         <p className="github-error">
-          Unable to load recent activity. Visit{' '}
+          Unable to load projects. Visit{' '}
           <a
             href={`https://github.com/${username}`}
             target="_blank"
@@ -58,14 +58,14 @@ const GitHubActivity = ({ username }) => {
   if (loading) {
     return (
       <div className="github-activity">
-        <p className="github-loading">Loading recent activity...</p>
+        <p className="github-loading">Loading projects...</p>
       </div>
     )
   }
 
   return (
     <div className="github-activity">
-      <h3>Recent Open Source Activity</h3>
+      <h3>Projects</h3>
       <div className="github-repos">
         {repos.map((repo) => (
           <a

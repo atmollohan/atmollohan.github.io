@@ -4,7 +4,9 @@ title: 'Configs'
 company: 'Side Project'
 role: 'Creator'
 period: 'Ongoing'
+order: 6
 tags: ['Shell', 'Docker', 'Kubernetes', 'DevOps', 'GitHub Actions']
+description: 'Cross-machine development environment configuration toolkit. Shell configs, modular aliases, a Docker dev container image, and an install script that detects OS, architecture, and hardware.'
 ---
 
 ## Overview

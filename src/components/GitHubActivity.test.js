@@ -31,7 +31,7 @@ describe('GitHubActivity', () => {
   it('shows loading state initially', () => {
     global.fetch = jest.fn(() => new Promise(() => {}))
     render(<GitHubActivity username="atmollohan" />)
-    expect(screen.getByText(/loading recent activity/i)).toBeInTheDocument()
+    expect(screen.getByText(/loading projects/i)).toBeInTheDocument()
   })
 
   it('renders repo cards after successful fetch', async () => {
@@ -60,9 +60,7 @@ describe('GitHubActivity', () => {
     render(<GitHubActivity username="atmollohan" />)
 
     await waitFor(() => {
-      expect(
-        screen.getByText(/unable to load recent activity/i)
-      ).toBeInTheDocument()
+      expect(screen.getByText(/unable to load projects/i)).toBeInTheDocument()
     })
 
     const link = screen.getByText(/github.com\/atmollohan/i)

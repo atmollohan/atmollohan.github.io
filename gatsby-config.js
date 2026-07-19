@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: 'Landing Page',
+    title: 'Mollo Tech',
     author: 'Andrew Mollohan',
-    description: 'Mollo Tech | Portfolio',
+    description: 'Andrew Mollohan | Software Engineer',
     siteUrl: 'https://atmollohan.github.io',
   },
   plugins: [
@@ -15,7 +15,7 @@ module.exports = {
         background_color: '#1e1814',
         theme_color: '#c46a3c',
         display: 'standalone',
-        icon: 'src/images/favicon-32x32.png',
+        icon: 'src/images/favicon.svg',
       },
     },
     {

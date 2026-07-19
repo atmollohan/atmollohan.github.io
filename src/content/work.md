@@ -7,11 +7,11 @@ title: 'Work'
 
 ### December 2025 - Present
 
-**[HavocAI](/work/havocai)** — Senior Platform Engineer
+**[HavocAI](/work/havocai)** | Senior Platform Engineer
 
-**Autonomous security testing. Cloud infrastructure for simulated adversarial environments at scale.**
+**Cloud platform owner. Infrastructure, security, DevOps, and everything in between.**
 
-Built the infrastructure layer for an autonomous security testing platform. Scaled simulated environments from single agent to 1000+ concurrent devices. Owned end-to-end cloud security model including compliance scanning, POAM generation for IATT, and remediation of security findings.
+Own the entire cloud platform. Kubernetes, CI/CD, IaC, security scanning, compliance. If it runs in the cloud, it's my problem.
 
 <span class="tech-tags">
 <span class="tag">AWS</span>
@@ -33,35 +33,40 @@ Built the infrastructure layer for an autonomous security testing platform. Scal
 
 ### November 2021 - November 2025
 
-**[Harness](/work/harness)** — Senior Software Engineer II
+**[Harness](/work/harness)** | Senior Software Engineer II
 
-**Internal developer platform. Built and maintained the infrastructure that ships Harness to customers.**
+**Built Harness's first security product from acquired startup ZeroNorth. Grew it to $10M+ ARR.**
 
-Started as Software Engineer II, promoted to Senior Software Engineer I then II. When ZeroNorth was acquired by Harness, it became the first security center product, Security Testing Orchestration (STO). Built a sellable product within the platform in under 6 months. Received multiple Star Performer awards (2022, 2023, 2024).
+Full stack across frontend, backend, DB, and DevOps. Ran scrum ceremonies. Migrated dozens of cloud runners from AWS to GCP. Promoted twice.
 
 <span class="tech-tags">
+<span class="tag">Python</span>
+<span class="tag">Go</span>
+<span class="tag">TypeScript</span>
+<span class="tag">PostgreSQL</span>
+<span class="tag">Redis</span>
+<span class="tag">MongoDB</span>
+<span class="tag">GCP</span>
 <span class="tag">AWS</span>
-<span class="tag">Azure</span>
-<span class="tag">Terraform</span>
 <span class="tag">Kubernetes</span>
+<span class="tag">Helm</span>
+<span class="tag">Terraform</span>
 <span class="tag">Docker</span>
 <span class="tag">CI/CD</span>
 <span class="tag">Java</span>
-<span class="tag">TypeScript</span>
 <span class="tag">React</span>
-<span class="tag">Go</span>
-<span class="tag">PostgreSQL</span>
+<span class="tag">Security</span>
 </span>
 
 ---
 
 ### February 2021 - November 2021
 
-**[ZeroNorth](/work/zeronorth)** — Software Engineer II
+**[ZeroNorth](/work/zeronorth)** | Software Engineer II
 
 **Security scanning orchestration. Startup acquired by Harness.**
 
-Built platform that orchestrates security testing across the software development lifecycle. Integrated 15+ security scanning tools into unified orchestration platform. Designed infrastructure automation for multi-tenant security environments.
+Orchestrated security testing across the SDLC. Integrated 15+ scanning tools into a unified platform.
 
 <span class="tech-tags">
 <span class="tag">AWS</span>
@@ -79,28 +84,25 @@ Built platform that orchestrates security testing across the software developmen
 
 ### 2020 - 2021
 
-**[We Roast Coffee](/work/we-roast-coffee)** — Full Stack Engineer
+**[We Roast Coffee](/work/we-roast-coffee)** | Full Stack Engineer
 
 **E-commerce. Built a Shopify store from scratch for a local coffee brand.**
 
-Worked with a friend to launch the digital assets for his local coffee company. Built Shopify online store with memorable domain (weroast.coffee), plus a JAMstack blog proof-of-concept using Gatsby, Auth0, Contentful, and Netlify.
+Shopify store with a JAMstack blog proof-of-concept using Gatsby, Auth0, Contentful, and Netlify.
 
 <span class="tech-tags">
-<span class="tag">Python</span>
-<span class="tag">TypeScript</span>
-<span class="tag">React</span>
-<span class="tag">Node.js</span>
-<span class="tag">PostgreSQL</span>
-<span class="tag">Docker</span>
-<span class="tag">AWS</span>
 <span class="tag">Shopify</span>
+<span class="tag">Gatsby</span>
+<span class="tag">Auth0</span>
+<span class="tag">Contentful</span>
+<span class="tag">Netlify</span>
 </span>
 
-**[PCRI Annual Summit](/work/pcri)** — Event Technology Consultant
+**[PCRI Annual Summit](/work/pcri)** | Event Technology Consultant
 
-**Healthcare events. Hybrid summit tech for 500+ attendees.**
+**Healthcare events. Hybrid summit tech for hundreds of attendees.**
 
-Consulted for PCRI (Professional Conference and Research Institute) to manage technical execution of their annual healthcare summit. Managed event registration via Eventbrite, configured Zoom for hybrid event delivery, and built API integrations to generate attendee credential lists. Executed two consecutive summits with 500+ attendees each year.
+Eventbrite registration, Zoom hybrid delivery, and API integrations for attendee credentials.
 
 <span class="tech-tags">
 <span class="tag">Eventbrite</span>
@@ -112,22 +114,27 @@ Consulted for PCRI (Professional Conference and Research Institute) to manage te
 
 ---
 
-### 2018 - 2021
+### 2017 - 2021
 
-**[Optum](/work/optum)** — Software Engineer
+**[Optum](/work/optum)** | Software Engineer
 
-**Healthcare tech. Big data and DevOps at UnitedHealth Group's tech arm.**
+**Healthcare tech. Big data, distributed systems, and ML at UnitedHealth Group.**
 
-Started as Technology Development Intern (summer 2017), received return offer early in senior year, then full-time as Technology Development Associate, promoted to Software Engineer. Optum is the tech subsidiary of United Health Group, serving 49+ million members.
+Five product teams: big data pipelines, distributed scanning, ML benefits app, broker webapp and marketplace, and a Next.js iframe plugin that saved $1M+.
 
 <span class="tech-tags">
-<span class="tag">Java</span>
-<span class="tag">Spring Boot</span>
-<span class="tag">PostgreSQL</span>
-<span class="tag">React</span>
+<span class="tag">Python</span>
+<span class="tag">TypeScript</span>
+<span class="tag">Node.js</span>
+<span class="tag">Next.js</span>
+<span class="tag">Scala</span>
+<span class="tag">Spark</span>
 <span class="tag">Docker</span>
 <span class="tag">Kubernetes</span>
-<span class="tag">AWS</span>
+<span class="tag">DevOps</span>
+<span class="tag">Machine Learning</span>
+<span class="tag">MySQL</span>
+<span class="tag">React</span>
 </span>
 
 ---

@@ -1,39 +1,31 @@
 ---
 slug: '/work/pcri'
-title: 'PCRI'
+title: 'PCRI Annual Summit'
 company: 'PCRI'
-role: 'Software Engineer'
+role: 'Event Technology Consultant'
 period: '2020 - 2021'
-tags: ['Python', 'Django', 'PostgreSQL', 'JavaScript', 'React', 'Docker', 'AWS']
+tags: ['Python', 'Eventbrite', 'Zoom', 'API Integration', 'Automation']
 ---
 
 ## Role
 
-Software Engineer building web applications for property management and tenant relations. Focused on backend development and data processing pipelines.
+Event technology consultant for PCRI (Professional Conference and Research Institute). Managed technical execution of their annual healthcare summit.
 
 ## The Work
 
-### Property Management Platform
+**Event Registration:**
+- Managed event registration and attendee management via Eventbrite
+- Built API integrations to generate attendee credential lists
 
-**Application Development:**
-- Built tenant portal for maintenance requests and lease management
-- Implemented automated rent collection and payment processing
-- Designed reporting dashboard for property managers
-- Created document management system for leases and compliance
-
-**Data Processing:**
-- Built ETL pipelines for processing financial transactions
-- Implemented automated reconciliation for rent payments
-- Designed data warehouse for historical reporting
-- Created API integrations with third-party accounting systems
+**Hybrid Event Delivery:**
+- Configured Zoom for hybrid event delivery to support both in-person and remote attendees
+- Ensured smooth technical execution across both Summit events
 
 ## Impact
 
-- Built platform managing 500+ rental units
-- Reduced manual data entry by 60% through automation
-- Implemented payment processing handling $2M+ annually
-- Designed reporting system that eliminated manual spreadsheet work
+- Executed two consecutive summits with hundreds of attendees each year
+- Managed end-to-end technical setup for hybrid healthcare conference
 
 ## Stack
 
-Python, Django, PostgreSQL, JavaScript, React, Docker, AWS
+Python, Eventbrite, Zoom, API Integration, Automation

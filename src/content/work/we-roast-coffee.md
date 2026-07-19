@@ -4,7 +4,7 @@ title: 'We Roast Coffee'
 company: 'We Roast Coffee'
 role: 'Full Stack Engineer'
 period: '2020 - 2021'
-tags: ['Python', 'TypeScript', 'React', 'Node.js', 'PostgreSQL', 'Docker', 'AWS', 'Shopify']
+tags: ['Shopify', 'Gatsby', 'Auth0', 'Contentful', 'Netlify']
 ---
 
 ## Role
@@ -44,4 +44,4 @@ Full Stack Engineer building the digital infrastructure for a specialty coffee r
 
 ## Stack
 
-Python, TypeScript, React, Node.js, PostgreSQL, Docker, AWS, Shopify, Stripe
+Shopify, Gatsby, Auth0, Contentful, Netlify
