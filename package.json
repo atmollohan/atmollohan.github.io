@@ -36,7 +36,7 @@
     "deploy": "gatsby build --prefix-paths && gh-pages -d public -b gh-pages"
   },
   "devDependencies": {
-    "@babel/core": "^7.29.0",
+    "@babel/core": "^7.29.6",
     "@babel/preset-env": "^7.29.2",
     "@babel/preset-react": "^7.28.5",
     "@testing-library/jest-dom": "^6.9.1",
