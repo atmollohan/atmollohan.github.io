@@ -14,6 +14,7 @@ jest.mock('gatsby', () => ({
     })
   ),
   graphql: jest.fn(),
+  withPrefix: jest.fn((path) => path),
   Link: ({ children, to, ...props }) => (
     <a href={to} {...props}>
       {children}

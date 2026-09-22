@@ -11,6 +11,7 @@ jest.mock('gatsby', () => ({
     })
   ),
   graphql: jest.fn(),
+  withPrefix: jest.fn((path) => path),
 }))
 
 describe('Work', () => {
@@ -52,6 +53,21 @@ describe('Work', () => {
     )
     fireEvent.click(screen.getByLabelText('close'))
     expect(mockOnCloseArticle).toHaveBeenCalled()
+  })
+
+  it('links to the current resume PDF', () => {
+    render(
+      <Work
+        article="work"
+        articleTimeout={false}
+        onCloseArticle={mockOnCloseArticle}
+      />
+    )
+
+    expect(screen.getByText('Download Resume (PDF)')).toHaveAttribute(
+      'href',
+      '/resume.1.8.0.pdf'
+    )
   })
 
   it('does not render when not active', () => {

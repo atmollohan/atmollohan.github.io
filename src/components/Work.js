@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { StaticQuery, graphql } from 'gatsby'
+import { StaticQuery, graphql, withPrefix } from 'gatsby'
 
 const WorkContent = ({ article, articleTimeout, onCloseArticle, html }) => {
   const close = (
@@ -28,6 +28,13 @@ const WorkContent = ({ article, articleTimeout, onCloseArticle, html }) => {
     >
       <h2 className="major">Work</h2>
       <div dangerouslySetInnerHTML={{ __html: html }} />
+      <a
+        className="button resume-button"
+        href={withPrefix('/resume.1.8.0.pdf')}
+        download
+      >
+        Download Resume (PDF)
+      </a>
       {close}
     </article>
   )

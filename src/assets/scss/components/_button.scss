@@ -43,6 +43,22 @@ button,
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
   }
 
+  &.resume-button {
+    &:hover {
+      background: functions.palette(gradient);
+      border-color: transparent;
+      color: functions.palette(bg) !important;
+      transform: translateY(-2px) scale(1.02);
+      box-shadow: 0 8px 22px rgba(196, 106, 60, 0.3);
+    }
+
+    &:active {
+      background: functions.palette(accent);
+      transform: translateY(0) scale(0.99);
+      box-shadow: 0 4px 10px rgba(196, 106, 60, 0.22);
+    }
+  }
+
   &.icon {
     &:before {
       margin-right: 0.5em;
