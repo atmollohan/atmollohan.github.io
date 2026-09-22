@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { StaticQuery, graphql, Link } from 'gatsby'
+import { StaticQuery, graphql, Link, withPrefix } from 'gatsby'
 import SocialLinks from './SocialLinks'
 
 const IntroContent = ({
@@ -37,6 +37,13 @@ const IntroContent = ({
     >
       <h2 className="major">What I Do</h2>
       <div dangerouslySetInnerHTML={{ __html: html }} />
+      <a
+        className="button resume-button"
+        href={withPrefix('/resume.1.8.0.pdf')}
+        download
+      >
+        Download Resume (PDF)
+      </a>
       <div className="intro-projects">
         <h3>Projects</h3>
         {projects.map((project) => (

@@ -14,6 +14,7 @@ jest.mock('gatsby', () => ({
     })
   ),
   graphql: jest.fn(),
+  withPrefix: jest.fn((path) => path),
   Link: ({ children, to, ...props }) => (
     <a href={to} {...props}>
       {children}
@@ -50,6 +51,21 @@ describe('Intro', () => {
     )
 
     expect(screen.getByText('LinkedIn')).toBeInTheDocument()
+  })
+
+  it('links to the current resume PDF', () => {
+    render(
+      <Intro
+        article="intro"
+        articleTimeout={false}
+        onCloseArticle={mockOnCloseArticle}
+      />
+    )
+
+    expect(screen.getByText('Download Resume (PDF)')).toHaveAttribute(
+      'href',
+      '/resume.1.8.0.pdf'
+    )
   })
 
   it('renders close button', () => {
