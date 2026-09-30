@@ -3,7 +3,7 @@ module.exports = {
     title: 'Mollo Tech',
     author: 'Andrew Mollohan',
     description: 'Andrew Mollohan | Software Engineer',
-    siteUrl: 'https://atmollohan.github.io',
+    siteUrl: 'https://mollo.tech',
   },
   plugins: [
     {

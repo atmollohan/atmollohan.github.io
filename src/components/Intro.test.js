@@ -2,25 +2,34 @@ import React from 'react'
 import { render, screen } from '@testing-library/react'
 import Intro from './Intro'
 
-jest.mock('gatsby', () => ({
-  StaticQuery: jest.fn(({ render }) =>
-    render({
-      markdownRemark: {
-        html: '<p>Test intro content</p>',
-      },
-      allMarkdownRemark: {
-        nodes: [],
-      },
-    })
-  ),
-  graphql: jest.fn(),
-  withPrefix: jest.fn((path) => path),
-  Link: ({ children, to, ...props }) => (
+jest.mock('gatsby', () => {
+  const MockLink = ({ children, to, ...props }) => (
     <a href={to} {...props}>
       {children}
     </a>
-  ),
-}))
+  )
+
+  MockLink.propTypes = {
+    children: require('prop-types').node,
+    to: require('prop-types').string,
+  }
+
+  return {
+    StaticQuery: jest.fn(({ render }) =>
+      render({
+        markdownRemark: {
+          html: '<p>Test intro content</p>',
+        },
+        allMarkdownRemark: {
+          nodes: [],
+        },
+      })
+    ),
+    graphql: jest.fn(),
+    withPrefix: jest.fn((path) => path),
+    Link: MockLink,
+  }
+})
 
 describe('Intro', () => {
   const mockOnCloseArticle = jest.fn()
