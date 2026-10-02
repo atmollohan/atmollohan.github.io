@@ -232,19 +232,30 @@ src/
 │   ├── projects/       # Per-project detail content
 │   └── work/           # Per-role detail content
 ├── images/             # Static images and gifs
-└── pages/              # Gatsby pages
-    ├── index.js            # SPA landing page
-    ├── 404.js
-    ├── work.js
-    ├── projects.js
-    ├── v2.js
-    └── {markdownRemark.frontmatter__slug}.jsx  # Shared detail template
+├── pages/              # Gatsby pages
+│   ├── index.js            # SPA landing page
+│   ├── 404.js
+│   ├── blog.js             # Blog listing
+│   ├── work.js
+│   ├── projects.js
+│   └── v2.js
+└── templates/          # Detail page templates
+    ├── blog-post.js       # Blog post detail (/blog/*)
+    └── shared-detail.jsx  # Work and project detail (/work/*, /projects/*)
 static/                 # Copied verbatim to / (CNAME, resume.1.8.0.pdf)
 ```
 
-Note: there is no `src/templates/`. The shared detail template lives in `src/pages/`
-as `{markdownRemark.frontmatter__slug}.jsx` and is driven by the `createPage` loop in
-`gatsby-node.js`, which creates a page for every markdown file that has a `frontmatter.slug`.
+Both detail templates live in `src/templates/` and are driven by the `createPage` loop in
+`gatsby-node.js`, which creates a page for every markdown file that has a `frontmatter.slug`
+and picks the template by slug prefix.
+
+**No file under `src/pages/` may use the `{model.field}` naming pattern.** Gatsby's File
+System Route API treats any file in `src/pages/` named `{...}` as a route generator and
+auto-creates a page for every matching node. That runs after `gatsby-node.js` `createPages`,
+so it silently overwrites programmatic routing. This repo was bitten by exactly that: the
+shared template was originally named `{markdownRemark.frontmatter__slug}.jsx`, which
+overrode the blog routing and made every `/blog/*` post render with the work/project
+template. It now lives at `src/templates/shared-detail.jsx`.
 
 ## Content Management
 

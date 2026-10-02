@@ -75,13 +75,16 @@ per-item page generated from Markdown by the `createPage` loop in `gatsby-node.j
 │   │   ├── work/              # harness, havocai, optum, pcri, we-roast-coffee, zeronorth
 │   │   └── resume.1.8.0.txt   # Plain-text resume (PDF lives in static/)
 │   ├── images/                # bg, portraits, gifs, favicon.svg
-│   └── pages/
-│       ├── 404.js
-│       ├── index.js           # Main SPA page (functional, hooks)
-│       ├── projects.js        # Standalone projects listing
-│       ├── v2.js              # Placeholder
-│       ├── work.js            # Standalone work listing
-│       └── {markdownRemark.frontmatter__slug}.jsx  # Shared detail template
+│   ├── pages/
+│   │   ├── 404.js
+│   │   ├── blog.js            # Blog listing
+│   │   ├── index.js           # Main SPA page (functional, hooks)
+│   │   ├── projects.js        # Standalone projects listing
+│   │   ├── v2.js              # Placeholder
+│   │   └── work.js            # Standalone work listing
+│   └── templates/             # Detail templates, never {model.field} named
+│       ├── blog-post.js       # Blog post detail (/blog/*)
+│       └── shared-detail.jsx  # Work and project detail (/work/*, /projects/*)
 ├── .nvmrc
 ├── .prettierrc                # trailingComma: es5, semi: false, singleQuote: true
 ├── AGENTS.md                  # Project conventions for AI agents
@@ -169,8 +172,13 @@ Note: `react-helmet`, `gatsby-plugin-react-helmet`, `react-confetti`, and `react
 ### Detail Pages
 
 `gatsby-node.js` queries all `allMarkdownRemark` nodes and calls `createPage` for any
-node with a `frontmatter.slug`, using `src/pages/{markdownRemark.frontmatter__slug}.jsx`
-as the component. This covers both `/projects/*` and `/work/*` items.
+node with a `frontmatter.slug`, picking `src/templates/shared-detail.jsx` for `/work/*` and
+`/projects/*` and `src/templates/blog-post.js` for `/blog/*`.
+
+Both templates live under `src/templates/`, never `src/pages/`. A `{model.field}` filename
+under `src/pages/` triggers Gatsby's File System Route API, which auto-creates a page for
+every matching node *after* `createPages` and silently overrides programmatic routing. That
+is what previously made blog posts render with the work/project template.
 
 The shared template renders `company` / `role` / `period` meta and a `tags` list from
 frontmatter, then the markdown body via `dangerouslySetInnerHTML`. Its `Head` export uses

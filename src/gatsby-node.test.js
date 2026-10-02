@@ -5,9 +5,7 @@ const makeGraphql = (nodes) =>
   jest.fn().mockResolvedValue({ data: { allMarkdownRemark: { nodes } } })
 
 const blogTemplate = path.resolve('./src/templates/blog-post.js')
-const sharedTemplate = path.resolve(
-  './src/pages/{markdownRemark.frontmatter__slug}.jsx'
-)
+const sharedTemplate = path.resolve('./src/templates/shared-detail.jsx')
 
 describe('createPages', () => {
   it('routes /blog/ slugs to the blog template and everything else to the shared template', async () => {
