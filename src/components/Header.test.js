@@ -85,8 +85,8 @@ describe('Header', () => {
 
     expect(labels).toEqual([
       'Intro',
-      'Work',
       'About',
+      'Work',
       'Contact',
       'All Work',
       'All Projects',
