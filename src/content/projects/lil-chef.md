@@ -4,7 +4,7 @@ title: 'Lil Chef'
 company: 'Side Project'
 role: 'Creator'
 period: 'Ongoing'
-order: 2
+order: 1
 tags: ['Next.js', 'TypeScript', 'PostgreSQL', 'Ollama', 'Docker', 'Tailwind', 'AI']
 description: 'A local-first web app that generates weekly meal plans using AI. The theme is a rat chef doing the planning, you are just the prep cook.'
 ---

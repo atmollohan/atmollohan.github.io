@@ -35,6 +35,10 @@ const ProjectsPage = ({ data }) => {
   return (
     <Layout location={{ pathname: '/projects' }}>
       <article id="projects" className="active">
+        <Link to="/" className="back-link">
+          &larr; Back to Home
+        </Link>
+
         <h2 className="major">Projects</h2>
         <p>Side projects and personal builds.</p>
         <div className="project-list">
@@ -63,7 +67,7 @@ export const query = graphql`
   query {
     allMarkdownRemark(
       filter: { frontmatter: { slug: { regex: "^/projects/" } } }
-      sort: { frontmatter: { period: DESC } }
+      sort: { frontmatter: { order: ASC } }
     ) {
       nodes {
         frontmatter {

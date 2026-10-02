@@ -36,6 +36,10 @@ const WorkPage = ({ data }) => {
   return (
     <Layout location={{ pathname: '/work' }}>
       <article id="work" className="active">
+        <Link to="/" className="back-link">
+          &larr; Back to Home
+        </Link>
+
         <h2 className="major">Work</h2>
         <p>Professional experience and key contributions.</p>
         <div className="project-list">
