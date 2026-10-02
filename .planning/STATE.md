@@ -92,7 +92,7 @@ pushed). Summary at `.planning/phases/03-longer-term-additions/03-01-SUMMARY.md`
 |-------------|-----------|
 | PF-12 blog section | Seed post, `blog-post.js` template, `/blog` listing, per-post SEO |
 | PF-13 RSS feed | `gatsby-plugin-feed` at `/rss.xml`, blog-scoped, 1 item, `content:encoded` |
-| PF-14 nav link | `All Work`, `All Projects`, `Blog` as real anchors beside the 4 SPA buttons |
+| PF-14 nav link | `Projects`, `Blog` as real anchors between the SPA buttons, with `Contact` last |
 
 Three requirements closed at once, plus an unrequested but necessary routing fix.
 
@@ -171,9 +171,9 @@ lil-chef, will-of-the-people) before any code can be written. Those are git-trac
 Open decision: whether `category` is a single value or a list, and what the initial vocabulary
 is. That is a content decision to make with the user, not to infer.
 
-Also: `src/pages/projects.js` carries `style={{ display: 'none' }}`. PF-16 will edit that file,
-so decide explicitly at that point whether to keep, remove, or route around the inline style,
-rather than letting it change as a side effect.
+Also: `src/pages/projects.js` no longer carries the inline `display: none` that used to blank the
+standalone page. PF-16 will edit that file for filter state, so keep the back link and the
+`order ASC` sort intact when adding it.
 
 ---
 
@@ -227,9 +227,11 @@ live constraints on PF-15 and PF-16.
 - Canonical domain is `https://mollo.tech` (via `static/CNAME`). `atmollohan.github.io`
   301-redirects to it. Use `mollo.tech` for any new feed or page metadata.
 - Header nav (`src/components/Header.js`) is SPA button-driven over
-  `['work', 'intro', 'about', 'contact']` via `onOpenArticle`. Resolved with a sibling group of
-  three real Gatsby `Link`s labelled `All Work`, `All Projects`, `Blog`. Do not add routes to
-  the SPA array.
+  `['intro', 'about', 'work']` via `onOpenArticle`, plus a sibling group of two real Gatsby
+  `Link`s labelled `Projects`, `Blog`, with `Contact` rendered last so the call to action sits
+  furthest right. Final order: `Intro | About | Work | Projects | Blog | Contact`. Do not add
+  routes to the SPA array. The `/work` link was dropped deliberately: the standalone role index
+  stays reachable by URL and in the sitemap, but the nav points at the home-page Work summary.
 - `gatsby-plugin-feed` is **now installed** at `^5.16.0`. The feed is scoped with
   `match: '^/blog'` and a `filter` on the `^/blog/` slug prefix. The filter is required, not
   defensive: without it all 17 slugged markdown files ship as feed items and the build exits 0.
@@ -237,7 +239,9 @@ live constraints on PF-15 and PF-16.
   a new frontmatter field before it can filter on anything. **Still true, and it is the first
   task for PF-16.**
 - `/projects` exists at `src/pages/projects.js` and renders all 6 cards with no filter state.
-  It carries `style={{ display: 'none' }}`; see the PF-16 note above.
+  The inline `display: none` that used to blank the standalone page is gone, and it now sorts by
+  `frontmatter.order ASC` like the home page. Ordering the cards requires editing `order` in
+  `src/content/projects/*.md`; see the PF-16 note above.
 
 ### Future Improvements (Beyond Phase 3)
 - TypeScript migration

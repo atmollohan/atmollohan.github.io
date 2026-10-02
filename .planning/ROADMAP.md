@@ -95,14 +95,15 @@
 
 **Plans**: Slice 1 complete (`03-PLAN-01.md` → `03-01-SUMMARY.md`). Slice 2 not planned.
 
-**Delivered in slice 1** (2026-10-01, 14 commits on `chore/docs-reconcile-and-canonical-domain`,
-not pushed):
+**Delivered in slice 1** (2026-10-01, on `chore/docs-reconcile-and-canonical-domain`, pushed
+through `4e19896`):
 
 - `src/content/blog/` with a seed post at `/blog/building-lil-chef`
 - `src/templates/blog-post.js` - blog-only template, `og:type=article`, `mollo.tech` canonical
 - `src/pages/blog.js` - `/blog` listing, filtered to `^/blog/`, sorted by date descending
 - `gatsby-plugin-feed` at `/rss.xml`, scoped with `match: '^/blog'`
-- Header route links `All Work`, `All Projects`, `Blog` as real anchors beside the 4 SPA buttons
+- Header route links `Projects`, `Blog` as real anchors, with `Contact` last so the call to
+  action sits furthest right. Final order: `Intro | About | Work | Projects | Blog | Contact`.
 - `src/gatsby-node.test.js` unit test proving the blog/project/work routing split
 - Shared detail template moved `src/pages/{markdownRemark.frontmatter__slug}.jsx` →
   `src/templates/shared-detail.jsx`
@@ -116,8 +117,9 @@ not pushed):
   arguments rather than the component Gatsby finally resolves.
 - Never import `useLocation` from `gatsby` at module scope in a component that renders in the
   static pass. Gatsby resolves the SSR entry during `npm run build` and it does not export it.
-- `src/pages/projects.js` carries `style={{ display: 'none' }}`. PF-16 edits that file; decide
-  explicitly whether to keep, remove, or route around it.
+- `src/pages/projects.js` no longer carries the inline `display: none` that used to blank the
+  standalone page. PF-16 edits that file for filter state; preserve the back link and the
+  `order ASC` sort when doing so.
 - PF-16 has a hard content prerequisite: there is no `category` frontmatter field today, so a
   `category` key must be added to all six files under `src/content/projects/` before any
   filtering code can be written. Whether `category` is a single value or a list, and what the

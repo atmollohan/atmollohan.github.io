@@ -57,12 +57,16 @@ fixed a routing bug that predated this plan and silently owned every markdown pa
 - **`/blog` listing** (`src/pages/blog.js`) filtered to `^/blog/` and sorted by
   `frontmatter.date DESC`, with a plain-anchor subscribe link to `/rss.xml` (not a Gatsby
   `Link`: the file is written by `onPostBuild` and has no page-data entry). 7 tests.
+  The visible subscribe link was later removed: `/rss.xml` 404s under `gatsby develop` because
+  the feed is only written in `onPostBuild`, so the link looked broken locally. Feed generation
+  and the `<link rel="alternate">` in the head were kept because both work in production.
 - **RSS feed** at `/rss.xml` via `gatsby-plugin-feed`, scoped with `match: '^/blog'` so the
   auto-injected `<link rel="alternate">` appears only on blog pages, not all 21 pages.
   Exactly 1 item, body passed through as `content:encoded`.
-- **Header route links**: `All Work`, `All Projects`, `Blog` as real anchors after the four
-  unchanged SPA buttons, styled by a new `nav-item` mixin applied at both the desktop and
-  xsmall breakpoints.
+- **Header route links**: `Projects`, `Blog` as real anchors between the SPA buttons, with
+  `Contact` rendered last. Final order: `Intro | About | Work | Projects | Blog | Contact`.
+  Styled by a new `nav-item` mixin applied at both the desktop and xsmall breakpoints.
+  Revised after user review: the `/work` link was dropped and the `All` prefixes were removed.
 - **Moved the shared detail template** out of `src/pages/` (see deviations), which is the
   actual reason blog routing works now.
 - **Corrected `AGENTS.md` and `ANALYSIS.md`**, which both documented a structure that no
