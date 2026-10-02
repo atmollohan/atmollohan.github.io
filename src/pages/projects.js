@@ -34,7 +34,7 @@ const ProjectsPage = ({ data }) => {
 
   return (
     <Layout location={{ pathname: '/projects' }}>
-      <article id="projects" className="active" style={{ display: 'none' }}>
+      <article id="projects" className="active">
         <h2 className="major">Projects</h2>
         <p>Side projects and personal builds.</p>
         <div className="project-list">

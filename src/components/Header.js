@@ -21,7 +21,7 @@ const Header = (props) => (
     </div>
     <nav aria-label="Main navigation">
       <ul>
-        {['work', 'intro', 'about', 'contact'].map((section) => (
+        {['intro', 'work', 'about', 'contact'].map((section) => (
           <li key={section}>
             <button
               className={''}

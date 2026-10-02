@@ -61,13 +61,11 @@ describe('BlogPage', () => {
     expect(screen.getByText('Ollama')).toBeInTheDocument()
   })
 
-  it('links to the rss feed with a plain anchor, not a route link', () => {
+  it('does not link to the rss feed on page', () => {
     render(<BlogPage data={pageData([postNode])} />)
 
-    expect(screen.getByText('Subscribe via RSS')).toHaveAttribute(
-      'href',
-      '/rss.xml'
-    )
+    expect(screen.queryByText('Subscribe via RSS')).not.toBeInTheDocument()
+    expect(document.querySelector('a[href="/rss.xml"]')).toBeNull()
   })
 
   it('links back to the site', () => {

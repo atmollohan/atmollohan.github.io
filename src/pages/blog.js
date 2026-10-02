@@ -64,10 +64,6 @@ const BlogPage = ({ data }) => {
             />
           ))}
         </div>
-
-        <p className="meta">
-          <a href="/rss.xml">Subscribe via RSS</a>
-        </p>
       </article>
     </Layout>
   )

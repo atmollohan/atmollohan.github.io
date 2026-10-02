@@ -84,8 +84,8 @@ describe('Header', () => {
     const labels = Array.from(items).map((item) => item.textContent)
 
     expect(labels).toEqual([
-      'Work',
       'Intro',
+      'Work',
       'About',
       'Contact',
       'All Work',
