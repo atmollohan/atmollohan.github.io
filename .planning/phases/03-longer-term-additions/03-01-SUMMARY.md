@@ -122,6 +122,50 @@ fixed a routing bug that predated this plan and silently owned every markdown pa
   `mockOnOpenArticle` name. The new test uses its own `onOpenArticle` local, which satisfies
   both the grep and the plan's "do not modify the 5 original tests" constraint.
 
+### 7. User prose review: one unsourced claim cut
+
+- The user reviewed the seed post at the blocking checkpoint and cut one claim as unsourced:
+  the post stated Gemini works out to "roughly $0.009 per plan, about $0.07 a month". Nothing
+  in `src/content/projects/lil-chef.md` backs that figure, so it was removed rather than
+  sourced or replaced. The argument now reads "Google Gemini is cheap enough to be the
+  production path, and having it there is what leaves the local path free to stay local",
+  which keeps the reasoning without inventing a number. Commit `3299d36`.
+- Re-checked the rest of the post for the same class of problem. Every other numeric or
+  capability claim traces to `src/content/projects/lil-chef.md`: PostgreSQL 17, Next.js 16,
+  Turbopack, Tailwind CSS v4, Raspberry Pi 4/5, Docker Compose, `/api/health` health checks,
+  PDF recipe import, GitHub Actions. Nothing else was cut or flagged.
+- The user approved the remainder of the prose as written. No further edits.
+
+## Load-bearing knowledge for PF-15 and PF-16
+
+Two bugs fixed here are not in the plan and will recur if rediscovered the hard way. Both are
+recorded in `03-PLAN-01.md` critical facts 9 and 10 as well.
+
+### `useLocation` from `gatsby` breaks SSR
+
+`Header.js` briefly imported `useLocation` to mark the active route. During `npm run build`,
+Gatsby resolves the `gatsby` module to its **SSR entry**, which does not export
+`useLocation`, so every static HTML render died with
+`(0 , gatsby_browser_entry.useLocation) is not a function`. The browser entry exports it; the
+SSR entry does not. Any `gatsby` export that only exists at runtime must not be imported at
+module scope in a component that renders in the static pass. Header renders only on `/`, so
+active-route marking was never even useful here. If a later phase wants it, pass `location`
+down as a prop the way `index.js` already does, never via `useLocation`.
+
+### The `{model.field}` filename in `src/pages/` is a routing footgun
+
+Any file under `src/pages/` named `{model.field}` is a Gatsby **File System Route API**
+generator. It auto-creates a page for every matching node and resolves **after**
+`gatsby-node.js` `createPages`, silently overwriting programmatic routing. This repo shipped
+it for months as `{markdownRemark.frontmatter__slug}.jsx`. Consequence when it collided with
+blog routing: every `/blog/*` post rendered with the work/project template, emitting
+`og:type=website` instead of `article`, with no `<time>` element and no `All posts` back link.
+The build exited 0 and every unit test passed, because the unit tests assert on `createPage`
+**arguments**, not on the component Gatsby finally resolves. Now at
+`src/templates/shared-detail.jsx`. **Do not move it back into `src/pages/`,** and do not add a
+second page-creation loop to work around it. The only reliable guard is the built-output
+assertion that the post page emits `og:type=article`.
+
 ## Verification
 
 All commands run from the repo root. Baseline before this plan was 10 suites / 41 tests,
@@ -140,8 +184,12 @@ All commands run from the repo root. Baseline before this plan was 10 suites / 4
 | Route set | 22 routes, diff against pre-move set is identical |
 | Regression | `/projects/lil-chef` and `/work/havocai` still emit `Back to Home` |
 | Nav | `index.html` has exactly 4 `<li><button` plus 3 anchors |
-| House style | 0 em dashes in the seed post |
+| House style | 0 em dashes in the seed post, in `public/rss.xml`, and on the rendered post page |
 | `src/pages/` | no `{...}` File System Route API file remains |
+
+The gate was re-run in full after the user prose edit (commit `3299d36`), since the post body
+feeds both the RSS `content:encoded` payload and the rendered post page. All numbers in the
+table are from that final run, not carried over.
 
 ## Known Stubs
 
@@ -159,5 +207,11 @@ real markdown, and the feed is generated from real nodes.
 
 ## Self-Check: PASSED
 
-All 12 commits present, all created files exist, and every committed path was verified against
+All 14 commits present, all created files exist, and every committed path was verified against
 a clean production build.
+
+## Status
+
+Prose review complete. The user read `src/content/blog/building-lil-chef.md` in full, cut one
+unsourced cost figure, approved the remainder, and approved Option A for the template move.
+Plan 03-01 is closed pending any orchestrator writes to STATE.md and ROADMAP.md.
