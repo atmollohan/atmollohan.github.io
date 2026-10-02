@@ -116,6 +116,18 @@ describe('Header', () => {
     expect(screen.getByText('Blog').tagName).toBe('A')
   })
 
+  it('does not call onOpenArticle when a route link is clicked', () => {
+    const onOpenArticle = jest.fn()
+
+    render(<Header onOpenArticle={onOpenArticle} timeout={true} />)
+
+    fireEvent.click(screen.getByText('Blog'))
+    fireEvent.click(screen.getByText('All Work'))
+    fireEvent.click(screen.getByText('All Projects'))
+
+    expect(onOpenArticle).not.toHaveBeenCalled()
+  })
+
   it('marks no route as active on the site root', () => {
     const { container } = render(
       <Header onOpenArticle={mockOnOpenArticle} timeout={true} />
