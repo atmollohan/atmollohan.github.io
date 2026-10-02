@@ -3,7 +3,6 @@ import React from 'react'
 import { Link } from 'gatsby'
 
 const routes = [
-  { to: '/work', label: 'All Work' },
   { to: '/projects', label: 'All Projects' },
   { to: '/blog', label: 'Blog' },
 ]
