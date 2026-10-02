@@ -29,6 +29,64 @@
 
 }
 
+/// Styles a header nav item so buttons and links render identically.
+/// Buttons and anchors share this so route links pick up the same hover
+/// and active treatment as the SPA section buttons.
+@mixin nav-item {
+	display: block;
+	min-width: 7.5rem;
+	height: 2.75rem;
+	line-height: 2.75rem;
+	padding: 0 1.5rem;
+	text-transform: uppercase;
+	letter-spacing: functions.font(letter-spacing);
+	font-size: 0.8rem;
+	font-family: functions.font(family);
+	border: none;
+	border-radius: 4px;
+	background-color: transparent;
+	color: functions.palette(fg-bold) !important;
+	cursor: pointer;
+	transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+	position: relative;
+	overflow: hidden;
+
+	&:hover,
+	&:focus {
+		background-color: functions.palette(accent);
+		color: functions.palette(bg) !important;
+		transform: translateY(-2px);
+		box-shadow: 0 6px 20px rgba(196, 106, 60, 0.4);
+	}
+
+	&:active {
+		background-color: functions.palette(accent);
+		transform: translateY(0);
+		box-shadow: 0 2px 8px rgba(196, 106, 60, 0.3);
+	}
+
+	&.special {
+		background: functions.palette(gradient);
+		border: none;
+		color: functions.palette(bg) !important;
+		font-weight: functions.font(weight-bold);
+		box-shadow: 0 4px 15px rgba(196, 106, 60, 0.3);
+
+		&:hover,
+		&:focus {
+			transform: translateY(-2px);
+			box-shadow: 0 8px 25px rgba(196, 106, 60, 0.4);
+			background: functions.palette(gradient);
+			color: functions.palette(bg) !important;
+		}
+
+		&:active {
+			transform: translateY(0);
+			box-shadow: 0 4px 10px rgba(196, 106, 60, 0.3);
+		}
+	}
+}
+
 /// Applies padding to an element, taking the current element-margin value into account.
 /// @param {mixed} $tb Top/bottom padding.
 /// @param {mixed} $lr Left/right padding.
