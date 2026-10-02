@@ -77,7 +77,7 @@ describe('Header', () => {
     expect(container.querySelector('#header')).toBeInTheDocument()
   })
 
-  it('renders the two route links after the SPA buttons', () => {
+  it('renders the two route links between the section buttons', () => {
     render(<Header onOpenArticle={mockOnOpenArticle} timeout={true} />)
 
     const items = screen.getByRole('navigation').querySelectorAll('li')
@@ -87,19 +87,16 @@ describe('Header', () => {
       'Intro',
       'About',
       'Work',
-      'Contact',
-      'All Projects',
+      'Projects',
       'Blog',
+      'Contact',
     ])
   })
 
   it('points each route link at its route', () => {
     render(<Header onOpenArticle={mockOnOpenArticle} timeout={true} />)
 
-    expect(screen.getByText('All Projects')).toHaveAttribute(
-      'href',
-      '/projects'
-    )
+    expect(screen.getByText('Projects')).toHaveAttribute('href', '/projects')
     expect(screen.getByText('Blog')).toHaveAttribute('href', '/blog')
   })
 
@@ -116,7 +113,7 @@ describe('Header', () => {
     render(<Header onOpenArticle={onOpenArticle} timeout={true} />)
 
     fireEvent.click(screen.getByText('Blog'))
-    fireEvent.click(screen.getByText('All Projects'))
+    fireEvent.click(screen.getByText('Projects'))
 
     expect(onOpenArticle).not.toHaveBeenCalled()
   })

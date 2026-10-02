@@ -2,10 +2,33 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import { Link } from 'gatsby'
 
+const sections = ['intro', 'about', 'work']
+
 const routes = [
-  { to: '/projects', label: 'All Projects' },
+  { to: '/projects', label: 'Projects' },
   { to: '/blog', label: 'Blog' },
 ]
+
+const capitalize = (value) => value.charAt(0).toUpperCase() + value.slice(1)
+
+const SectionButton = ({ section, isActive, onOpen }) => (
+  <li>
+    <button
+      className={''}
+      aria-current={isActive ? 'page' : undefined}
+      aria-expanded={isActive}
+      onClick={() => onOpen(section)}
+    >
+      {capitalize(section)}
+    </button>
+  </li>
+)
+
+SectionButton.propTypes = {
+  section: PropTypes.string.isRequired,
+  isActive: PropTypes.bool,
+  onOpen: PropTypes.func,
+}
 
 const Header = (props) => (
   <header id="header" style={!props.timeout ? { display: 'none' } : {}}>
@@ -20,27 +43,24 @@ const Header = (props) => (
     </div>
     <nav aria-label="Main navigation">
       <ul>
-        {['intro', 'about', 'work', 'contact'].map((section) => (
-          <li key={section}>
-            <button
-              className={''}
-              aria-current={props.article === section ? 'page' : undefined}
-              aria-expanded={props.article === section}
-              onClick={() => {
-                props.onOpenArticle(section)
-              }}
-            >
-              {section === 'work'
-                ? 'Work'
-                : section.charAt(0).toUpperCase() + section.slice(1)}
-            </button>
-          </li>
+        {sections.map((section) => (
+          <SectionButton
+            key={section}
+            section={section}
+            isActive={props.article === section}
+            onOpen={props.onOpenArticle}
+          />
         ))}
         {routes.map((route) => (
           <li key={route.to}>
             <Link to={route.to}>{route.label}</Link>
           </li>
         ))}
+        <SectionButton
+          section="contact"
+          isActive={props.article === 'contact'}
+          onOpen={props.onOpenArticle}
+        />
       </ul>
     </nav>
   </header>
