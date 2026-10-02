@@ -31,13 +31,15 @@
 
 /// Styles a header nav item so buttons and links render identically.
 /// Buttons and anchors share this so route links pick up the same hover
-/// and active treatment as the SPA section buttons.
+/// and active treatment as the SPA section buttons. Includes the anchor
+/// resets that cancel the global dotted-underline `a` rule.
 @mixin nav-item {
 	display: block;
 	min-width: 7.5rem;
 	height: 2.75rem;
 	line-height: 2.75rem;
 	padding: 0 1.5rem;
+	width: 100%;
 	text-transform: uppercase;
 	letter-spacing: functions.font(letter-spacing);
 	font-size: 0.8rem;
@@ -46,6 +48,7 @@
 	border-radius: 4px;
 	background-color: transparent;
 	color: functions.palette(fg-bold) !important;
+	text-decoration: none;
 	cursor: pointer;
 	transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 	position: relative;
@@ -63,6 +66,10 @@
 		background-color: functions.palette(accent);
 		transform: translateY(0);
 		box-shadow: 0 2px 8px rgba(196, 106, 60, 0.3);
+	}
+
+	&:after {
+		display: none;
 	}
 
 	&.special {
