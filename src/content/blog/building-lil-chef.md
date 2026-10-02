@@ -14,7 +14,7 @@ The meal planning is the easy part. The four decisions underneath it are what I 
 
 The model layer is an abstraction over Ollama, OpenAI, Anthropic, OpenRouter, and Google Gemini. Every one of them can generate a plan. Picking one would have been a smaller project.
 
-I picked five because the deployment target decides which provider wins. Running fully local with Ollama gets GPU-accelerated inference with no egress. That is the mode I actually use, because a plan built from my own dietary restrictions has no reason to leave the machine. Ollama is not available everywhere, and it is not always the best answer for a batch job. Google Gemini works out to roughly $0.009 per plan, about $0.07 a month, which is cheap enough to be the production path and leaves the local path free to be local.
+I picked five because the deployment target decides which provider wins. Running fully local with Ollama gets GPU-accelerated inference with no egress. That is the mode I actually use, because a plan built from my own dietary restrictions has no reason to leave the machine. Ollama is not available everywhere, and it is not always the best answer for a batch job. Google Gemini is cheap enough to be the production path, and having it there is what leaves the local path free to stay local.
 
 The abstraction earns its cost because the provider is a deployment detail, not a product feature. Swapping it should not touch the rest of the app.
 
