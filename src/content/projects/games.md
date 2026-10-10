@@ -4,7 +4,7 @@ title: 'Games Arcade'
 company: 'Side Project'
 role: 'Creator'
 period: 'Ongoing'
-order: 5
+order: 4
 tags: ['HTML', 'JavaScript', 'Python', 'Docker', 'Cloudflare Tunnel', 'Tailscale']
 description: '7 classic arcade games in a single HTML page, served by a lightweight Python HTTP server. Containerized for ARM64/AMD64 and ready for Raspberry Pi deployment.'
 ---

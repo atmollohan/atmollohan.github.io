@@ -4,7 +4,7 @@ title: 'Echo Protocol'
 company: 'Side Project'
 role: 'Creator'
 period: 'Ongoing'
-order: 4
+order: 3
 tags: ['Python', 'Streamlit', 'Docker', 'Cloudflare Tunnel', 'Tailscale', 'Raspberry Pi']
 description: 'A web tool for generating Beckman Echo liquid handler protocols. Runs locally as a standalone Python app or Docker container so users can connect their own data. Designed to run on a Raspberry Pi.'
 ---

@@ -115,10 +115,10 @@ export const Head = () => (
       content="Cloud platform engineer building scalable infrastructure, DevSecOps tools, and AI-augmented developer experiences."
     />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://atmollohan.github.io" />
+    <meta property="og:url" content="https://mollo.tech" />
     <meta
       property="og:image"
-      content="https://atmollohan.github.io/icons/icon-512x512.png"
+      content="https://mollo.tech/icons/icon-512x512.png"
     />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Mollo Tech | Andrew Mollohan" />

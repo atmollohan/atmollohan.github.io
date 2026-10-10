@@ -4,7 +4,7 @@ title: 'The Will of the People'
 company: 'Side Project'
 role: 'Creator'
 period: 'Ongoing'
-order: 1
+order: 2
 tags: ['Node.js', 'Discord.js', 'Docker', 'Jest', 'GitHub Actions', 'Raspberry Pi']
 description: 'A Discord bot that became the engine of a server economy, casino, and voice. Runs on a Raspberry Pi 5 after migrating from AWS EC2 when credits ran out.'
 ---

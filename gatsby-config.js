@@ -3,7 +3,7 @@ module.exports = {
     title: 'Mollo Tech',
     author: 'Andrew Mollohan',
     description: 'Andrew Mollohan | Software Engineer',
-    siteUrl: 'https://atmollohan.github.io',
+    siteUrl: 'https://mollo.tech',
   },
   plugins: [
     {
@@ -46,5 +46,55 @@ module.exports = {
     },
     `gatsby-transformer-remark`,
     `gatsby-plugin-sitemap`,
+    {
+      resolve: `gatsby-plugin-feed`,
+      options: {
+        feeds: [
+          {
+            title: `Mollo Tech Blog`,
+            description: `Writing about infrastructure, DevSecOps, and side projects by Andrew Mollohan`,
+            output: `/rss.xml`,
+            match: `^/blog`,
+            feed_url: `https://mollo.tech/rss.xml`,
+            copyright: `Copyright ${new Date().getFullYear()} Andrew Mollohan`,
+            query: `
+              {
+                site {
+                  siteMetadata {
+                    siteUrl
+                  }
+                }
+                allMarkdownRemark(
+                  filter: { frontmatter: { slug: { regex: "^/blog/" } } }
+                  sort: { frontmatter: { date: DESC } }
+                ) {
+                  nodes {
+                    excerpt(pruneLength: 200)
+                    html
+                    frontmatter {
+                      slug
+                      title
+                      date
+                      description
+                      tags
+                    }
+                  }
+                }
+              }
+            `,
+            serialize: ({ query: { site, allMarkdownRemark } }) =>
+              allMarkdownRemark.nodes.map((node) => ({
+                title: node.frontmatter.title,
+                description: node.frontmatter.description || node.excerpt,
+                date: node.frontmatter.date,
+                url: `${site.siteMetadata.siteUrl}${node.frontmatter.slug}`,
+                guid: `${site.siteMetadata.siteUrl}${node.frontmatter.slug}`,
+                categories: node.frontmatter.tags || [],
+                custom_elements: [{ 'content:encoded': node.html }],
+              })),
+          },
+        ],
+      },
+    },
   ],
 }

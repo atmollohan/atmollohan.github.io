@@ -4,7 +4,7 @@ title: 'Home Lab'
 company: 'Side Project'
 role: 'Creator'
 period: 'Ongoing'
-order: 3
+order: 5
 tags: ['Raspberry Pi', 'Linux', 'Docker', 'Tailscale', 'Cloudflare Tunnel', 'Networking', 'Box64', 'Box86', 'SteamCMD', 'Pi-hole', 'Self-Hosted']
 description: 'Multi-device home lab built from scratch. Raspberry Pis and custom-built computers running a Tailscale mesh, Cloudflare tunnels, game servers, and network services.'
 ---

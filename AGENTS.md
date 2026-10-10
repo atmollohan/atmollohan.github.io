@@ -223,16 +223,39 @@ chore: update dependencies
 src/
 ├── assets/
 │   └── scss/           # Sass stylesheets
-├── components/         # Reusable React components
+├── components/         # Reusable React components (13 + 10 test files)
 ├── content/           # Markdown content files
 │   ├── about.md
 │   ├── contact.md
 │   ├── intro.md
-│   └── work.md
+│   ├── work.md
+│   ├── projects/       # Per-project detail content
+│   └── work/           # Per-role detail content
 ├── images/             # Static images and gifs
-├── pages/              # Gatsby pages (index.js, 404.js, v2.js)
-└── templates/          # (if used) Dynamic page templates
+├── pages/              # Gatsby pages
+│   ├── index.js            # SPA landing page
+│   ├── 404.js
+│   ├── blog.js             # Blog listing
+│   ├── work.js
+│   ├── projects.js
+│   └── v2.js
+└── templates/          # Detail page templates
+    ├── blog-post.js       # Blog post detail (/blog/*)
+    └── shared-detail.jsx  # Work and project detail (/work/*, /projects/*)
+static/                 # Copied verbatim to / (CNAME, resume.1.8.0.pdf)
 ```
+
+Both detail templates live in `src/templates/` and are driven by the `createPage` loop in
+`gatsby-node.js`, which creates a page for every markdown file that has a `frontmatter.slug`
+and picks the template by slug prefix.
+
+**No file under `src/pages/` may use the `{model.field}` naming pattern.** Gatsby's File
+System Route API treats any file in `src/pages/` named `{...}` as a route generator and
+auto-creates a page for every matching node. That runs after `gatsby-node.js` `createPages`,
+so it silently overwrites programmatic routing. This repo was bitten by exactly that: the
+shared template was originally named `{markdownRemark.frontmatter__slug}.jsx`, which
+overrode the blog routing and made every `/blog/*` post render with the work/project
+template. It now lives at `src/templates/shared-detail.jsx`.
 
 ## Content Management
 
@@ -245,26 +268,65 @@ title: 'Intro'
 ---
 ```
 
+### Content Frontmatter by Type
+
+SPA sections (`intro.md`, `about.md`, `work.md`, `contact.md`):
+
+```yaml
+slug: '/intro'
+title: 'Intro'
+```
+
+Project and work detail pages (`src/content/projects/*.md`, `src/content/work/*.md`):
+
+```yaml
+slug: '/projects/lil-chef'
+title: 'Lil Chef'
+company: 'Side Project'
+role: 'Creator'
+period: 'Ongoing'
+order: 2                    # projects only, ASC sort
+description: 'One line.'
+tags: ['Next.js', 'TypeScript']
+```
+
+**Editing rule**: change the markdown, not the components. `Intro.js`, `About.js`,
+`Work.js`, `Contact.js`, and `Projects.js` all render markdown via `StaticQuery` +
+`dangerouslySetInnerHTML`, so content is single-sourced from `src/content/`.
+
+Note: `Work.js` and `Projects.js` hardcode their own meta lines
+(`company | role | period`, tags) from frontmatter rather than rendering the markdown
+body, so frontmatter fields must stay in sync for those listings.
+
 ## Useful Links
 
 - [Gatsby Documentation](https://www.gatsbyjs.com/docs/)
 - [Prettier Docs](https://prettier.io/docs/en/index.html)
-- [react-use Hooks](https://github.com/streamich/react-use)
 
 ## Project Status
 
 ### Completed
 
-- Modern UI with amber accent color and hover effects
+- Terracotta accent palette (`#c46a3c`) replacing the original amber
 - Functional components with hooks (useState, useEffect, useCallback, useRef)
-- Unit tests for Header, Footer, SocialLinks, Intro components (19 tests)
+- 10 Jest test suites, 41 tests, all passing
 - Click-outside-to-close article functionality
-- All content updated with accurate tech stacks
+- Separate `/work` and `/projects` pages plus per-item detail pages
+- Content lives in `src/content/` markdown, queried via GraphQL in components
+
+### Current State (2026-09-29)
+
+- `npm test` 41/41, `npm run lint` 0 errors 0 warnings, `npm run format:check` clean
+- Site is served at `https://mollo.tech` (via `static/CNAME`); `atmollohan.github.io` 301s
+  to it. Use `mollo.tech` as the canonical origin in metadata and sitemaps.
+- Phase 3 (blog, RSS, nav link, case study format, project filtering) not started
+- See `.planning/ROADMAP.md` and `.planning/STATE.md` for current phase status
 
 ### Future Improvements
 
 - TypeScript migration
-- Accessibility audit (contrast ratios, ARIA labels)
-- Image optimization/lazy loading
-- Add blog section
+- Blog section (Phase 3)
+- Project category filtering (Phase 3)
+- Dark mode toggle
+- Client-side search
 - Update Gatsby to latest version

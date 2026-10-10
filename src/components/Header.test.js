@@ -2,6 +2,25 @@ import React from 'react'
 import { render, screen, fireEvent } from '@testing-library/react'
 import Header from './Header'
 
+jest.mock('gatsby', () => {
+  const MockLink = ({ children, to, ...props }) => (
+    <a href={to} {...props}>
+      {children}
+    </a>
+  )
+
+  MockLink.propTypes = {
+    children: require('prop-types').node,
+    to: require('prop-types').string,
+  }
+
+  return {
+    graphql: jest.fn(),
+    withPrefix: jest.fn((path) => path),
+    Link: MockLink,
+  }
+})
+
 describe('Header', () => {
   const mockOnOpenArticle = jest.fn()
 
@@ -56,5 +75,55 @@ describe('Header', () => {
     )
 
     expect(container.querySelector('#header')).toBeInTheDocument()
+  })
+
+  it('renders the two route links between the section buttons', () => {
+    render(<Header onOpenArticle={mockOnOpenArticle} timeout={true} />)
+
+    const items = screen.getByRole('navigation').querySelectorAll('li')
+    const labels = Array.from(items).map((item) => item.textContent)
+
+    expect(labels).toEqual([
+      'Intro',
+      'About',
+      'Work',
+      'Projects',
+      'Blog',
+      'Contact',
+    ])
+  })
+
+  it('points each route link at its route', () => {
+    render(<Header onOpenArticle={mockOnOpenArticle} timeout={true} />)
+
+    expect(screen.getByText('Projects')).toHaveAttribute('href', '/projects')
+    expect(screen.getByText('Blog')).toHaveAttribute('href', '/blog')
+  })
+
+  it('does not mark the SPA buttons as links', () => {
+    render(<Header onOpenArticle={mockOnOpenArticle} timeout={true} />)
+
+    expect(screen.getByText('Intro').tagName).toBe('BUTTON')
+    expect(screen.getByText('Blog').tagName).toBe('A')
+  })
+
+  it('does not call onOpenArticle when a route link is clicked', () => {
+    const onOpenArticle = jest.fn()
+
+    render(<Header onOpenArticle={onOpenArticle} timeout={true} />)
+
+    fireEvent.click(screen.getByText('Blog'))
+    fireEvent.click(screen.getByText('Projects'))
+
+    expect(onOpenArticle).not.toHaveBeenCalled()
+  })
+
+  it('renders the route links as plain anchors with no active marking', () => {
+    const { container } = render(
+      <Header onOpenArticle={mockOnOpenArticle} timeout={true} />
+    )
+
+    expect(container.querySelectorAll('nav a.special')).toHaveLength(0)
+    expect(container.querySelectorAll('nav a[aria-current]')).toHaveLength(0)
   })
 })

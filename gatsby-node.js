@@ -21,15 +21,16 @@ exports.createPages = async ({ graphql, actions }) => {
     return
   }
 
-  const template = path.resolve(
-    './src/pages/{markdownRemark.frontmatter__slug}.jsx'
-  )
+  const template = path.resolve('./src/templates/shared-detail.jsx')
+  const blogTemplate = path.resolve('./src/templates/blog-post.js')
 
   result.data.allMarkdownRemark.nodes.forEach((node) => {
     if (node.frontmatter.slug) {
       createPage({
         path: node.frontmatter.slug,
-        component: template,
+        component: node.frontmatter.slug.startsWith('/blog/')
+          ? blogTemplate
+          : template,
         context: {
           id: node.id,
         },
